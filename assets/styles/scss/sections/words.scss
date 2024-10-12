@@ -1,0 +1,43 @@
+.words {
+  padding: 161px 0;
+  background-image: url("/assets/images/words_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include lg {
+    padding: 120px 0;
+  }
+
+  @include md {
+    padding: 65px 0;
+  }
+
+  @include xs {
+    padding: 48px 0;
+  }
+
+  &__wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 702px;
+    text-align: center;
+
+    @include lg {
+      max-width: 526px;
+    }
+
+    @include md {
+      max-width: 347px;
+    }
+
+    @include xs {
+      max-width: 259px;
+    }
+  }
+}

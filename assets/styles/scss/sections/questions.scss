@@ -1,0 +1,120 @@
+.questions {
+  @include section-padding-md;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "img text form"
+      "img text button";
+    column-gap: 25px;
+
+    @include lg {
+      gap: 20px;
+    }
+
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "img text"
+        "img form"
+        "button button";
+      gap: 40px;
+    }
+
+    @include r(740) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-areas:
+        "img"
+        "text"
+        "form"
+        "button";
+      gap: 42px;
+    }
+
+    @include xs {
+    }
+  }
+
+  &__img {
+    grid-area: img;
+
+    @include r(740) {
+      padding: 0 55px;
+    }
+  }
+
+  &__picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include md {
+      aspect-ratio: 0.7;
+    }
+
+    @include r(740) {
+      aspect-ratio: 0.97;
+    }
+  }
+
+  &__text {
+    grid-area: text;
+  }
+
+  &__form {
+    grid-area: form;
+  }
+
+  &__comment {
+    width: 100%;
+    // height: 100%;
+    min-height: 150px;
+    border: 1px solid $color-gray-dark;
+    font-family: var(--montserrat-font-family);
+    font-size: var(--paragraph-standard-font-size);
+    font-weight: var(--paragraph-standard-font-weight, 400);
+    font-style: normal;
+    line-height: var(--paragraph-standard-line-height);
+    letter-spacing: var(--paragraph-standard-letter-spacing);
+    text-transform: var(--paragraph-standard-text-transform);
+    text-decoration: var(--paragraph-standard-text-decoration);
+    color: $color-blue-dark;
+    padding: 16px;
+    resize: vertical;
+    overflow: auto;
+    transition: $transition;
+
+    @include sm {
+      padding: 12px;
+    }
+
+    @include xs {
+      padding: 10px 8px;
+    }
+
+    &:focus {
+      border: 2px solid $color-orange-light;
+    }
+
+    &::placeholder {
+      color: $color-gray-dark;
+
+      @extend %paragraph-standard;
+    }
+  }
+
+  &__button {
+    grid-area: button;
+    justify-self: end;
+    align-self: end;
+
+    @include r(740) {
+      justify-self: center;
+      margin-top: 20px;
+    }
+  }
+}

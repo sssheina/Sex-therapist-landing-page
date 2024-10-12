@@ -1,0 +1,174 @@
+.button {
+  max-width: 386px;
+  width: 100%;
+  height: 93px;
+  border-radius: 53px;
+  text-align: center;
+  outline: none;
+  transition: $transition;
+
+  &:hover {
+    background: $color-orange-light;
+  }
+
+  &:active {
+    background: $color-orange-dark;
+  }
+
+  @include lg {
+    max-width: 295px;
+    height: 70px;
+  }
+
+  @include md {
+    max-width: 213px;
+    height: 50px;
+  }
+
+  @include sm {
+    max-width: 278px;
+    height: 70px;
+  }
+
+  @include xs {
+    max-width: 212px;
+    height: 53px;
+  }
+}
+
+.button-main {
+  max-width: 523px;
+  width: 100%;
+
+
+  @include lg {
+    max-width: 392px;
+  }
+
+  @include md {
+    max-width: 227px;
+  }
+
+  @include sm {
+    max-width: 278px;
+  }
+
+  @include xs {
+    max-width: 212px;
+  }
+}
+
+.button__primary {
+  background: $color-orange;
+  color: $color-white;
+  border: none;
+
+  &:hover {
+    background: $color-orange-light;
+  }
+
+  &:active {
+    background: $color-orange-dark;
+  }
+}
+
+.button__outline {
+  border: 2px solid $color-orange;
+  background: $color-white;
+  color: $color-orange;
+
+  &:hover {
+    border: 2px solid $color-orange-light;
+    background: $color-orange-light;
+    color: $color-white;
+  }
+
+  &:active {
+    border: 2px solid $color-orange-dark;
+    background: $color-orange-dark;
+    color: $color-white;
+  }
+}
+
+.button-up {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  background: rgba(217, 217, 217, 0.5);
+  border: none;
+  border-radius: 30px;
+  width: 55px;
+  height: 55px;
+  z-index: 2;
+  transition: $transition;
+
+  &:hover {
+    background: $color-gray-light;
+    transform: translateY(-4px);
+  }
+
+  &:active {
+    background: $color-orange-light;
+  }
+}
+
+.button__secondary {
+  background: $color-blue-dark;
+  color: $color-white;
+
+  &:hover {
+    background: $color-blue-middle;
+  }
+
+  &:active {
+    background: $color-white;
+    color: $color-blue-dark;
+  }
+}
+
+.button__outline-blue {
+  border: 2px solid $color-blue-dark;
+  background: $color-white;
+  color: $color-blue-dark;
+
+  &:hover {
+    border: 2px solid $color-blue-middle;
+    background: $color-blue-middle;
+  }
+
+  &:active {
+    border: 2px solid $color-blue-dark;
+  background: $color-blue-dark;
+  color: $color-white;
+  }
+}
+
+.button__secondary,
+.button__outline-blue {
+  text-align: center;
+  outline: none;
+  transition: $transition;
+  max-width: 386px;
+  width: 100%;
+  height: 80px;
+
+  @include lg {
+    max-width: 295px;
+    height: 60px;
+  }
+
+  @include md {
+    max-width: 213px;
+    height: 48px;
+  }
+
+  @include sm {
+    max-width: 278px;
+    height: 48px;
+  }
+
+  @include xs {
+    max-width: 205px;
+    height: 48px;
+  }
+}

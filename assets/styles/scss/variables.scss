@@ -1,0 +1,222 @@
+$color-orange-dark: #bd5b01;
+$color-orange-light: #d69961;
+$color-orange: #ce6a0e;
+$color-blue-dark: #010e23;
+$color-blue-middle: #35445b;
+$color-blue-light: #d9e9ff;
+$color-blue-lightest: #e5effc;
+
+$color-gray-dark: #b1b1b1;
+$color-gray-middle: #c8c7c7;
+$color-gray-light: #d9d9d9;
+
+$color-white: #fefefe;
+$color-blue-light-gradient: linear-gradient($color-white, $color-blue-light);
+$color-success: rgb(70, 145, 70);
+$color-danger: red;
+
+$transition: 0.4s ease;
+
+%h1-title {
+  font-family: var(--raleway-font-family);
+  font-size: var(--h1-title-font-size);
+  font-weight: var(--h1-title-font-weight, 400);
+  font-style: normal;
+  line-height: var(--h1-title-line-height);
+  text-transform: var(--h1-title-text-transform);
+  text-decoration: var(--h1-title-text-decoration);
+  color: $color-white;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+// Применение стилей для разных языков
+[lang="ru"] .h1-title {
+  font-size: var(--h1-title-font-size);
+}
+
+[lang="en"] .h1-title,
+[lang="fr"] .h1-title {
+  font-size: var(--h1-title-font-size-en-fr);
+}
+
+%h2-title {
+  position: relative;
+  font-family: var(--raleway-font-family);
+  font-size: var(--h2-title-font-size);
+  font-weight: var(--h2-title-font-weight, 400);
+  font-style: normal;
+  line-height: var(--h2-title-line-height);
+  text-transform: var(--h2-title-text-transform);
+  text-decoration: var(--h2-title-text-decoration);
+  text-align: var(--h2-title-text-align);
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%h3-title {
+  font-family: var(--raleway-font-family);
+  font-size: var(--h3-title-font-size);
+  font-weight: var(--h3-title-font-weight, 400);
+  font-style: normal;
+  line-height: var(--h3-title-line-height);
+  text-transform: var(--h3-title-text-transform);
+  text-decoration: var(--h3-title-text-decoration);
+  color: $color-blue-dark;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%h4-title {
+  font-family: var(--raleway-font-family);
+  font-size: var(--h4-title-font-size);
+  font-weight: var(--h4-title-font-weight, 400);
+  font-style: normal;
+  line-height: var(--h4-title-line-height);
+  text-transform: var(--h4-title-text-transform);
+  text-decoration: var(--h4-title-text-decoration);
+  color: $color-blue-dark;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%h5-title {
+  font-family: var(--raleway-font-family);
+  font-size: var(--h5-title-font-size);
+  font-weight: var(--h5-title-font-weight, 400);
+  font-style: normal;
+  line-height: var(--h5-title-line-height);
+  text-transform: var(--h5-title-text-transform);
+  text-decoration: var(--h5-title-text-decoration);
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%paragraph-large {
+  font-family: var(--raleway-font-family);
+  font-size: var(--paragraph-large-font-size);
+  font-weight: var(--paragraph-large-font-weight, 400);
+  font-style: normal;
+  line-height: var(--paragraph-large-line-height);
+  text-transform: var(--paragraph-large-text-transform);
+  text-decoration: var(--paragraph-large-text-decoration);
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%paragraph-medium {
+  font-family: var(--raleway-font-family);
+  font-size: var(--paragraph-medium-font-size);
+  font-weight: var(--paragraph-medium-font-weight, 400);
+  font-style: italic;
+  line-height: var(--paragraph-medium-line-height);
+  text-transform: var(--paragraph-medium-text-transform);
+  text-decoration: var(--paragraph-medium-text-decoration);
+  color: $color-white;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%paragraph-standard {
+  font-family: var(--montserrat-font-family);
+  font-size: var(--paragraph-standard-font-size);
+  font-weight: var(--paragraph-standard-font-weight, 400);
+  font-style: normal;
+  line-height: var(--paragraph-standard-line-height);
+  text-transform: var(--paragraph-standard-text-transform);
+  text-decoration: var(--paragraph-standard-text-decoration);
+  color: $color-blue-dark;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%paragraph-small {
+  font-family: var(--montserrat-font-family);
+  font-size: var(--paragraph-small-font-size);
+  font-weight: var(--paragraph-small-font-weight, 400);
+  font-style: normal;
+  line-height: var(--paragraph-small-line-height);
+  text-transform: var(--paragraph-small-text-transform);
+  text-decoration: var(--paragraph-small-text-decoration);
+  color: $color-blue-dark;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%button-text {
+  font-family: var(--montserrat-font-family);
+  font-size: var(--button-text-font-size);
+  font-weight: var(--button-text-font-weight, 400);
+  font-style: var(--button-text-font-style);
+  line-height: var(--button-text-line-height);
+  text-transform: var(--button-text-text-transform);
+  text-decoration: var(--button-text-text-decoration);
+  color: $color-white;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%footnote-standard {
+  font-family: var(--montserrat-font-family);
+  font-size: var(--footnote-standard-font-size);
+  font-weight: var(--footnote-standard-font-weight, 400);
+  font-style: var(--footnote-standard-font-style);
+  line-height: var(--footnote-standard-line-height);
+  text-transform: var(--footnote-standard-text-transform);
+  text-decoration: var(--footnote-standard-text-decoration);
+  color: $color-blue-dark;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%error-text {
+  font-family: var(--montserrat-font-family);
+  font-size: var(--error-text-font-size);
+  font-weight: var(--error-text-font-weight, 500);
+  font-style: var(--error-text-font-style);
+  line-height: var(--error-text-line-height);
+  text-transform: var(--error-text-text-transform);
+  text-decoration: var(--error-text-text-decoration);
+  color: $color-danger;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+%span-text {
+  font-family: var(--raleway-font-family);
+  font-size: var(--span-text-font-size);
+  font-weight: var(--span-text-font-weight, 400);
+  font-style: italic;
+  font-style: var(--span-text-font-style);
+  line-height: var(--span-text-line-height);
+  text-transform: var(--span-text-text-transform);
+  text-decoration: var(--spantext-text-decoration);
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
+// Применение стилей для разных языков
+[lang="ru"] .span-text {
+  font-size: var(--span-text-font-size-ru);
+}
+
+[lang="en"] .span-text {
+  font-size: var(--span-text-font-size-en);
+}
+
+[lang="fr"] .span-text {
+  font-size: var(--span-text-font-size-fr);
+}

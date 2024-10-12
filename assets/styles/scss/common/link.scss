@@ -1,0 +1,9 @@
+.link {
+  text-decoration: none;
+  color: $color-orange;
+  transition: $transition;
+
+  &:hover {
+    color: $color-orange-light;
+  }
+}

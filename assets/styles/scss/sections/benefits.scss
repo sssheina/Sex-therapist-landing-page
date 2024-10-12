@@ -1,0 +1,131 @@
+.benefits {
+  @include section-padding-md;
+
+  &__content {
+    display: grid;
+    gap: 50px 22px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    @include lg {
+      gap: 38px 20px;
+    }
+
+    @include md {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 34px 15px;
+    }
+
+    @include sm {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(9, auto);
+      gap: 35px;
+    }
+  }
+}
+
+.benefits-card {
+  display: grid;
+  grid-template-rows: 38% 1fr;
+
+  @include lg {
+    grid-template-rows: auto auto;
+    gap: 15px;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    justify-self: center;
+    display: block;
+
+    @include r(920) {
+      max-width: 213px;
+      aspect-ratio: 0.95;
+    }
+
+    @include sm {
+      max-width: none;
+      aspect-ratio: 2.37;
+    }
+  }
+
+  &:nth-child(1),
+  &:nth-child(4),
+  &:nth-child(6),
+  &:nth-child(9),
+  &:nth-child(12) {
+    .benefits-card__title {
+      color: $color-orange;
+    }
+  }
+
+  &:nth-child(2),
+  &:nth-child(8),
+  &:nth-child(11) {
+    background: $color-blue-light-gradient;
+  }
+
+  &:nth-child(3) {
+    @include md {
+      order: 2;
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &:nth-child(5) {
+    @include sm {
+      display: none;
+    }
+  }
+
+  &:nth-child(6) {
+    @include sm {
+      order: 3;
+    }
+  }
+
+  &:nth-child(7) {
+    @include sm {
+      order: 2;
+    }
+  }
+
+  &:nth-child(8) {
+    @include sm {
+      order: 4;
+    }
+  }
+
+  &:nth-child(9) {
+    order: 3;
+
+    @include sm {
+      order: 5;
+    }
+  }
+
+  &:nth-child(10) {
+    order: 4;
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &:nth-child(11) {
+    order: 6;
+  }
+
+  &:nth-child(12) {
+    order: 5;
+
+    @include sm {
+      order: 7;
+    }
+  }
+}

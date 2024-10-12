@@ -1,0 +1,28 @@
+.button-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 95px;
+
+  @include lg {
+    margin-top: 70px;
+  }
+
+  @include md {
+    margin-top: 40px;
+  }
+
+  @include sm {
+    justify-content: center;
+    align-items: center;
+
+    .icon-cross {
+      display: none;
+    }
+  }
+
+  @include xs {
+    margin-top: 35px;
+  }
+}

@@ -1,0 +1,65 @@
+.icon-logo {
+  max-width: 35px;
+  max-height: 40px;
+  stroke: $color-white;
+  stroke-width: 2px;
+}
+
+.icon-cross {
+  max-width: 28px;
+  max-height: 28px;
+  fill: $color-blue-dark;
+
+  @include lg {
+    max-width: 21px;
+    max-height: 21px;
+  }
+
+  @include md {
+    max-width: 16px;
+    max-height: 16px;
+  }
+}
+
+.icon-quote {
+  max-width: 50px;
+  max-height: 100px;
+  fill: $color-white;
+
+  @include lg {
+    max-width: 40px;
+    max-height: 70px;
+  }
+
+  @include md {
+    max-width: 30px;
+  }
+}
+
+.icon-up {
+  width: 100%;
+  height: 100%;
+  fill: $color-blue-dark;
+}
+
+.icon-whatsapp {
+  max-width: 40px;
+  max-height: 40px;
+  fill: $color-white;
+}
+
+.icon-social {
+  max-width: 53px;
+  max-height: 53px;
+  color: $color-blue-dark;
+
+  @include lg {
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+.icon-arrow-right {
+  max-width: 20px;
+  max-height: 20px;
+}

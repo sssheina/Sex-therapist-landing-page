@@ -1,0 +1,211 @@
+// max-width
+@mixin r($width) {
+  @media only screen and (max-width: ($width + "px")) {
+    @content;
+  }
+}
+
+// min-width
+
+@mixin rmin($width) {
+  @media only screen and (min-width: ($width + "px")) {
+    @content;
+  }
+}
+
+// max-width 1919px (по макету на 1440px)
+
+@mixin lg {
+  @include r(1919) {
+    @content;
+  }
+}
+
+// min-width 1919.1px
+
+@mixin lg-up {
+  @include rmin(1919.1) {
+    @content;
+  }
+}
+
+// max-width 1439px (по макету на 768px)
+
+@mixin md {
+  @include r(1439) {
+    @content;
+  }
+}
+
+// min-width 1439.1px (по макету на 1440px)
+
+@mixin md-up {
+  @include rmin(1439.1) {
+    @content;
+  }
+}
+
+// max-width 767px (по макету на 428px)
+
+@mixin sm {
+  @include r(767) {
+    @content;
+  }
+}
+
+// min-width 767.1px (по макету на 768px)
+
+@mixin sm-up {
+  @include rmin(767.1) {
+    @content;
+  }
+}
+
+//  max-width 427px (по макету на 320px)
+
+@mixin xs {
+  @include r(427) {
+    @content;
+  }
+}
+
+// min-width 427.1px (по макету на 428px)
+
+@mixin xs-up {
+  @include rmin(427.1) {
+    @content;
+  }
+}
+
+@mixin transform($property, $value) {
+  $property: $value;
+}
+
+// button focus
+// @mixin btn-focus($color) {
+//   outline: 3px solid $color;
+//   box-shadow: 0 0 4px 3px $color;
+//   outline-offset: 7px;
+// }
+
+// button hover
+// @mixin btn-hover() {
+//   outline: none;
+//   outline-offset: 0;
+// }
+
+@mixin header() {
+  max-height: 100px;
+
+  @include lg {
+    max-height: 85px;
+  }
+
+  @include md {
+    max-height: 70px;
+  }
+
+  @include sm {
+    max-height: 60px;
+  }
+}
+
+@mixin section-padding-sm {
+  padding-top: 72px;
+  padding-bottom: 72px;
+
+  @include lg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include md {
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+
+  @include sm {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include xs {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@mixin section-padding-md {
+  padding-top: 73px;
+  padding-bottom: 145px;
+
+  @include lg {
+    padding-top: 60px;
+    padding-bottom: 108px;
+  }
+
+  @include md {
+    padding-top: 35px;
+    padding-bottom: 66px;
+  }
+
+  @include sm {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  @include xs {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+}
+
+@mixin section-padding-lg {
+  padding-top: 145px;
+  padding-bottom: 72px;
+
+  @include lg {
+    padding-top: 108px;
+    padding-bottom: 60px;
+  }
+
+  @include md {
+    padding-top: 66px;
+    padding-bottom: 35px;
+  }
+
+  @include sm {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  @include xs {
+    padding-top: 70px;
+    padding-bottom: 35px;
+  }
+}
+
+@mixin section-padding-standard {
+  padding-top: 145px;
+  padding-bottom: 145px;
+
+  @include lg {
+    padding-top: 108px;
+    padding-bottom: 108px;
+  }
+
+  @include md {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include sm {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @include xs {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}

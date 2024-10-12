@@ -1,0 +1,138 @@
+.faq {
+  @include section-padding-lg;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 0 50px;
+
+    @include r(970) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    margin-bottom: 63px;
+
+    @include lg {
+      margin-bottom: 47px;
+    }
+
+    @include md {
+      margin-bottom: 35px;
+    }
+
+    @include sm {
+      margin-bottom: 55px;
+    }
+
+    @include xs {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__content {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: grid;
+    gap: 35px;
+
+    @include lg {
+      gap: 25px;
+    }
+
+    @include r(970) {
+      grid-column: 1;
+      margin-left: 57px;
+      gap: 15px;
+    }
+
+    @include sm {
+      margin-left: unset;
+    }
+  }
+
+  &__action {
+    grid-column: span 2;
+    margin-top: 95px;
+
+    @include lg {
+      margin-top: 70px;
+    }
+
+    @include md {
+      margin-top: 40px;
+    }
+
+    @include sm {
+      grid-column: span 1;
+    }
+
+    @include xs {
+      margin-top: 35px;
+    }
+  }
+}
+
+.faq-box {
+  &__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    gap: 10px;
+    background: $color-blue-light-gradient;
+    cursor: pointer;
+
+    @include lg {
+      padding: 25px;
+    }
+
+    @include md {
+      padding: 15px;
+    }
+
+    @include xs {
+      padding: 10px 15px;
+    }
+  }
+
+  &__answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: $transition;
+  }
+
+  &__text {
+    padding: 35px;
+
+    @include lg {
+      padding: 25px;
+    }
+
+    @include md {
+      padding: 15px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-orange;
+
+    &:hover {
+      color: $color-orange-light;
+    }
+  }
+
+  &__cross {
+    transition: $transition;
+    cursor: pointer;
+  }
+
+  &.active {
+    .faq-box__cross {
+      transform: rotate(45deg);
+    }
+  }
+}

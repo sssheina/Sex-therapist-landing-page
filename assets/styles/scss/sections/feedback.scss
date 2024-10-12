@@ -1,0 +1,136 @@
+.feedback {
+  background-image: url("/assets/images/feedback_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include section-padding-standard;
+
+  &__title {
+    color: $color-white;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0 70px;
+
+    @include md {
+      padding: 0 50px;
+    }
+
+    @include md {
+      padding: 0 40px;
+    }
+
+    @include sm {
+      padding: unset;
+    }
+  }
+
+  &__slide {
+    display: grid !important;
+    grid-template-rows: auto 1fr auto auto auto;
+    gap: 15px;
+
+    @include sm {
+      gap: 10px;
+    }
+
+    @include xs {
+      gap: 2px;
+    }
+  }
+
+  &__text {
+    color: $color-white;
+    margin-bottom: 10px;
+    padding-right: 5rem;
+
+    @include md {
+      padding-right: 2rem;
+    }
+
+    @include sm {
+      padding-right: unset;
+    }
+  }
+
+  &__line {
+    max-width: 240px;
+    width: 100%;
+    height: 1px;
+    background-color: $color-orange-light;
+    border: none;
+    margin-left: 0;
+
+    @include md {
+      max-width: 140px;
+    }
+  }
+
+  &__client {
+    color: $color-orange-light;
+  }
+
+  &__client-info {
+    color: $color-white;
+  }
+
+  &__cross {
+    fill: $color-white;
+  }
+}
+
+.swiper {
+  position: relative;
+  padding-bottom: 6% !important;
+
+  @include sm {
+    padding-bottom: 10% !important;
+  }
+
+  @include xs {
+    padding-bottom: 15% !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  cursor: pointer;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 5px;
+  background: $color-white !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 25px !important;
+  border-radius: 5px !important;
+  background: $color-orange-light !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @include sm {
+    display: none !important;
+  }
+}
+
+.swiper-button-prev::after {
+  left: 0;
+  color: $color-white;
+
+  @include md {
+    font-size: 35px !important;
+  }
+}
+
+.swiper-button-next::after {
+  right: 0;
+  color: $color-white;
+
+  @include md {
+    font-size: 35px !important;
+  }
+}

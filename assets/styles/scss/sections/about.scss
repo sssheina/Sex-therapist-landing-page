@@ -1,0 +1,39 @@
+.about {
+  @include section-padding-lg;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 49%;
+    gap: 44px;
+    justify-content: space-between;
+
+    @include r(1250) {
+      grid-template-columns: 1fr;
+      gap: 34px;
+    }
+
+    @include sm {
+      gap: 30px;
+    }
+  }
+
+  &__text-block {
+    display: grid;
+    gap: 15px;
+  }
+
+  &__video-block {
+    @include r(1250) {
+      grid-row: -1;
+    }
+  }
+
+  &__line {
+    width: 200px;
+    justify-self: start;
+    margin-left: 0;
+    height: 1px;
+    border: none;
+    background: $color-gray-dark;
+  }
+}
