@@ -29,7 +29,7 @@ export const loadLanguage = (generateContent) => {
   });
 };
 
-const language = document.querySelector(".language__language");
+export const language = document.querySelector(".language__language");
 const languageOptionsList = document.querySelector(".language__options");
 const languageOptions = document.querySelectorAll(".language__option");
 

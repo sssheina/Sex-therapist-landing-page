@@ -1,11 +1,12 @@
 import { openModal } from "./composables/modal.js";
 import { modalContent } from "./composables/modal.js";
 import { checkPrivacyPolicyConsent } from "./composables/privacy-policy.js";
-import {
-  dropdown,
-  changeLanguage,
-  loadLanguage,
-} from "./composables/language.js";
+// import {
+//   dropdown,
+//   changeLanguage,
+//   loadLanguage,
+// } from "./composables/language.js";
+import { language } from "./composables/language.js";
 
 let thanksMessage, errorMessage;
 const form = document.querySelector(".questions__form");
@@ -80,7 +81,7 @@ const checkMessageField = (userInput) => {
   }
 };
 
-const updateModalContent = (language) => {
+const updateModalContent = () => {
   const content = modalMessageMap[language] || modalMessageMap.EN;
 
   thanksMessage = `<div class="modal-content__small">
@@ -101,8 +102,10 @@ const updateModalContent = (language) => {
   `;
 };
 
-loadLanguage(updateModalContent);
-dropdown.addEventListener("change", changeLanguage(updateModalContent));
+updateModalContent();
+
+// loadLanguage(updateModalContent);
+// dropdown.addEventListener("change", changeLanguage(updateModalContent));
 
 sendButton.addEventListener("click", async function (event) {
   event.preventDefault();
