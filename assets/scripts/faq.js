@@ -15,11 +15,3 @@ const faqBoxes = document.querySelectorAll(".faq-box");
 faqBoxes.forEach((box) => {
   box.addEventListener("click", toggleAnswer);
 });
-
-const crossIcons = document.querySelectorAll(".faq-box__cross");
-crossIcons.forEach((icon) => {
-  icon.addEventListener("click", (e) => {
-    e.stopPropagation();
-    toggleAnswer(e);
-  });
-});
