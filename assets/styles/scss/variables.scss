@@ -166,19 +166,19 @@ $transition: 0.4s ease;
   text-rendering: var(--text-rendering);
 }
 
-%footnote-standard {
-  font-family: var(--montserrat-font-family);
-  font-size: var(--footnote-standard-font-size);
-  font-weight: var(--footnote-standard-font-weight, 400);
-  font-style: var(--footnote-standard-font-style);
-  line-height: var(--footnote-standard-line-height);
-  text-transform: var(--footnote-standard-text-transform);
-  text-decoration: var(--footnote-standard-text-decoration);
-  color: $color-blue-dark;
-  -webkit-font-smoothing: var(--font-smoothing);
-  -moz-osx-font-smoothing: var(--font-smoothing);
-  text-rendering: var(--text-rendering);
-}
+// %footnote-standard {
+//   font-family: var(--montserrat-font-family);
+//   font-size: var(--footnote-standard-font-size);
+//   font-weight: var(--footnote-standard-font-weight, 400);
+//   font-style: var(--footnote-standard-font-style);
+//   line-height: var(--footnote-standard-line-height);
+//   text-transform: var(--footnote-standard-text-transform);
+//   text-decoration: var(--footnote-standard-text-decoration);
+//   color: $color-blue-dark;
+//   -webkit-font-smoothing: var(--font-smoothing);
+//   -moz-osx-font-smoothing: var(--font-smoothing);
+//   text-rendering: var(--text-rendering);
+// }
 
 %error-text {
   font-family: var(--montserrat-font-family);

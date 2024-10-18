@@ -37,7 +37,6 @@
             <p class="language__language paragraph-standard">EN</p>
             <ul class="language__options">
               <li class="language__option paragraph-standard">RU</li>
-              <li class="language__option paragraph-standard">EN</li>
               <li class="language__option paragraph-standard">FR</li>
             </ul>
           </div>
@@ -70,7 +69,11 @@
           <p class="cover__therapy psychotherapy span-text">psychotherapy</p>
           <p class="cover__therapy sextherapy span-text">sex therapy</p>
           <p class="cover__preposition h1-title">with</p>
-          <div class="cover__icons-container"></div>
+          <div class="cover__icons-container">
+            <svg class="cover__cross icon-cross">
+              <use xlink:href="/assets/images/figures/sprite.svg#cross"></use>
+            </svg>
+          </div>
         </div>
 
         <div class="cover__action button-block">
@@ -114,10 +117,12 @@
               way&nbsp;of being and build close relationships.
             </p>
             <hr class="about__line" />
-            <p class="footnote-standard">* Acceptance & Commitment Therapy</p>
-            <p class="footnote-standard">
-              ** Emotionally Focused Therapy for couples
-            </p>
+            <div class="about__footnote">
+              <p class="paragraph-small">* Acceptance & Commitment Therapy</p>
+              <p class="paragraph-small">
+                ** Emotionally Focused Therapy for couples
+              </p>
+            </div>
           </div>
 
           <div class="about__video-block">
@@ -673,7 +678,7 @@
     <!-- FEEDBACK -->
     <section class="feedback" id="feedback">
       <div class="feedback__wrapper container">
-        <h2 class="feedback__title h2-title title">testimonials</h2>
+        <h2 class="feedback__title h2-title title">Feedback</h2>
 
         <!-- slider -->
         <div class="feedback__content">

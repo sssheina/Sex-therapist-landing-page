@@ -36,4 +36,9 @@
     border: none;
     background: $color-gray-dark;
   }
+
+  &__footnote {
+    display: grid;
+    gap: 6px;
+  }
 }

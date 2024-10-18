@@ -8,6 +8,8 @@
 .icon-cross {
   max-width: 28px;
   max-height: 28px;
+  width: 100%;
+  height: 100%;
   fill: $color-blue-dark;
 
   @include lg {

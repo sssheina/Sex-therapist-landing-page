@@ -878,20 +878,6 @@ textarea {
   text-rendering: var(--text-rendering);
 }
 
-.footnote-standard {
-  font-family: var(--montserrat-font-family);
-  font-size: var(--footnote-standard-font-size);
-  font-weight: var(--footnote-standard-font-weight, 400);
-  font-style: var(--footnote-standard-font-style);
-  line-height: var(--footnote-standard-line-height);
-  text-transform: var(--footnote-standard-text-transform);
-  text-decoration: var(--footnote-standard-text-decoration);
-  color: #010e23;
-  -webkit-font-smoothing: var(--font-smoothing);
-  -moz-osx-font-smoothing: var(--font-smoothing);
-  text-rendering: var(--text-rendering);
-}
-
 .error-text {
   font-family: var(--montserrat-font-family);
   font-size: var(--error-text-font-size);
@@ -1051,12 +1037,6 @@ textarea {
   --button-text-font-weight: 400;
   --button-text-font-style: normal;
   --button-text-text-decoration: none;
-  --footnote-standard-font-size: 18px;
-  --footnote-standard-font-weight: 400;
-  --footnote-standard-font-style: italic;
-  --footnote-standard-line-height: 28px;
-  --footnote-standard-text-transform: none;
-  --footnote-standard-text-decoration: none;
   --error-text-font-size: 16px;
   --error-text-font-weight: 500;
   --error-text-font-style: normal;
@@ -1230,21 +1210,6 @@ textarea {
 @media only screen and (max-width: 427px) {
   :root {
     --button-text-font-size: 15px;
-  }
-}
-@media only screen and (max-width: 1919px) {
-  :root {
-    --footnote-standard-font-size: 16px;
-  }
-}
-@media only screen and (max-width: 1439px) {
-  :root {
-    --footnote-standard-font-size: 15px;
-  }
-}
-@media only screen and (max-width: 427px) {
-  :root {
-    --footnote-standard-font-size: 14px;
   }
 }
 @media only screen and (max-width: 1919px) {
@@ -1950,6 +1915,8 @@ body::-webkit-scrollbar-thumb {
 .icon-cross {
   max-width: 28px;
   max-height: 28px;
+  width: 100%;
+  height: 100%;
   fill: #010e23;
 }
 @media only screen and (max-width: 1919px) {
@@ -2610,6 +2577,10 @@ body::-webkit-scrollbar-thumb {
   height: 1px;
   border: none;
   background: #b1b1b1;
+}
+.about__footnote {
+  display: grid;
+  gap: 6px;
 }
 
 .clients {
