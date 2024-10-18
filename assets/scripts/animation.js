@@ -74,13 +74,13 @@ const preposition = gsap.from(".cover__preposition", {
 ScrollTrigger.create({
   trigger: ".cover__preposition",
   start: "top 90%",
-  onEnter: () => preposition.play(),
+  onEnter: () => preposition?.play(),
 });
 
 ScrollTrigger.create({
   trigger: ".cover__preposition",
   start: "top bottom",
-  onLeaveBack: () => preposition.pause(0),
+  onLeaveBack: () => preposition?.pause(0),
 });
 
 // psychotherapy
