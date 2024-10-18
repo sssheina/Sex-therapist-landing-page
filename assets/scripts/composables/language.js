@@ -3,12 +3,12 @@ let selectedLanguage;
 
 const setLanguage = (language) => {
   localStorage.setItem("selectedLanguage", language);
-  updateLanguageAttribute(language);
+  // updateLanguageAttribute(language);
 };
 
-const updateLanguageAttribute = (language) => {
-  document.documentElement.lang = language.toLowerCase();
-};
+// const updateLanguageAttribute = (language) => {
+//   document.documentElement.lang = language.toLowerCase();
+// };
 
 export const changeLanguage = (generateContent) => {
   return (event) => {
@@ -24,7 +24,7 @@ export const loadLanguage = (generateContent) => {
     selectedLanguage = localStorage.getItem("selectedLanguage") || "EN";
     dropdown.value = selectedLanguage;
 
-    updateLanguageAttribute(selectedLanguage);
+    // updateLanguageAttribute(selectedLanguage);
     generateContent(selectedLanguage);
   });
 };
