@@ -1099,7 +1099,7 @@ textarea {
 }
 @media only screen and (max-width: 1439px) {
   :root {
-    --h3-title-font-size: 16px;
+    --h3-title-font-size: 19px;
   }
 }
 @media only screen and (max-width: 427px) {
@@ -1114,7 +1114,7 @@ textarea {
 }
 @media only screen and (max-width: 1439px) {
   :root {
-    --h4-title-font-size: 18px;
+    --h4-title-font-size: 17px;
   }
 }
 @media only screen and (max-width: 427px) {
@@ -1850,6 +1850,16 @@ body::-webkit-scrollbar-thumb {
 }
 @media only screen and (max-width: 767px) {
   .footer__copyright-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer__copy {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 767px) {
+  .footer__copy {
     flex-direction: column;
     align-items: center;
   }
@@ -4107,36 +4117,41 @@ body::-webkit-scrollbar-thumb {
 
 .modal {
   position: relative;
-  max-width: 90%;
+  max-width: 50%;
   min-width: 270px;
-  padding: 2rem;
+  padding: 6rem;
   z-index: 2000;
   background-color: white;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
+@media only screen and (max-width: 1439px) {
+  .modal {
+    padding: 4rem 3rem 3rem;
+    max-width: 70%;
+  }
+}
 @media only screen and (max-width: 767px) {
   .modal {
-    padding: 2.5rem 1.5rem 1.5rem;
+    padding: 3rem 1.5rem 2rem;
+    max-width: 90%;
   }
 }
 .modal__title {
-  font-size: 25px;
   line-height: 100%;
   text-align: center;
-}
-@media only screen and (max-width: 767px) {
-  .modal__title {
-    font-size: 18px;
-  }
 }
 .modal__text {
   text-align: justify;
   line-height: 130%;
+  padding-top: 0.3rem;
 }
 .modal__list-ordered {
+  display: flex;
+  flex-direction: column;
   list-style: decimal;
   padding-left: 19px;
+  gap: 1rem;
 }
 .modal__item-ordered {
   margin-bottom: 5px;
@@ -4144,7 +4159,7 @@ body::-webkit-scrollbar-thumb {
 }
 .modal__item-unordered {
   position: relative;
-  padding-left: 25px;
+  padding: 0.5rem 0 0 1.5rem;
 }
 .modal__item-unordered::before {
   content: "—";
