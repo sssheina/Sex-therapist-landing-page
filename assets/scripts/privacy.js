@@ -523,8 +523,6 @@ const generatePrivacyPolicyContent = (content) => {
 };
 
 const updatePrivacyPolicyContent = () => {
-  console.log(language.textContent);
-
   const content =
     privacyPolicyData[language.textContent] || privacyPolicyData.EN;
 

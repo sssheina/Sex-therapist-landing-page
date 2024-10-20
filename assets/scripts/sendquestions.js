@@ -2,6 +2,7 @@ import { openModal } from "./composables/modal.js";
 import { modalContent } from "./composables/modal.js";
 import { checkPrivacyPolicyConsent } from "./composables/privacy-policy.js";
 import { language } from "./composables/language.js";
+import { loading } from "./loader.js";
 
 let thanksMessage, errorMessage;
 const form = document.querySelector(".questions__form");
@@ -123,6 +124,8 @@ sendButton.addEventListener("click", async function (event) {
   }
 
   try {
+    loading("grid");
+
     const response = await fetch("https://formspree.io/f/xvgpvnov", {
       method: "POST",
       body: formData,
@@ -132,16 +135,18 @@ sendButton.addEventListener("click", async function (event) {
     });
 
     if (response.ok) {
-      modalContent.innerHTML = thanksMessage;
-
+      loading("none");
       form.reset();
+      modalContent.innerHTML = thanksMessage;
     } else {
+      loading("none");
       console.error("Unknown error occured");
       modalContent.innerHTML = errorMessage;
     }
 
     openModal();
   } catch (error) {
+    loading("none");
     console.error("Error:", error);
     modalContent.innerHTML = errorMessage;
 
