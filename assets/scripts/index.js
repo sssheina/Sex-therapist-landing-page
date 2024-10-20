@@ -1,5 +1,3 @@
-import "./menu.js";
-
 import "./faq.js";
 import "./sendquestions.js";
 import "./privacy.js";
