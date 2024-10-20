@@ -73,7 +73,7 @@ const privacyPolicyData = {
           },
           {
             title: "Calendly",
-            text: "Когда вы записываетесь на консультацию через платформу Calendly, вы передаете право на обработку своих данных этой платформе. Ознакомиться с политикой конфиденциальности этого сервиса можно здесь: https://calendly.com/legal/privacy-notice",
+            text: "Когда вы записываетесь на консультацию через платформу Calendly, вы передаете право на обработку своих данных этой платформе. Ознакомиться с политикой конфиденциальности этого сервиса можно здесь: <a href='https://calendly.com/legal/privacy-notice' target='_blank' class='link'>Calendly.com</a>.",
           },
         ],
       },
@@ -167,7 +167,7 @@ const privacyPolicyData = {
     list: [
       {
         title: "Data Controller",
-        text: "The data controller is: Therapeutic Journeys, 983 204 199 RCS Paris Contact information: Kat.tartary@gmail.com",
+        text: "The data controller is: Therapeutic Journeys, 983 204 199 RCS Paris",
       },
       {
         title: "What Data We Collect",
@@ -227,7 +227,7 @@ const privacyPolicyData = {
           },
           {
             title: "Calendly",
-            text: "When you book a consultation through the Calendly platform, you transfer the right to process your data to this platform. You can read the privacy policy of this service here: https://calendly.com/legal/privacy-notice",
+            text: "When you book a consultation through the Calendly platform, you transfer the right to process your data to this platform. You can read the privacy policy of this service here: <a href='https://calendly.com/legal/privacy-notice' target='_blank' class='link'>Calendly.com</a>.",
           },
         ],
       },
@@ -381,7 +381,7 @@ const privacyPolicyData = {
           },
           {
             title: "Calendly",
-            text: " Lorsque vous prenez rendez-vous pour une consultation par l'intermédiaire de la plateforme Calendly, vous transférez le droit de traiter vos données à cette plateforme. Vous pouvez consulter la politique de confidentialité de ce service ici : https://calendly.com/legal/privacy-notice",
+            text: " Lorsque vous prenez rendez-vous pour une consultation par l'intermédiaire de la plateforme Calendly, vous transférez le droit de traiter vos données à cette plateforme. Vous pouvez consulter la politique de confidentialité de ce service ici: <a href='https://calendly.com/legal/privacy-notice' target='_blank' class='link'>Calendly.com</a>.",
           },
         ],
       },
