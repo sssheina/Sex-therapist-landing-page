@@ -4289,6 +4289,7 @@ body::-webkit-scrollbar-thumb {
     content: "-";
     top: -2px;
     left: -11px;
+    padding-top: 0.5rem;
   }
 }
 .modal__item-unordered .modal__text {
