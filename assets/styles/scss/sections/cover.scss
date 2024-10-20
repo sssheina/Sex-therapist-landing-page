@@ -20,6 +20,11 @@
 
   @include md {
     padding-bottom: 43px;
+    background-image: url("/assets/images/cover_background_768.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 
   // @include r() {
