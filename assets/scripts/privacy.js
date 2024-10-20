@@ -71,6 +71,10 @@ const privacyPolicyData = {
             title: "Formspree.io",
             text: "Мы используем сервис Formspree.io для обработки и отправки данных из форм на наш email. Formspree.io может получать данные, которые вы вводите в наши формы, чтобы передать их на указанный адрес электронной почты. Формы и данные, отправленные через Formspree.io, обрабатываются в соответствии с их Политикой конфиденциальности.",
           },
+          {
+            title: "Calendly",
+            text: "Когда вы записываетесь на консультацию через платформу Calendly, вы передаете право на обработку своих данных этой платформе. Ознакомиться с политикой конфиденциальности этого сервиса можно здесь: https://calendly.com/legal/privacy-notice",
+          },
         ],
       },
       {
@@ -220,6 +224,10 @@ const privacyPolicyData = {
           {
             title: "Formspree.io",
             text: "We use Formspree.io to process and send form data to our email. Formspree.io may receive the data you enter in our forms to forward it to the specified email address. Forms and data sent via Formspree.io are processed according to their Privacy Policy.",
+          },
+          {
+            title: "Calendly",
+            text: "When you book a consultation through the Calendly platform, you transfer the right to process your data to this platform. You can read the privacy policy of this service here: https://calendly.com/legal/privacy-notice",
           },
         ],
       },
@@ -371,6 +379,10 @@ const privacyPolicyData = {
             title: "Formspree.io",
             text: "Nous utilisons Formspree.io pour traiter et envoyer les données des formulaires à notre email. Formspree.io peut recevoir les données que vous saisissez dans nos formulaires pour les transmettre à l'adresse email spécifiée. Les formulaires et les données envoyées via Formspree.io sont traités conformément à leur Politique de Confidentialité.",
           },
+          {
+            title: "Calendly",
+            text: " Lorsque vous prenez rendez-vous pour une consultation par l'intermédiaire de la plateforme Calendly, vous transférez le droit de traiter vos données à cette plateforme. Vous pouvez consulter la politique de confidentialité de ce service ici : https://calendly.com/legal/privacy-notice",
+          },
         ],
       },
       {
@@ -507,7 +519,7 @@ const generatePrivacyPolicyContent = (content) => {
     .join("");
 
   return `
-    <h2 class="modal__title h2-title">${title}</h2>
+    <h3 class="modal__title h3-title">${title}</h3>
     <p class="modal__text paragraph-small">${text}</p>
     <ol class="modal__list-ordered">
       ${items}
