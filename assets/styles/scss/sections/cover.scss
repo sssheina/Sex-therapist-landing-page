@@ -22,6 +22,9 @@
     padding-bottom: 43px;
   }
 
+  // @include r() {
+  // }
+
   @include sm {
     padding-bottom: 95px;
     background-image: url("/assets/images/cover_background.png");
@@ -132,7 +135,7 @@
     object-fit: cover;
     z-index: -1;
 
-    @include xs {
+    @include sm {
       display: none;
     }
   }
