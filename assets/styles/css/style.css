@@ -782,6 +782,20 @@ textarea {
   text-rendering: var(--text-rendering);
 }
 
+.h3-title-main {
+  font-family: var(--raleway-font-family);
+  font-size: var(--h3-title-main-font-size);
+  font-weight: var(--h3-title-main-font-weight, 400);
+  font-style: normal;
+  line-height: var(--h3-title-main-line-height);
+  text-transform: var(--h3-title-main-text-transform);
+  text-decoration: var(--h3-title-main-text-decoration);
+  color: #fefefe;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
 .h4-title {
   font-family: var(--raleway-font-family);
   font-size: var(--h4-title-font-size);
@@ -997,6 +1011,12 @@ textarea {
   --h3-title-line-height: 130%;
   --h3-title-text-transform: uppercase;
   --h3-title-text-decoration: none;
+  --h3-title-main-font-family: var(--raleway-font-family);
+  --h3-title-main-font-size: 30px;
+  --h3-title-main-font-weight: 400;
+  --h3-title-main-line-height: 130%;
+  --h3-title-main-text-transform: uppercase;
+  --h3-title-main-text-decoration: none;
   --h4-title-font-family: var(--raleway-font-family);
   --h4-title-font-size: 25px;
   --h4-title-font-weight: 400;
@@ -1105,6 +1125,26 @@ textarea {
 @media only screen and (max-width: 427px) {
   :root {
     --h3-title-font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1919px) {
+  :root {
+    --h3-title-main-font-size: 22px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  :root {
+    --h3-title-main-font-size: 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  :root {
+    --h3-title-main-font-size: 16px;
+  }
+}
+@media only screen and (max-width: 427px) {
+  :root {
+    --h3-title-main-font-size: 14px;
   }
 }
 @media only screen and (max-width: 1919px) {
@@ -2406,9 +2446,6 @@ body::-webkit-scrollbar-thumb {
   [lang=ru] .cover__content {
     grid-template-columns: 1fr auto 1fr;
   }
-}
-[lang=ru] .cover__preposition {
-  display: none;
 }
 
 [lang=en] .cover__content {

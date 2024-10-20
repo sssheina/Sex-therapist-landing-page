@@ -70,6 +70,20 @@ $transition: 0.4s ease;
   text-rendering: var(--text-rendering);
 }
 
+%h3-title-main {
+  font-family: var(--raleway-font-family);
+  font-size: var(--h3-title-main-font-size);
+  font-weight: var(--h3-title-main-font-weight, 400);
+  font-style: normal;
+  line-height: var(--h3-title-main-line-height);
+  text-transform: var(--h3-title-main-text-transform);
+  text-decoration: var(--h3-title-main-text-decoration);
+  color: $color-white;
+  -webkit-font-smoothing: var(--font-smoothing);
+  -moz-osx-font-smoothing: var(--font-smoothing);
+  text-rendering: var(--text-rendering);
+}
+
 %h4-title {
   font-family: var(--raleway-font-family);
   font-size: var(--h4-title-font-size);

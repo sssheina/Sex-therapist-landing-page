@@ -170,10 +170,6 @@
       grid-template-columns: 1fr auto 1fr;
     }
   }
-
-  &__preposition {
-    display: none;
-  }
 }
 
 [lang="en"] .cover {
@@ -282,6 +278,7 @@
     @include xs {
       font-size: 12px;
     }
+
     br {
       display: none;
 
