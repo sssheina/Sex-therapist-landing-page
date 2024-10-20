@@ -1,10 +1,5 @@
-// import {
-//   dropdown,
-//   changeLanguage,
-//   loadLanguage,
-// } from "./composables/language.js";
-
 import { language } from "./composables/language.js";
+import { modalContent } from "./composables/modal.js";
 
 const privacyPolicyData = {
   RU: {
@@ -533,8 +528,9 @@ const updatePrivacyPolicyContent = () => {
   const content =
     privacyPolicyData[language.textContent] || privacyPolicyData.EN;
 
-  const privacyContent = document.querySelector(".questions__modal-content");
+  modalContent.innerHTML = "";
 
+  const privacyContent = document.querySelector(".questions__modal-content");
   const button = document.querySelector(".button-close");
 
   button.title = content.buttonText;
@@ -542,6 +538,3 @@ const updatePrivacyPolicyContent = () => {
 };
 
 updatePrivacyPolicyContent();
-
-// loadLanguage(updatePrivacyPolicyContent);
-// dropdown.addEventListener("change", changeLanguage(updatePrivacyPolicyContent));

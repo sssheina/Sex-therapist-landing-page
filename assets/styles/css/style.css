@@ -2010,6 +2010,10 @@ body::-webkit-scrollbar-thumb {
 .policy__link {
   white-space: nowrap;
 }
+.policy__error {
+  display: none;
+}
+
 [lang=en] .policy__consent {
   flex-direction: row-reverse;
 }
@@ -4197,8 +4201,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 20px;
 }
 .modal-content__icon {
-  max-width: 70px;
-  max-height: 70px;
+  max-width: 50px;
+  max-height: 50px;
   display: block;
   margin: 0 auto;
 }

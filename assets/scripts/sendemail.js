@@ -1,11 +1,7 @@
 import { openModal } from "./composables/modal.js";
 import { modalContent } from "./composables/modal.js";
 import { checkPrivacyPolicyConsent } from "./composables/privacy-policy.js";
-import {
-  dropdown,
-  changeLanguage,
-  loadLanguage,
-} from "./composables/language.js";
+import { language } from "./composables/language.js";
 
 let thanksMessage, errorMessage;
 const form = document.querySelector(".footer__form");
@@ -61,29 +57,28 @@ const validateRegFormEmail = (needShowMessages) => {
   return result;
 };
 
-const updateModalContent = (language) => {
-  const content = modalMessageMap[language] || modalMessageMap.EN;
+const updateModalContent = () => {
+  const content = modalMessageMap[language.textContent] || modalMessageMap.EN;
 
   thanksMessage = `<div class="modal-content__small">
-  <h4 class="h4-title text-center">${content.thanksTitle}</h4>
   <svg class="modal-content__icon icon-success">
-    <use xlink:href="/assets/images/figures/sprite.svg#success"></use>
+  <use xlink:href="/assets/images/figures/sprite.svg#success"></use>
   </svg>
+  <h4 class="h4-title text-center">${content.thanksTitle}</h4>
   <p class="paragraph-standard text-center">${content.thanksText}</p>
   </div> `;
 
   errorMessage = `<div class="modal-content__small">
-  <h4 class="h4-title text-center">${content.errorTitle}</h4>
   <svg class="modal-content__icon icon-error">
-    <use xlink:href="/assets/images/figures/sprite.svg#error"></use>
+  <use xlink:href="/assets/images/figures/sprite.svg#error"></use>
   </svg>
+  <h4 class="h4-title text-center">${content.errorTitle}</h4>
   <p class="paragraph-standard text-center">${content.errorText}</p>
   </div>
   `;
 };
 
-loadLanguage(updateModalContent);
-dropdown.addEventListener("change", changeLanguage(updateModalContent));
+updateModalContent();
 
 footerSendButton.addEventListener("click", async function (event) {
   event.preventDefault();

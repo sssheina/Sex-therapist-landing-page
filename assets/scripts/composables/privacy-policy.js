@@ -10,10 +10,10 @@ document.querySelectorAll(".policy__link").forEach(function (link) {
 
 export const checkPrivacyPolicyConsent = (consentCheckbox, errorPolitics) => {
   if (!consentCheckbox.checked) {
-    errorPolitics.innerText = "Прочтите и подтвердите согласие";
+    errorPolitics.style.display = "block";
     return false;
   } else {
-    errorPolitics.innerText = "";
+    errorPolitics.style.display = "none";
     return true;
   }
 };
