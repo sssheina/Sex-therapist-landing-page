@@ -22,19 +22,29 @@
   max-width: 50%;
   min-width: 270px;
   // min-height: 270px;
-  padding: 6rem;
+  padding: 3rem;
   z-index: 2000;
   background-color: white;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 
+  @include lg {
+    padding: 2rem;
+    max-width: 70%;
+  }
+
   @include md {
-    padding: 4rem 3rem 3rem;
+    padding: 1rem;
     max-width: 70%;
   }
 
   @include sm {
-    padding: 3rem 1.5rem 2rem;
+    padding: 2rem;
+    max-width: 90%;
+  }
+
+  @include xs {
+    padding: 1rem;
     max-width: 90%;
   }
 
@@ -109,8 +119,8 @@
   }
 
   &__icon {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 30px;
+    max-height: 30px;
     display: block;
     margin: 0 auto;
 

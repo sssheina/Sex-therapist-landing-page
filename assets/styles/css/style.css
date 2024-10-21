@@ -4242,21 +4242,33 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   max-width: 50%;
   min-width: 270px;
-  padding: 6rem;
+  padding: 3rem;
   z-index: 2000;
   background-color: white;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
+@media only screen and (max-width: 1919px) {
+  .modal {
+    padding: 2rem;
+    max-width: 70%;
+  }
+}
 @media only screen and (max-width: 1439px) {
   .modal {
-    padding: 4rem 3rem 3rem;
+    padding: 1rem;
     max-width: 70%;
   }
 }
 @media only screen and (max-width: 767px) {
   .modal {
-    padding: 3rem 1.5rem 2rem;
+    padding: 2rem;
+    max-width: 90%;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .modal {
+    padding: 1rem;
     max-width: 90%;
   }
 }
@@ -4321,8 +4333,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 20px;
 }
 .modal-content__icon {
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 30px;
+  max-height: 30px;
   display: block;
   margin: 0 auto;
 }

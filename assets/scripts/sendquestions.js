@@ -23,7 +23,7 @@ const modalMessageMap = {
   },
   EN: {
     thanksTitle: "Thank you!",
-    thanksText: "Message was successfully sent",
+    thanksText: "Message was successfully sent.",
     errorTitle: "Error",
     errorText: "An error occurred while submitting the form",
     messageEmpty: "Message can not be empty",
