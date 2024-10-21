@@ -5,13 +5,16 @@ import {
   animateElementsGroup,
 } from "./composables/animation.js";
 
+const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+// if (!isMobile) {
 // COVER
 
 // title top
 const mainTitleTop = gsap.from(".cover__title.top", {
   x: -50,
   opacity: 0,
-  delay: 2.3,
+  delay: 1.5,
 });
 
 ScrollTrigger.create({
@@ -30,7 +33,7 @@ ScrollTrigger.create({
 const mainIconsCross = gsap.from(".cover__icons-container", {
   x: -50,
   opacity: 0,
-  delay: 2.3,
+  delay: 1.7,
 });
 
 ScrollTrigger.create({
@@ -49,7 +52,7 @@ ScrollTrigger.create({
 const mainTitleBottom = gsap.from(".cover__title.bottom", {
   x: 50,
   opacity: 0,
-  delay: 3,
+  delay: 2.8,
 });
 
 ScrollTrigger.create({
@@ -68,7 +71,7 @@ ScrollTrigger.create({
 const preposition = gsap.from(".cover__preposition", {
   x: 50,
   opacity: 0,
-  delay: 3,
+  delay: 2.3,
 });
 
 ScrollTrigger.create({
@@ -87,9 +90,9 @@ ScrollTrigger.create({
 const psychotherapy = gsap.from(".psychotherapy", {
   x: -100,
   opacity: 0,
-  delay: 1.2,
+  delay: 0.7,
   scale: 3,
-  duration: 1,
+  duration: 0.6,
 });
 
 ScrollTrigger.create({
@@ -109,7 +112,7 @@ const sextherapy = gsap.from(".sextherapy", {
   x: 100,
   opacity: 0,
   scale: 3,
-  duration: 1,
+  duration: 0.6,
 });
 
 ScrollTrigger.create({
@@ -128,7 +131,7 @@ ScrollTrigger.create({
 const mainSubtitleTop = gsap.from(".cover__subtitle.top", {
   y: -30,
   opacity: 0,
-  delay: 4,
+  delay: 3.2,
 });
 
 ScrollTrigger.create({
@@ -147,7 +150,7 @@ ScrollTrigger.create({
 const mainSubtitleBottom = gsap.from(".cover__subtitle.bottom", {
   y: 30,
   opacity: 0,
-  delay: 5,
+  delay: 4,
 });
 
 ScrollTrigger.create({
@@ -166,7 +169,7 @@ ScrollTrigger.create({
 const mainButtonBlock = gsap.from(".cover__action", {
   y: 30,
   opacity: 0,
-  delay: 6,
+  delay: 4.5,
 });
 
 ScrollTrigger.create({
@@ -183,7 +186,7 @@ ScrollTrigger.create({
 
 // H2 TITLE
 
-const h2_title = gsap.utils.toArray(".h2-title");
+const h2_title = gsap.utils.toArray(".h2-title:not(.steps__title)");
 
 h2_title.forEach((title) => {
   const anim = gsap.from(title, {
@@ -287,66 +290,7 @@ document.addEventListener("DOMContentLoaded", () => {
   animateSingleElement(".feedback__content");
 
   // STEPS
-
-  const stepsNumber = gsap.utils.toArray(".steps__number");
-  stepsNumber.forEach((number) => {
-    const anim = gsap.from(number, {
-      opacity: 0,
-    });
-
-    ScrollTrigger.create({
-      trigger: number,
-      start: "top 70%",
-      onEnter: () => anim.play(),
-    });
-
-    ScrollTrigger.create({
-      trigger: number,
-      start: "top bottom",
-      onLeaveBack: () => anim.pause(0),
-    });
-  });
-
-  const steps = gsap.utils.toArray(".steps__step");
-  steps.forEach((step) => {
-    const anim = gsap.from(step, {
-      x: -40,
-      opacity: 0,
-    });
-
-    ScrollTrigger.create({
-      trigger: step,
-      start: "top 70%",
-      onEnter: () => anim.play(),
-    });
-
-    ScrollTrigger.create({
-      trigger: step,
-      start: "top bottom",
-      onLeaveBack: () => anim.pause(0),
-    });
-  });
-
-  const stepsText = gsap.utils.toArray(".steps__text");
-  stepsText.forEach((step) => {
-    const anim = gsap.from(step, {
-      y: -30,
-      opacity: 0,
-      delay: 1,
-    });
-
-    ScrollTrigger.create({
-      trigger: step,
-      start: "top 70%",
-      onEnter: () => anim.play(),
-    });
-
-    ScrollTrigger.create({
-      trigger: step,
-      start: "top bottom",
-      onLeaveBack: () => anim.pause(0),
-    });
-  });
+  animateSingleElement(".steps__content");
 
   // PRICE
   animateSingleElement(".price__cards");
@@ -362,3 +306,4 @@ document.addEventListener("DOMContentLoaded", () => {
   animateSingleElement(".questions__text");
   animateSingleElement(".questions__form");
 });
+// }

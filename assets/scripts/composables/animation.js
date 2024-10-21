@@ -4,11 +4,13 @@ export const animateSingleElement = (elementClass) => {
   const element = gsap.from(elementClass, {
     y: 40,
     opacity: 0,
+    // anticipatePin: 1,
+    // fastScrollEnd: 3000,
   });
 
   ScrollTrigger.create({
     trigger: elementClass,
-    start: "top 70%",
+    start: "top 75%",
     onEnter: () => element.play(),
   });
 
@@ -26,13 +28,14 @@ export const animateElementsGroup = (elementClass) => {
     gsap.from(card, {
       scrollTrigger: {
         trigger: card,
-        start: "top 70%",
+        start: "top 75%",
         end: "top bottom",
         toggleActions: "play none none reverse",
         // markers: true,
       },
       y: 30,
       stagger: 0.8,
+      // anticipatePin: 1,
     });
   });
 };
