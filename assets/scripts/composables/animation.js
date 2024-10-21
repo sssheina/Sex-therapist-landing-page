@@ -35,6 +35,7 @@ export const animateElementsGroup = (elementClass) => {
       },
       y: 30,
       stagger: 0.8,
+      opacity: 0.2,
       // anticipatePin: 1,
     });
   });
