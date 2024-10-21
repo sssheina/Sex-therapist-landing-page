@@ -7,7 +7,7 @@ import {
 
 const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-// if (!isMobile) {
+if (!isMobile) {
 // COVER
 
 // title top
@@ -306,4 +306,4 @@ document.addEventListener("DOMContentLoaded", () => {
   animateSingleElement(".questions__text");
   animateSingleElement(".questions__form");
 });
-// }
+}
