@@ -7,7 +7,6 @@ import {
 
 const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-if (!isMobile) {
 // COVER
 
 // title top
@@ -184,46 +183,20 @@ ScrollTrigger.create({
   onLeaveBack: () => mainButtonBlock.pause(0),
 });
 
-// H2 TITLE
+if (!isMobile) {
+  // H2 TITLE
 
-const h2_title = gsap.utils.toArray(".h2-title:not(.steps__title)");
+  const h2_title = gsap.utils.toArray(".h2-title:not(.steps__title)");
 
-h2_title.forEach((title) => {
-  const anim = gsap.from(title, {
-    x: -100,
-    opacity: 0,
-  });
-
-  ScrollTrigger.create({
-    trigger: title,
-    start: "center 90%",
-    onEnter: () => anim.play(),
-  });
-
-  ScrollTrigger.create({
-    trigger: title,
-    start: "top bottom",
-    onLeaveBack: () => anim.pause(0),
-  });
-});
-
-// ABOUT
-animateSingleElement(".about__video-block");
-animateSingleElement(".about__text-block");
-
-// EXPERTISE
-
-document.addEventListener("DOMContentLoaded", () => {
-  const expertise_heading = gsap.utils.toArray(".expertise-heading");
-  expertise_heading.forEach((title) => {
+  h2_title.forEach((title) => {
     const anim = gsap.from(title, {
-      x: -40,
+      x: -100,
       opacity: 0,
     });
 
     ScrollTrigger.create({
       trigger: title,
-      start: "top 70%",
+      start: "center 90%",
       onEnter: () => anim.play(),
     });
 
@@ -234,76 +207,103 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  const expertise_picture = gsap.utils.toArray(".expertise-block__picture");
-  expertise_picture.forEach((picture) => {
-    const anim = gsap.from(picture, {
-      y: -30,
-      opacity: 0,
-      delay: 1.5,
+  // ABOUT
+  animateSingleElement(".about__video-block");
+  animateSingleElement(".about__text-block");
+
+  // EXPERTISE
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const expertise_heading = gsap.utils.toArray(".expertise-heading");
+    expertise_heading.forEach((title) => {
+      const anim = gsap.from(title, {
+        x: -40,
+        opacity: 0,
+      });
+
+      ScrollTrigger.create({
+        trigger: title,
+        start: "top 70%",
+        onEnter: () => anim.play(),
+      });
+
+      ScrollTrigger.create({
+        trigger: title,
+        start: "top bottom",
+        onLeaveBack: () => anim.pause(0),
+      });
     });
 
-    ScrollTrigger.create({
-      trigger: picture,
-      start: "top 70%",
-      onEnter: () => anim.play(),
+    const expertise_picture = gsap.utils.toArray(".expertise-block__picture");
+    expertise_picture.forEach((picture) => {
+      const anim = gsap.from(picture, {
+        y: -30,
+        opacity: 0,
+        delay: 1.5,
+      });
+
+      ScrollTrigger.create({
+        trigger: picture,
+        start: "top 70%",
+        onEnter: () => anim.play(),
+      });
+
+      ScrollTrigger.create({
+        trigger: picture,
+        start: "top bottom",
+        onLeaveBack: () => anim.pause(0),
+      });
     });
 
-    ScrollTrigger.create({
-      trigger: picture,
-      start: "top bottom",
-      onLeaveBack: () => anim.pause(0),
+    const expertise_block = gsap.utils.toArray(".expertise-block-item");
+    expertise_block.forEach((box) => {
+      const anim = gsap.from(box, {
+        y: -30,
+        opacity: 0,
+        delay: 2.3,
+        stagger: 0.3,
+      });
+
+      ScrollTrigger.create({
+        trigger: box,
+        start: "top 70%",
+        onEnter: () => anim.play(),
+      });
+
+      ScrollTrigger.create({
+        trigger: box,
+        start: "top bottom",
+        onLeaveBack: () => anim.pause(0),
+      });
     });
+
+    // CLIENTS
+    animateSingleElement(".clients__cards");
+
+    // METHODS
+    animateElementsGroup(".methods-card");
+
+    // BENEFITS
+    animateElementsGroup(".benefits-card");
+
+    // FEEDBACK
+    animateSingleElement(".feedback__content");
+
+    // STEPS
+    animateSingleElement(".steps__content");
+
+    // PRICE
+    animateSingleElement(".price__cards");
+
+    // WORDS
+    animateSingleElement(".words__content");
+
+    // FAQ
+    animateElementsGroup(".faq-box");
+
+    // QUESTIONS
+    animateSingleElement(".questions__img");
+    animateSingleElement(".questions__text");
+    animateSingleElement(".questions__form");
   });
-
-  const expertise_block = gsap.utils.toArray(".expertise-block-item");
-  expertise_block.forEach((box) => {
-    const anim = gsap.from(box, {
-      y: -30,
-      opacity: 0,
-      delay: 2.3,
-      stagger: 0.3,
-    });
-
-    ScrollTrigger.create({
-      trigger: box,
-      start: "top 70%",
-      onEnter: () => anim.play(),
-    });
-
-    ScrollTrigger.create({
-      trigger: box,
-      start: "top bottom",
-      onLeaveBack: () => anim.pause(0),
-    });
-  });
-
-  // CLIENTS
-  animateSingleElement(".clients__cards");
-
-  // METHODS
-  animateElementsGroup(".methods-card");
-
-  // BENEFITS
-  animateElementsGroup(".benefits-card");
-
-  // FEEDBACK
-  animateSingleElement(".feedback__content");
-
-  // STEPS
-  animateSingleElement(".steps__content");
-
-  // PRICE
-  animateSingleElement(".price__cards");
-
-  // WORDS
-  animateSingleElement(".words__content");
-
-  // FAQ
-  animateElementsGroup(".faq-box");
-
-  // QUESTIONS
-  animateSingleElement(".questions__img");
-  animateSingleElement(".questions__text");
-  animateSingleElement(".questions__form");
-});
 }
