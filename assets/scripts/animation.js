@@ -67,23 +67,27 @@ export const startAnimation = () => {
   });
 
   // preposition
-  const preposition = gsap.from(".cover__preposition", {
-    x: 50,
-    opacity: 0,
-    delay: 2.3,
-  });
+  const preposition = document.querySelector(".cover__preposition");
 
-  ScrollTrigger.create({
-    trigger: ".cover__preposition",
-    start: "top 90%",
-    onEnter: () => preposition?.play(),
-  });
+  if (preposition) {
+    const prepositionAnimation = gsap.from(".cover__preposition", {
+      x: 50,
+      opacity: 0,
+      delay: 2.3,
+    });
 
-  ScrollTrigger.create({
-    trigger: ".cover__preposition",
-    start: "top bottom",
-    onLeaveBack: () => preposition?.pause(0),
-  });
+    ScrollTrigger.create({
+      trigger: ".cover__preposition",
+      start: "top 90%",
+      onEnter: () => prepositionAnimation.play(),
+    });
+
+    ScrollTrigger.create({
+      trigger: ".cover__preposition",
+      start: "top bottom",
+      onLeaveBack: () => prepositionAnimation.pause(0),
+    });
+  }
 
   // psychotherapy
   const psychotherapy = gsap.from(".psychotherapy", {
