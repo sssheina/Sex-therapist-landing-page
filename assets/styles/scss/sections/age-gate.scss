@@ -5,19 +5,39 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 30px;
   backdrop-filter: blur(23px);
   z-index: 1000;
 
+  @include xs {
+    padding: 20px;
+  }
+
   &__image {
     width: 100%;
+  }
+
+  &__logo {
+    stroke: $color-blue-dark;
   }
 
   &__content {
     max-width: 50%;
     display: grid;
     justify-items: center;
-    gap: 10px;
     background: $color-white;
+
+    @include lg {
+      max-width: 659px;
+    }
+
+    @include md {
+      max-width: 368px;
+    }
+
+    @include xs {
+      max-width: 100%;
+    }
   }
 
   &__info {
@@ -25,9 +45,23 @@
     display: grid;
     justify-items: center;
     gap: 50px;
-    margin: 20px auto 90px;
-    padding: 0 15px;
+    margin: 50px 50px 90px;
     text-align: center;
+
+    @include lg {
+      margin: 38px 38px 50px;
+      gap: 38px;
+    }
+
+    @include md {
+      margin: 13px 13px 40px;
+      gap: 13px;
+    }
+
+    @include xs {
+      margin: 15px 15px 40px;
+      gap: 15px;
+    }
   }
 
   &__age {
@@ -35,6 +69,10 @@
     display: flex;
     align-items: center;
     gap: 6px;
+
+    @include xs {
+      align-items: flex-start;
+    }
   }
 
   &__button {

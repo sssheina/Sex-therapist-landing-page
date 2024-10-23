@@ -4185,33 +4185,78 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 30px;
   backdrop-filter: blur(23px);
   z-index: 1000;
 }
+@media only screen and (max-width: 427px) {
+  .age-gate {
+    padding: 20px;
+  }
+}
 .age-gate__image {
   width: 100%;
+}
+.age-gate__logo {
+  stroke: #010e23;
 }
 .age-gate__content {
   max-width: 50%;
   display: grid;
   justify-items: center;
-  gap: 10px;
   background: #fefefe;
+}
+@media only screen and (max-width: 1919px) {
+  .age-gate__content {
+    max-width: 659px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .age-gate__content {
+    max-width: 368px;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .age-gate__content {
+    max-width: 100%;
+  }
 }
 .age-gate__info {
   max-width: 552px;
   display: grid;
   justify-items: center;
   gap: 50px;
-  margin: 20px auto 90px;
-  padding: 0 15px;
+  margin: 50px 50px 90px;
   text-align: center;
+}
+@media only screen and (max-width: 1919px) {
+  .age-gate__info {
+    margin: 38px 38px 50px;
+    gap: 38px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .age-gate__info {
+    margin: 13px 13px 40px;
+    gap: 13px;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .age-gate__info {
+    margin: 15px 15px 40px;
+    gap: 15px;
+  }
 }
 .age-gate__age {
   max-width: fit-content;
   display: flex;
   align-items: center;
   gap: 6px;
+}
+@media only screen and (max-width: 427px) {
+  .age-gate__age {
+    align-items: flex-start;
+  }
 }
 .age-gate__button.invalid {
   border: 1px solid transparent;

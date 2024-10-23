@@ -29,19 +29,22 @@
   <div class="age-gate">
     <div class="age-gate__content">
       <img src="./assets/images/age-gate.png" alt="Абстрактные волнистые линии" class="age-gate__image">
+
       <div class="age-gate__info">
-        <h3 class="h3-title">Cайт содержит материалы <br> для взрослых</h3>
+        <svg class="age-gate__logo icon-logo">
+          <use xlink:href="/assets/images/figures/sprite.svg#logo"></use>
+        </svg>
+        <h3 class="h3-title">This site contains adult content</h3>
         <div>
-          <p class="paragraph-standard">Если вам уже есть 18 лет — добро пожаловать!</p>
-          <p class="paragraph-standard">Если нет — пожалуйста, воспользуйтесь ресурсами, предназначенными
-            для вашего возраста.</p>
+          <p class="paragraph-standard">If you are over 18 years of age, welcome!</p>
+          <p class="paragraph-standard">If you are not, please use resources that correspond to your age.</p>
         </div>
         <div class="age-gate__age">
           <input type="checkbox" id="age">
-          <label for="age" class="paragraph-standard">Я подтверждаю, что мне больше 18 лет</label>
+          <label for="age" class="paragraph-standard">I confirm that I am over 18&nbsp;years&nbsp;old</label>
         </div>
 
-        <button class="age-gate__button button__secondary button-text">Подтвердить</button>
+        <button class="age-gate__button button__secondary button-text">Confirm</button>
       </div>
     </div>
   </div>
@@ -221,7 +224,7 @@
           </div>
 
           <div class="about__video-block" itemscope itemtype="https://schema.org/VideoObject">
-            <video class="about__video" controls>
+            <video class="about__video" controls poster="/assets/images/poster.png">
               <source src="/assets/video/kate_en.mp4" itemprop="contentUrl" type="video/mp4" />
               Your browser does not support video.
             </video>
