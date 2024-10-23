@@ -4213,6 +4213,12 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   gap: 6px;
 }
+.age-gate__button.invalid {
+  border: 1px solid transparent;
+  background: #949494;
+  color: rgb(201, 201, 201);
+  cursor: not-allowed;
+}
 
 .overlay {
   position: fixed;
