@@ -32,55 +32,35 @@ const showHeaderMenu = () => {
 
   if (!nav.classList.contains("show") && activeLink) {
     activeLink.classList.remove("active");
-    activeLink = null; // Сбросить activeLink после удаления класса
+    activeLink = null;
   }
 };
 
 headerMenuLinks.forEach((link) => {
-  link.addEventListener("click", function () {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
     headerMenuLinks.forEach((otherLink) =>
       otherLink.classList.remove("active")
     );
 
+    showHeaderMenu();
+
     link.classList.add("active");
     activeLink = link;
+
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+    const headerHeight = document.querySelector(".header").offsetHeight;
+    const targetPosition =
+      targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: "smooth",
+    });
   });
 });
-
-// const burger = document.querySelector(".header-burger");
-// const overlay = document.querySelector(".header__overlay");
-// const headerMenuLinks = document.querySelectorAll(".header__menu-link");
-// let activeLink;
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   burger.addEventListener("click", showHeaderMenu);
-//   overlay.addEventListener("click", showHeaderMenu);
-// });
-
-// const showHeaderMenu = () => {
-//   burger.classList.toggle("active");
-//   overlay.classList.toggle("show");
-
-//   const nav = document.querySelector(".header__nav");
-
-//   nav.classList.toggle("show");
-//   document.body.classList.toggle("lock");
-
-//   if (!nav.classList.contains("show")) {
-//     activeLink.classList.remove("active");
-//   }
-// };
-
-// headerMenuLinks.forEach((link) => {
-//   link.addEventListener("click", function () {
-//     headerMenuLinks.forEach((otherLink) =>
-//       otherLink.classList.remove("active")
-//     );
-
-//     link.classList.add("active");
-//     activeLink = link;
-//   });
-// });
 
 // ----- FEEDBACK -----
 

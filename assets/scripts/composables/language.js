@@ -1,34 +1,3 @@
-export const dropdown = document.querySelector(".language");
-let selectedLanguage;
-
-const setLanguage = (language) => {
-  localStorage.setItem("selectedLanguage", language);
-  // updateLanguageAttribute(language);
-};
-
-// const updateLanguageAttribute = (language) => {
-//   document.documentElement.lang = language.toLowerCase();
-// };
-
-export const changeLanguage = (generateContent) => {
-  return (event) => {
-    selectedLanguage = event.target.value;
-
-    setLanguage(selectedLanguage);
-    generateContent(selectedLanguage);
-  };
-};
-
-export const loadLanguage = (generateContent) => {
-  document.addEventListener("DOMContentLoaded", () => {
-    selectedLanguage = localStorage.getItem("selectedLanguage") || "EN";
-    dropdown.value = selectedLanguage;
-
-    // updateLanguageAttribute(selectedLanguage);
-    generateContent(selectedLanguage);
-  });
-};
-
 export const language = document.querySelector(".language__language");
 const languageOptionsList = document.querySelector(".language__options");
 const languageOptions = document.querySelectorAll(".language__option");
@@ -48,4 +17,10 @@ languageOptions.forEach((option) => {
     language.textContent = option.textContent;
     languageOptionsList.classList.remove("active");
   });
+});
+
+document.addEventListener("click", function (event) {
+  if (event.target !== language && event.target !== languageOptions) {
+    languageOptionsList.classList.remove("active");
+  }
 });
