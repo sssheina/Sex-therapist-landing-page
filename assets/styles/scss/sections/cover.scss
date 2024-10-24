@@ -225,6 +225,10 @@
   }
 
   &__icons-container {
+    @include lg {
+      margin-right: 15px;
+    }
+
     @include sm {
       margin-right: 20px;
     }

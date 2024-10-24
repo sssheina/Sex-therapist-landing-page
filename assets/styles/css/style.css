@@ -2534,6 +2534,11 @@ body::-webkit-scrollbar-thumb {
     margin-left: unset;
   }
 }
+@media only screen and (max-width: 1919px) {
+  [lang=en] .cover__icons-container {
+    margin-right: 15px;
+  }
+}
 @media only screen and (max-width: 767px) {
   [lang=en] .cover__icons-container {
     margin-right: 20px;
@@ -4260,6 +4265,10 @@ body::-webkit-scrollbar-thumb {
   .age-gate__age {
     align-items: flex-start;
   }
+}
+.age-gate__age label,
+.age-gate__age input {
+  cursor: pointer;
 }
 .age-gate__button.invalid {
   border: 1px solid transparent;

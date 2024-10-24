@@ -73,6 +73,11 @@
     @include xs {
       align-items: flex-start;
     }
+
+    label,
+    input {
+      cursor: pointer;
+    }
   }
 
   &__button {
