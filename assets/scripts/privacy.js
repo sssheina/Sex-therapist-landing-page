@@ -257,7 +257,7 @@ const privacyPolicyData = {
       },
       {
         title: "How Long We Retain Your Data",
-        text: "We take all reasonable measures to protect your data from unauthorized access, alteration, disclosure, or destruction. We use secure servers and protocols for data transmission.",
+        text: "We retain your data for as long as necessary to fulfill the purposes outlined in this Privacy Policy or until you withdraw your consent for data processing.",
       },
       {
         title: "How We Protect Your Data",
