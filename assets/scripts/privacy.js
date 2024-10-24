@@ -261,7 +261,7 @@ const privacyPolicyData = {
       },
       {
         title: "How We Protect Your Data",
-        text: "We take all reasonable measures to protect your data from unauthorized access, alteration, disclosure, or destruction. We use secure servers and protocols for data transmission.",
+        text: "We take all reasonable measures to protect your data from unauthorized access, modification, disclosure, or destruction. We use secure servers and protocols for data transmission.",
       },
       {
         title: "Your Rights Under GDPR",
@@ -411,7 +411,7 @@ const privacyPolicyData = {
       },
       {
         title: "Durée de Conservation de Vos Données",
-        text: "Nous prenons toutes les mesures raisonnables pour protéger vos données contre tout accès non autorisé, modification, divulgation ou destruction. Nous utilisons des serveurs et des protocoles sécurisés pour la transmission des données.",
+        text: "Nous conservons vos données aussi longtemps que nécessaire pour atteindre les objectifs décrits dans la présente Politique de confidentialité ou jusqu'à ce que vous retiriez votre consentement au traitement des données.",
       },
       {
         title: "Comment Nous Protégeons Vos Données",
