@@ -22,6 +22,31 @@
 </head>
 
 <body>
+  <!-- AGE GATE -->
+  <div class="age-gate">
+    <div class="age-gate__content">
+      <img src="./assets/images/age-gate.png" alt="Абстрактные волнистые линии" class="age-gate__image">
+
+      <div class="age-gate__info">
+        <svg class="age-gate__logo icon-logo">
+          <use xlink:href="/assets/images/figures/sprite.svg#logo"></use>
+        </svg>
+        <h3 class="h3-title">Ce site a un contenu pour&nbsp;adultes</h3>
+        <div>
+          <p class="paragraph-standard">Si vous avez plus de 18 ans, bienvenue !</p>
+          <p class="paragraph-standard">Si ce n'est pas le cas, veuillez utiliser les ressources conçues pour votre âge.
+          </p>
+        </div>
+        <div class="age-gate__age">
+          <input type="checkbox" id="age">
+          <label for="age" class="paragraph-standard">Je certifie que j'ai plus de 18 ans</label>
+        </div>
+
+        <button class="age-gate__button button__secondary button-text">Confirmer</button>
+      </div>
+    </div>
+  </div>
+
   <!-- LOADER -->
   <div class="loader">
     <div class="loader__wrapper">
@@ -1472,7 +1497,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-  <script type="module" src="/assets/scripts/index-fr.js"></script>
+  <script type="module" src="/assets/scripts/index.js"></script>
 </body>
 
 </html>
