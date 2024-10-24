@@ -20,7 +20,7 @@
     @include sm {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(9, auto);
-      gap: 35px;
+      gap: 30px;
     }
   }
 }
@@ -31,7 +31,11 @@
 
   @include lg {
     grid-template-rows: auto auto;
+  }
+
+  @include sm {
     gap: 15px;
+    padding-bottom: 15px;
   }
 
   &__img {
@@ -39,6 +43,7 @@
     object-fit: cover;
     justify-self: center;
     display: block;
+    grid-row: span 2;
 
     @include r(920) {
       max-width: 213px;

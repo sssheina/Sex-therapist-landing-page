@@ -2834,6 +2834,7 @@ body::-webkit-scrollbar-thumb {
   .methods__cards {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, auto);
+    gap: 20px;
   }
 }
 @media only screen and (min-width: 1439.1px) {
@@ -2847,16 +2848,14 @@ body::-webkit-scrollbar-thumb {
   grid-template-rows: 25% 1fr;
   gap: 10px;
 }
-@media only screen and (max-width: 1919px) {
-  .methods-card {
-    grid-template-rows: 20% 1fr;
-    padding-bottom: 15px;
-  }
-}
 @media only screen and (max-width: 1439px) {
   .methods-card {
-    grid-template-rows: 18% 1fr;
-    padding-bottom: unset;
+    grid-template-rows: 25% auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .methods-card {
+    padding-bottom: 20px;
   }
 }
 .methods-card:nth-child(odd) .methods-card__title {
@@ -2882,6 +2881,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   object-fit: cover;
   display: block;
+  grid-row: span 2;
 }
 @media only screen and (max-width: 1439px) {
   .methods-card__img {
@@ -2897,7 +2897,7 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 767px) {
   .methods-card__img {
     object-position: center top;
-    aspect-ratio: 2.16;
+    aspect-ratio: 3.16;
   }
 }
 
@@ -3234,7 +3234,7 @@ body::-webkit-scrollbar-thumb {
   .benefits__content {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, auto);
-    gap: 35px;
+    gap: 30px;
   }
 }
 
@@ -3245,7 +3245,12 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 1919px) {
   .benefits-card {
     grid-template-rows: auto auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .benefits-card {
     gap: 15px;
+    padding-bottom: 15px;
   }
 }
 .benefits-card__img {
@@ -3253,6 +3258,7 @@ body::-webkit-scrollbar-thumb {
   object-fit: cover;
   justify-self: center;
   display: block;
+  grid-row: span 2;
 }
 @media only screen and (max-width: 920px) {
   .benefits-card__img {
