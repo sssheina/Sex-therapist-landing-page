@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  // outline: none; /* Убираем стандартный стиль обводки */   
+  border: 4px solid var(--color-orange-dark);
+  background: rgba(255, 220, 188, 0.5); /* Применяем тёмно-оранжевую обводку */
+}
+
 html {
   scroll-behavior: smooth;
 }
