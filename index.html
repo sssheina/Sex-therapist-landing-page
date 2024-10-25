@@ -26,7 +26,7 @@
 
 <body>
   <!-- AGE GATE -->
-  <div class="age-gate">
+  <div class="age-gate" id="ageGateModal">
     <div class="age-gate__content">
       <img src="./assets/images/age-gate.png" alt="Абстрактные волнистые линии" class="age-gate__image">
 
@@ -46,6 +46,24 @@
         </div>
 
         <button class="age-gate__button button__secondary button-text">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Notification -->
+  <div id="cookieConsent" class="cookie hidden">
+    <div class="cookie__content container">
+      <div class="cookie__text-block">
+        <h4 class="cookie__title h4-title">cookies</h4>
+        <p class="cookie__text paragraph-standard">We use analytical cookies to enhance your experience on the site. 
+          Details about data processing can be found in the 
+          <a href="#" class="cookie__link link policy__link">Privacy Policy
+          </a>
+        </p>
+        </div>
+        <div class="cookie__button-block">  
+          <button class="cookie__button button__secondary button-text" id="acceptCookies">Accept</button>
+          <button class="cookie__button button__outline-blue button-text" id="declineCookies">Decline</button>
       </div>
     </div>
   </div>
