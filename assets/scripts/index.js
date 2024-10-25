@@ -7,3 +7,5 @@ import "./sendemail.js";
 import "./composables/privacy-policy.js";
 import "./main.js";
 import "./buttons.js";
+import "./composables/analytics.js";
+import "./composables/cookie.js";
