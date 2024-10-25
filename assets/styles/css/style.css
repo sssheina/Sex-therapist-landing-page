@@ -2082,11 +2082,6 @@ body::-webkit-scrollbar-thumb {
 .button:active {
   background: #bd5b01;
 }
-.button:focus {
-  background: #FFDCBC;
-  border: 1px solid #bd5b01;
-  color: #bd5b01;
-}
 @media only screen and (max-width: 1919px) {
   .button {
     max-width: 295px;
