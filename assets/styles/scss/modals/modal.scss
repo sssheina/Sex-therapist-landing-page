@@ -22,14 +22,13 @@
   max-width: 50%;
   min-width: 270px;
   // min-height: 270px;
-  padding: 3rem;
+  padding: 2rem;
   z-index: 2000;
   background-color: white;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 
   @include lg {
-    padding: 2rem;
     max-width: 70%;
   }
 
