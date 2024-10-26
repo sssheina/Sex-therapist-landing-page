@@ -2082,6 +2082,11 @@ body::-webkit-scrollbar-thumb {
 .button:active {
   background: #bd5b01;
 }
+.button:focus {
+  background: #FFDCBC;
+  border: 1px solid #bd5b01;
+  color: #bd5b01;
+}
 @media only screen and (max-width: 1919px) {
   .button {
     max-width: 295px;
@@ -2360,21 +2365,76 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   gap: 10.6rem;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+@media only screen and (max-width: 1919px) {
+  .cookie__content {
+    gap: 21px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .cookie__content {
+    gap: 57px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cookie__content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .cookie__content {
+    gap: 15px;
+  }
 }
 .cookie__text-block {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  padding: 1.5rem 0;
+}
+@media only screen and (max-width: 767px) {
+  .cookie__text-block {
+    flex-direction: column;
+    gap: 6px;
+  }
 }
 .cookie__button-block {
   display: flex;
-  padding: 1.5rem 0;
   gap: 1.5rem;
 }
+@media only screen and (max-width: 1439px) {
+  .cookie__button-block {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 .cookie__button {
-  width: 24.1rem;
-  height: 4rem;
+  width: 386px;
+  height: 80px;
+}
+@media only screen and (max-width: 1919px) {
+  .cookie__button {
+    width: 295px;
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .cookie__button {
+    width: 213px;
+    height: 48px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .cookie__button {
+    width: 278px;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .cookie__button {
+    width: 205px;
+  }
 }
 
 .cover {

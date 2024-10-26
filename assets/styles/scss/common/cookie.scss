@@ -10,26 +10,70 @@
 
     &__content {
         display: flex;
-        // gap: 170px;
         gap: 10.6rem; 
         align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        @include lg {
+            gap: 21px;
+        }
+
+        @include md {
+            gap: 57px;
+        }
+
+        @include sm {
+            flex-direction: column;
+            gap: 20px;
+          }
+
+          @include xs {
+            gap: 15px;
+          }
     }
 
     &__text-block {
         display: flex;
         flex-direction: column;
         gap: 0.6rem; 
-        padding: 1.5rem 0;
+
+        @include sm {
+            flex-direction: column;
+            gap: 6px; 
+          }
     }
 
     &__button-block {
         display: flex; 
-        padding: 1.5rem 0; 
-        gap: 1.5rem;      
+        gap: 1.5rem; 
+
+        @include md {
+            flex-direction: column;
+            gap: 10px;
+          }    
     }
 
     &__button {
-        width: 24.1rem;
-        height: 4rem;
+        width: 386px;
+        height: 80px;
+
+        @include lg {
+            width: 295px;
+            height: 60px;
+        }
+
+        @include md {
+            width: 213px;
+            height: 48px;
+        }
+
+        @include sm {
+            width: 278px;
+          }
+
+          @include xs {
+            width: 205px;
+          }
     }
 }
