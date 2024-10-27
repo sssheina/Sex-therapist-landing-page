@@ -2565,29 +2565,36 @@ body::-webkit-scrollbar-thumb {
   }
 }
 .cookie__button {
-  width: 386px;
-  height: 80px;
+  width: 300px;
+  height: 60px;
+}
+@media (min-width: 1920px) {
+  .cookie__button {
+    width: 300px;
+    height: 60px;
+  }
 }
 @media only screen and (max-width: 1919px) {
   .cookie__button {
-    width: 295px;
-    height: 60px;
+    width: clamp(230px, 230px + 70 * (100vw - 1440px) / 480, 300px);
+    height: clamp(50px, 50px + 10 * (100vw - 1440px) / 480, 60px);
   }
 }
 @media only screen and (max-width: 1439px) {
   .cookie__button {
-    width: 213px;
-    height: 48px;
+    width: clamp(180px, 180px + 50 * (100vw - 768px) / 672, 230px);
+    height: clamp(35px, 35px + 15 * (100vw - 768px) / 672, 50px);
   }
 }
 @media only screen and (max-width: 767px) {
   .cookie__button {
-    width: 278px;
+    width: clamp(278px, 278px + -98 * (100vw - 428px) / 340, 180px);
+    height: 35px;
   }
 }
 @media only screen and (max-width: 427px) {
   .cookie__button {
-    width: 205px;
+    width: clamp(205px, 205px + 73 * (100vw - 320px) / 108, 278px);
   }
 }
 
