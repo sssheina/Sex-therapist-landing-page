@@ -32,6 +32,27 @@ declineCookiesBtn.addEventListener("click", () => {
   disableAnalytics();  // Здесь можно отключить аналитику, если нужно
 });
 
+// Управление фокусом внутри cookieConsent
+const cookieFocusableElements = cookieConsent.querySelectorAll('button, [href]');
+let firstCookieFocusableElement = cookieFocusableElements[0];
+let lastCookieFocusableElement = cookieFocusableElements[cookieFocusableElements.length - 1];
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Tab" && cookieConsent.style.display === "flex") {
+    if (e.shiftKey) { // Shift + Tab
+      if (document.activeElement === firstCookieFocusableElement) {
+        lastCookieFocusableElement.focus();
+        e.preventDefault();
+      }
+    } else { // Tab
+      if (document.activeElement === lastCookieFocusableElement) {
+        firstCookieFocusableElement.focus();
+        e.preventDefault();
+      }
+    }
+  }
+});
+
 
 
 // // Элементы уведомления о куках

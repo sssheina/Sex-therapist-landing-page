@@ -81,19 +81,6 @@
   $property: $value;
 }
 
-// button focus
-// @mixin btn-focus($color) {
-//   outline: 3px solid $color;
-//   box-shadow: 0 0 4px 3px $color;
-//   outline-offset: 7px;
-// }
-
-// button hover
-// @mixin btn-hover() {
-//   outline: none;
-//   outline-offset: 0;
-// }
-
 @mixin header() {
   max-height: 100px;
 

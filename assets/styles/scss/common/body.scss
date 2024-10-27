@@ -37,3 +37,13 @@ body {
 .main {
   overflow-x: hidden;
 }
+
+input[type="checkbox"]:focus {
+  outline: 2px solid #35445b; // Обводка при фокусе
+  background-color: #f0f8ff;   // Цвет фона при фокусе
+}
+
+input[type="checkbox"]:focus + label {
+  // outline: 2px solid #4a90e2;    // Обводка при фокусе
+  background: rgba(255, 220, 188, 0.5);   // Цвет фона при фокусе
+}

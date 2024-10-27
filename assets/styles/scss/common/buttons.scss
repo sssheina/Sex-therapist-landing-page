@@ -155,6 +155,10 @@
     background: $color-white;
     color: $color-blue-dark;
   }
+  &:focus {
+    background: $color-blue-middle;
+    color: $color-orange-light;  
+  }
 }
 
 .button__outline-blue {
@@ -171,6 +175,11 @@
     border: 2px solid $color-blue-dark;
   background: $color-blue-dark;
   color: $color-white;
+  }
+
+  &:focus {
+    background: $color-orange-apricot;  
+    color: $color-blue-middle;     
   }
 }
 

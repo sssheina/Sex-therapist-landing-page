@@ -1489,6 +1489,15 @@ body::-webkit-scrollbar-thumb {
   overflow-x: hidden;
 }
 
+input[type=checkbox]:focus {
+  outline: 2px solid #35445b;
+  background-color: #f0f8ff;
+}
+
+input[type=checkbox]:focus + label {
+  background: rgba(255, 220, 188, 0.5);
+}
+
 .container {
   max-width: 1920px;
   width: 100%;
@@ -1803,6 +1812,10 @@ body::-webkit-scrollbar-thumb {
   height: 28px;
   z-index: 10;
   cursor: pointer;
+}
+.header-burger:focus {
+  outline: 2px solid var(--color-orange-dark); /* Задайте обводку */
+  outline-offset: 12px; /* Отступ от обводки */
 }
 .header-burger::before, .header-burger::after,
 .header-burger span {
@@ -2391,6 +2404,10 @@ body::-webkit-scrollbar-thumb {
   background: #fefefe;
   color: #010e23;
 }
+.button__secondary:focus {
+  background: #35445b;
+  color: #d69961;
+}
 
 .button__outline-blue {
   border: 2px solid #010e23;
@@ -2405,6 +2422,10 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #010e23;
   background: #010e23;
   color: #fefefe;
+}
+.button__outline-blue:focus {
+  background: #FFDCBC;
+  color: #35445b;
 }
 
 .button__secondary,

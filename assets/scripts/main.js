@@ -17,6 +17,13 @@ const headerMenuLinks = document.querySelectorAll(".header__menu-link");
 let activeLink = null;
 
 document.addEventListener("DOMContentLoaded", function () {
+  burger.setAttribute("tabindex", "0");
+  burger.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      showHeaderMenu();
+    }
+  });
   burger.addEventListener("click", showHeaderMenu);
   overlay.addEventListener("click", showHeaderMenu);
 });
