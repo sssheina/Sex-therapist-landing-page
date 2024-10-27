@@ -10,27 +10,49 @@
 
     &__content {
         display: flex;
-        gap: 10.6rem; 
+        gap: 320px; 
         align-items: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
 
+        @media (min-width: 1920px) {
+            gap: 320px; 
+          }
+
         @include lg {
-            gap: 21px;
+            gap: clamp(230px, calc(230px + ((320 - 230) * ((100vw - 1440px) / (1980 - 1440)))), 320px);
         }
 
         @include md {
-            gap: 57px;
+            gap: clamp(115px, calc(115px + ((230 - 115) * ((100vw - 768px) / (1440 - 768)))), 230px);
         }
 
         @include sm {
             flex-direction: column;
-            gap: 20px;
+            gap: clamp(20px, calc(20px + ((115 - 20) * ((100vw - 428px) / (768 - 428)))), 115px);
         }
 
         @include xs {
-            gap: 15px;
+            gap: clamp(15px, calc(15px + ((20 - 15) * ((100vw - 320px) / (428 - 320)))), 20px);
         }
+
+        // @include lg {
+        //     gap: 230px;
+        // }
+
+        // @include md {
+        //     gap: 115px;
+        // }
+
+        // @include sm {
+        //     flex-direction: column;
+        //     gap: 20px;
+        // }
+
+        // @include xs {
+        //     gap: clamp(230px, calc(230px + ((300 - 230) * ((100vw - 1440px) / (1920 - 1440)))), 300px);
+        //     gap: 15px;
+        // }
     }
 
     &__text-block {
@@ -38,9 +60,12 @@
         flex-direction: column;
         gap: 0.6rem; 
 
+        @include lg {
+            gap: 6px; 
+        }
+
         @include sm {
             flex-direction: column;
-            gap: 6px; 
         }
     }
 
