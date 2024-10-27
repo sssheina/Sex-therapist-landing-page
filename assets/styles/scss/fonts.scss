@@ -82,17 +82,17 @@
   }
   
   @include lg {
-    --h1-title-font-size: clamp(102px, calc(102px + ((120 - 102) * ((100vw - 1440px) / (1920 - 1440)))), 120px);
+    --h1-title-font-size: clamp(78px, calc(78px + ((102 - 78) * ((100vw - 1440px) / (1920 - 1440)))), 102px);
     --h1-title-font-size-en-fr: clamp(90px, calc(90px + ((120 - 90) * ((100vw - 1440px) / (1920 - 1440)))), 120px);
   }
 
   @include md {
-    --h1-title-font-size: clamp(78px, calc(78px + ((102 - 78) * ((100vw - 768px) / (1440 - 768)))), 102px);
+    --h1-title-font-size: clamp(41px, calc(41px + ((78 - 41) * ((100vw - 768px) / (1440 - 768)))), 78px);
     --h1-title-font-size-en-fr: clamp(48px, calc(48px + ((90 - 48) * ((100vw - 768px) / (1440 - 768)))), 90px);
   }
 
   @include sm {
-    --h1-title-font-size: clamp(41px, calc(41px + ((78 - 41) * ((100vw - 428px) / (768 - 428)))), 78px);
+    --h1-title-font-size: 41px;
     --h1-title-font-size-en-fr: clamp(38px, calc(38px + ((48 - 38) * ((100vw - 428px) / (768 - 428)))), 48px);
   }
 
