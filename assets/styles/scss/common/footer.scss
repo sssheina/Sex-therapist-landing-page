@@ -127,6 +127,7 @@
     flex: 1;
     height: 52px;
     border: 1px solid $color-blue-dark;
+    border-radius: 0;
     padding: 12px 19px;
 
     &::placeholder {

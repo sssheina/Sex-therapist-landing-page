@@ -1996,6 +1996,7 @@ body::-webkit-scrollbar-thumb {
   flex: 1;
   height: 52px;
   border: 1px solid #010e23;
+  border-radius: 0;
   padding: 12px 19px;
 }
 .footer__field::placeholder {
@@ -4509,6 +4510,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   min-height: 150px;
   border: 1px solid #b1b1b1;
+  border-radius: 0;
   font-family: var(--montserrat-font-family);
   font-size: var(--paragraph-standard-font-size);
   font-weight: var(--paragraph-standard-font-weight, 400);
@@ -4549,6 +4551,9 @@ body::-webkit-scrollbar-thumb {
     justify-self: center;
     margin-top: 20px;
   }
+}
+.questions__checkbox {
+  border-radius: 0;
 }
 
 .age-gate {
@@ -4659,6 +4664,7 @@ body::-webkit-scrollbar-thumb {
 #age {
   max-width: 13px;
   height: 13px;
+  border-radius: 0;
 }
 
 .overlay {
