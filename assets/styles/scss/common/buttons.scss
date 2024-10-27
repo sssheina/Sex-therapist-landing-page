@@ -21,25 +21,50 @@
     color: $color-orange-dark;
   }
 
-  @include lg {
-    max-width: 295px;
-    height: 70px;
+  @media (min-width: 1920px) {
+    max-width: 386px;
+    height: 93px;
+  }
+
+    @include lg {
+      max-width: clamp(295px, calc(295px + ((386 - 295) * ((100vw - 1440px) / (1920 - 1440)))), 386px);
+      height: clamp(70px, calc(70px + ((93 - 70) * ((100vw - 1440px) / (1920 - 1440)))), 93px);
   }
 
   @include md {
-    max-width: 213px;
-    height: 50px;
+    max-width: clamp(213px, calc(213px + ((295 - 213) * ((100vw - 768px) / (1440 - 768)))), 295px);
+    height: clamp(50px, calc(50px + ((70 - 50) * ((100vw - 768px) / (1440 - 768)))), 70px);
   }
 
   @include sm {
-    max-width: 278px;
-    height: 70px;
+    max-width: clamp(278px, calc(278px + ((213 - 278) * ((100vw - 428px) / (768 - 428)))), 213px);
+    height: clamp(70px, calc(70px + ((50 - 70) * ((100vw - 428px) / (768 - 428)))), 50px);
   }
 
   @include xs {
-    max-width: 212px;
-    height: 53px;
-  }
+    max-width: clamp(212px, calc(212px + ((278 - 212) * ((100vw - 320px) / (428 - 320)))), 278px);
+    height: clamp(53px, calc(53px + ((70 - 53) * ((100vw - 320px) / (428 - 320)))), 70px);
+    }
+
+  // @include lg {
+  //   max-width: 295px;
+  //   height: 70px;
+  // }
+
+  // @include md {
+  //   max-width: 213px;
+  //   height: 50px;
+  // }
+
+  // @include sm {
+  //   max-width: 278px;
+  //   height: 70px;
+  // }
+
+  // @include xs {
+  //   max-width: 212px;
+  //   height: 53px;
+  // }
 }
 
 .button-main {

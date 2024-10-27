@@ -52,53 +52,47 @@
   &__logo {
     max-width: clamp(55px, 5vw + 5px, 92px); 
     max-height: clamp(61px, 5vw + 5px, 105px);
-    // max-width: 92px;
-    // max-height: 105px;
-
-    @include lg {
-      // max-width: 48px;
-      // max-height: 55px;
-    }
-
-    @include md {
-      // max-width: 48px;
-      // max-height: 55px;
-    }
-
-    @include sm {
-      // max-width: 48px;
-      // max-height: 55px;
-    }
-
-    @include xs {
-      // max-width: 36px;
-      // max-height: 41px;
-    }
   }
 
   &__logo-text {
-    font-weight: 500;
+    font-weight: 400;
     max-width: 280px;
 
+    @media (min-width: 1920px) {
+      max-width: 280px;
+    }
+
     @include lg {
-      // max-width: 48px;
-      // max-height: 55px;
+      max-width: clamp(220px, calc(220px + ((280 - 220) * ((100vw - 1440px) / (1920 - 1440)))), 280px);
     }
 
     @include md {
-      // max-width: 48px;
-      // max-height: 55px;
+      max-width: clamp(205px, calc(205px + ((220 - 205) * ((100vw - 768px) / (1440 - 768)))), 220px);
     }
 
     @include sm {
-      // max-width: 48px;
-      // max-height: 55px;
+      max-width: 205px;
     }
 
     @include xs {
-      // max-width: 36px;
-      // max-height: 41px;
+      max-width: clamp(190px, calc(190px + ((205 - 190) * ((100vw - 320px) / (428 - 320)))), 205px);
     }
+
+    // @include lg {
+    //   max-width: 220px;
+    // }
+
+    // @include md {
+    //   max-width: 205px;
+    // }
+
+    // @include sm {
+    //   max-width: 205px;
+    // }
+
+    // @include xs {
+    //   max-width: 190px;
+    // }
   }
 
   &__subscribe {
