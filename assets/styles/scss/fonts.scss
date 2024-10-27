@@ -632,10 +632,10 @@
   }
 
   @include sm {
-    --span-text-font-size-ru: clamp(17px, calc(17px + ((17 - 17) * ((100vw - 428px) / (768 - 428)))), 17px);
-    --span-text-font-size-en: clamp(20px, calc(20px + ((20 - 20) * ((100vw - 428px) / (768 - 428)))), 20px);
-    --span-text-font-size-fr: clamp(22px, calc(22px + ((22 - 22) * ((100vw - 428px) / (768 - 428)))), 22px);
-  }
+    --span-text-font-size-ru: clamp(17px, calc(17px - ((16 - 17) * ((100vw - 428px) / (768 - 428)))), 16px);
+    --span-text-font-size-en: clamp(20px, calc(20px - ((16 - 20) * ((100vw - 428px) / (768 - 428)))), 16px);
+    --span-text-font-size-fr: clamp(22px, calc(22px - ((16 - 22) * ((100vw - 428px) / (768 - 428)))), 16px);
+}
 
   @include xs {
     --span-text-font-size-ru: clamp(14px, calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))), 16px);

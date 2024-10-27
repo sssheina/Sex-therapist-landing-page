@@ -1401,9 +1401,9 @@ textarea {
 }
 @media only screen and (max-width: 767px) {
   :root {
-    --span-text-font-size-ru: clamp(17px, calc(17px + ((17 - 17) * ((100vw - 428px) / (768 - 428)))), 17px);
-    --span-text-font-size-en: clamp(20px, calc(20px + ((20 - 20) * ((100vw - 428px) / (768 - 428)))), 20px);
-    --span-text-font-size-fr: clamp(22px, calc(22px + ((22 - 22) * ((100vw - 428px) / (768 - 428)))), 22px);
+    --span-text-font-size-ru: clamp(17px, calc(17px - ((16 - 17) * ((100vw - 428px) / (768 - 428)))), 16px);
+    --span-text-font-size-en: clamp(20px, calc(20px - ((16 - 20) * ((100vw - 428px) / (768 - 428)))), 16px);
+    --span-text-font-size-fr: clamp(22px, calc(22px - ((16 - 22) * ((100vw - 428px) / (768 - 428)))), 16px);
   }
 }
 @media only screen and (max-width: 427px) {
@@ -1896,8 +1896,33 @@ body::-webkit-scrollbar-thumb {
   max-height: clamp(61px, 5vw + 5px, 105px);
 }
 .footer__logo-text {
-  font-weight: 500;
+  font-weight: 400;
   max-width: 280px;
+}
+@media (min-width: 1920px) {
+  .footer__logo-text {
+    max-width: 280px;
+  }
+}
+@media only screen and (max-width: 1919px) {
+  .footer__logo-text {
+    max-width: clamp(220px, 220px + 60 * (100vw - 1440px) / 480, 280px);
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .footer__logo-text {
+    max-width: clamp(205px, 205px + 15 * (100vw - 768px) / 672, 220px);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer__logo-text {
+    max-width: 205px;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .footer__logo-text {
+    max-width: clamp(190px, 190px + 15 * (100vw - 320px) / 108, 205px);
+  }
 }
 .footer__subscribe {
   display: flex;
@@ -2210,28 +2235,34 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #bd5b01;
   color: #bd5b01;
 }
+@media (min-width: 1920px) {
+  .button {
+    max-width: 386px;
+    height: 93px;
+  }
+}
 @media only screen and (max-width: 1919px) {
   .button {
-    max-width: 295px;
-    height: 70px;
+    max-width: clamp(295px, 295px + 91 * (100vw - 1440px) / 480, 386px);
+    height: clamp(70px, 70px + 23 * (100vw - 1440px) / 480, 93px);
   }
 }
 @media only screen and (max-width: 1439px) {
   .button {
-    max-width: 213px;
-    height: 50px;
+    max-width: clamp(213px, 213px + 82 * (100vw - 768px) / 672, 295px);
+    height: clamp(50px, 50px + 20 * (100vw - 768px) / 672, 70px);
   }
 }
 @media only screen and (max-width: 767px) {
   .button {
-    max-width: 278px;
-    height: 70px;
+    max-width: clamp(278px, 278px + -65 * (100vw - 428px) / 340, 213px);
+    height: clamp(70px, 70px + -20 * (100vw - 428px) / 340, 50px);
   }
 }
 @media only screen and (max-width: 427px) {
   .button {
-    max-width: 212px;
-    height: 53px;
+    max-width: clamp(212px, 212px + 66 * (100vw - 320px) / 108, 278px);
+    height: clamp(53px, 53px + 17 * (100vw - 320px) / 108, 70px);
   }
 }
 
