@@ -74,6 +74,7 @@
     // height: 100%;
     min-height: 150px;
     border: 1px solid $color-gray-dark;
+    border-radius: 0;
     font-family: var(--montserrat-font-family);
     font-size: var(--paragraph-standard-font-size);
     font-weight: var(--paragraph-standard-font-weight, 400);
@@ -116,5 +117,9 @@
       justify-self: center;
       margin-top: 20px;
     }
+  }
+
+  &__checkbox {
+    border-radius: 0;
   }
 }
