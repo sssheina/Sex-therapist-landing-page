@@ -76,25 +76,50 @@
   --h1-title-text-decoration: none;
   --h1-title-font-size-en-fr: 120px; // размер для английского и французского
 
+  @media (min-width: 1920px) {
+    --h1-title-font-size: 102px;
+    --h1-title-font-size-en-fr: 120px; 
+  }
+  
   @include lg {
-    --h1-title-font-size: 78px;
-    --h1-title-font-size-en-fr: 90px;
+    --h1-title-font-size: clamp(102px, calc(102px + ((120 - 102) * ((100vw - 1440px) / (1920 - 1440)))), 120px);
+    --h1-title-font-size-en-fr: clamp(90px, calc(90px + ((120 - 90) * ((100vw - 1440px) / (1920 - 1440)))), 120px);
   }
 
   @include md {
-    --h1-title-font-size: 41px;
-    --h1-title-font-size-en-fr: 48px;
+    --h1-title-font-size: clamp(78px, calc(78px + ((102 - 78) * ((100vw - 768px) / (1440 - 768)))), 102px);
+    --h1-title-font-size-en-fr: clamp(48px, calc(48px + ((90 - 48) * ((100vw - 768px) / (1440 - 768)))), 90px);
   }
 
   @include sm {
-    --h1-title-font-size: 41px;
-    --h1-title-font-size-en-fr: 38px;
+    --h1-title-font-size: clamp(41px, calc(41px + ((78 - 41) * ((100vw - 428px) / (768 - 428)))), 78px);
+    --h1-title-font-size-en-fr: clamp(38px, calc(38px + ((48 - 38) * ((100vw - 428px) / (768 - 428)))), 48px);
   }
 
   @include xs {
-    --h1-title-font-size: 31px;
-    --h1-title-font-size-en-fr: 30px;
+    --h1-title-font-size: clamp(31px, calc(31px + ((41 - 31) * ((100vw - 320px) / (428 - 320)))), 41px);
+    --h1-title-font-size-en-fr: clamp(30px, calc(30px + ((38 - 30) * ((100vw - 320px) / (428 - 320)))), 38px);
   }
+
+  // @include lg {
+  //   --h1-title-font-size: 78px;
+  //   --h1-title-font-size-en-fr: 90px;
+  // }
+
+  // @include md {
+  //   --h1-title-font-size: 41px;
+  //   --h1-title-font-size-en-fr: 48px;
+  // }
+
+  // @include sm {
+  //   --h1-title-font-size: 41px;
+  //   --h1-title-font-size-en-fr: 38px;
+  // }
+
+  // @include xs {
+  //   --h1-title-font-size: 31px;
+  //   --h1-title-font-size-en-fr: 30px;
+  // }
 
   // h2 - title
 
@@ -106,17 +131,37 @@
   --h2-title-text-decoration: none;
   --h2-title-text-align: left;
 
-  @include lg {
-    --h2-title-font-size: 48px;
-  }
+@media (min-width: 1920px) {
+  --h2-title-font-size: 64px;
+}
 
-  @include md {
-    --h2-title-font-size: 34px;
-  }
+@include lg {
+  --h2-title-font-size: clamp(48px, calc(48px + ((64 - 48) * ((100vw - 1440px) / (1920 - 1440)))), 64px);
+}
 
-  @include xs {
-    --h2-title-font-size: 25px;
-  }
+@include md {
+  --h2-title-font-size: clamp(34px, calc(34px + ((48 - 34) * ((100vw - 768px) / (1440 - 768)))), 48px);
+}
+
+@include sm {
+  --h2-title-font-size: 34px; 
+}
+
+@include xs {
+  --h2-title-font-size: clamp(25px, calc(25px + ((34 - 25) * ((100vw - 320px) / (428 - 320)))), 34px);
+}
+
+  // @include lg {
+  //   --h2-title-font-size: 48px;
+  // }
+
+  // @include md {
+  //   --h2-title-font-size: 34px;
+  // }
+
+  // @include xs {
+  //   --h2-title-font-size: 25px;
+  // }
 
   // h3 - title
 
@@ -127,17 +172,37 @@
   --h3-title-text-transform: uppercase;
   --h3-title-text-decoration: none;
 
-  @include lg {
-    --h3-title-font-size: 22px;
+  @media (min-width: 1920px) {
+    --h3-title-font-size: 30px; 
   }
+
+  @include lg {
+    --h3-title-font-size: clamp(22px, calc(22px + ((30 - 22) * ((100vw - 1440px) / (1920 - 1440)))), 30px);
+}
 
   @include md {
-    --h3-title-font-size: 19px;
-  }
+    --h3-title-font-size: clamp(19px, calc(19px + ((22 - 19) * ((100vw - 768px) / (1440 - 768)))), 22px);
+}
 
-  @include xs {
-    --h3-title-font-size: 16px;
-  }
+  @include sm {
+    --h3-title-font-size: 19px;
+}
+
+@include xs {
+  --h3-title-font-size: clamp(16px, calc(16px + ((19 - 16) * ((100vw - 320px) / (428 - 320)))), 19px);
+}
+
+  // @include lg {
+  //   --h3-title-font-size: 22px;
+  // }
+
+  // @include md {
+  //   --h3-title-font-size: 19px;
+  // }
+
+  // @include xs {
+  //   --h3-title-font-size: 16px;
+  // }
 
   // h3 - title - main
 
@@ -148,21 +213,41 @@
   --h3-title-main-text-transform: uppercase;
   --h3-title-main-text-decoration: none;
 
+  @media (min-width: 1920px) {
+    --h3-title-main-font-size: 30px; 
+  }
+
   @include lg {
-    --h3-title-main-font-size: 22px;
+    --h3-title-main-font-size: clamp(22px, calc(22px + ((30 - 22) * ((100vw - 1440px) / (1920 - 1440)))), 30px);
   }
 
   @include md {
-    --h3-title-main-font-size: 12px;
+    --h3-title-main-font-size: clamp(14px, calc(14px + ((22 - 14) * ((100vw - 768px) / (1440 - 768)))), 22px);
   }
 
   @include sm {
-    --h3-title-main-font-size: 16px;
+    --h3-title-main-font-size: clamp(16px, calc(16px + ((19 - 16) * ((100vw - 428px) / (768 - 428)))), 19px);
   }
 
   @include xs {
-    --h3-title-main-font-size: 14px;
+    --h3-title-main-font-size: clamp(14px, calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))), 16px);
   }
+
+  // @include lg {
+  //   --h3-title-main-font-size: 22px;
+  // }
+
+  // @include md {
+  //   --h3-title-main-font-size: 12px;
+  // }
+
+  // @include sm {
+  //   --h3-title-main-font-size: 16px;
+  // }
+
+  // @include xs {
+  //   --h3-title-main-font-size: 14px;
+  // }
 
   // h4 - title
 
@@ -173,17 +258,37 @@
   --h4-title-text-transform: uppercase;
   --h4-title-text-decoration: none;
 
+  @media (min-width: 1920px) {
+    --h4-title-font-size: 25px;
+  }
+
   @include lg {
-    --h4-title-font-size: 19px;
+    --h4-title-font-size: clamp(19px, calc(19px + ((25 - 19) * ((100vw - 1440px) / (1920 - 1440)))), 25px);
   }
 
   @include md {
+    --h4-title-font-size: clamp(17px, calc(17px + ((19 - 17) * ((100vw - 768px) / (1440 - 768)))), 19px);
+  }
+
+  @include sm {
     --h4-title-font-size: 17px;
   }
 
   @include xs {
-    --h4-title-font-size: 14px;
+    --h4-title-font-size: clamp(14px, calc(14px + ((17 - 14) * ((100vw - 320px) / (428 - 320)))), 17px);
   }
+
+  // @include lg {
+  //   --h4-title-font-size: 19px;
+  // }
+
+  // @include md {
+  //   --h4-title-font-size: 17px;
+  // }
+
+  // @include xs {
+  //   --h4-title-font-size: 14px;
+  // }
 
   // h5 - title
 
@@ -194,17 +299,37 @@
   --h5-title-text-transform: uppercase;
   --h5-title-text-decoration: none;
 
+  @media (min-width: 1920px) {
+    --h5-title-font-size: 20px;
+  }
+
   @include lg {
-    --h5-title-font-size: 16px;
+    --h5-title-font-size: clamp(16px, calc(16px + ((20 - 16) * ((100vw - 1440px) / (1920 - 1440)))), 20px);
   }
 
   @include md {
+    --h5-title-font-size: clamp(15px, calc(15px + ((16 - 15) * ((100vw - 768px) / (1440 - 768)))), 16px);
+  }
+
+  @include sm {
     --h5-title-font-size: 15px;
   }
 
   @include xs {
-    --h5-title-font-size: 12px;
+    --h5-title-font-size: clamp(12px, calc(12px + ((15 - 12) * ((100vw - 320px) / (428 - 320)))), 15px);
   }
+
+  // @include lg {
+  //   --h5-title-font-size: 16px;
+  // }
+
+  // @include md {
+  //   --h5-title-font-size: 15px;
+  // }
+
+  // @include xs {
+  //   --h5-title-font-size: 12px;
+  // }
 
   // paragraph - large  цена в тарифах
 
@@ -214,17 +339,37 @@
   --paragraph-large-line-height: 1.5;
   --paragraph-large-text-transform: uppercase;
 
+  @media (min-width: 1920px) {
+    --paragraph-large-font-size: 48px;
+  }
+
   @include lg {
-    --paragraph-large-font-size: 36px;
+    --paragraph-large-font-size: clamp(36px, calc(36px + ((48 - 36) * ((100vw - 1440px) / (1920 - 1440)))), 48px);
   }
 
   @include md {
+    --paragraph-large-font-size: clamp(24px, calc(24px + ((36 - 24) * ((100vw - 768px) / (1440 - 768)))), 36px);
+  }
+
+  @include sm {
     --paragraph-large-font-size: 24px;
   }
 
   @include xs {
-    --paragraph-large-font-size: 20px;
+    --paragraph-large-font-size: clamp(20px, calc(20px + ((24 - 20) * ((100vw - 320px) / (428 - 320)))), 24px);
   }
+
+  // @include lg {
+  //   --paragraph-large-font-size: 36px;
+  // }
+
+  // @include md {
+  //   --paragraph-large-font-size: 24px;
+  // }
+
+  // @include xs {
+  //   --paragraph-large-font-size: 20px;
+  // }
 
   // paragraph - medium  текст в блоке слова
 
@@ -235,17 +380,37 @@
   --paragraph-medium-text-transform: none;
   --paragraph-medium-text-decoration: none;
 
+  @media (min-width: 1920px) {
+    --paragraph-medium-font-size: 40px;
+  }
+
   @include lg {
-    --paragraph-medium-font-size: 30px;
+    --paragraph-medium-font-size: clamp(30px, calc(30px + ((40 - 30) * ((100vw - 1440px) / (1920 - 1440)))), 40px);
   }
 
   @include md {
-    --paragraph-medium-font-size: 20px;
+    --paragraph-medium-font-size: clamp(20px, calc(20px + ((30 - 20) * ((100vw - 768px) / (1440 - 768)))), 30px);
+  }
+
+  @include sm {
+    --paragraph-medium-font-size: 20px; 
   }
 
   @include xs {
-    --paragraph-medium-font-size: 15px;
+    --paragraph-medium-font-size: clamp(15px, calc(15px + ((20 - 15) * ((100vw - 320px) / (428 - 320)))), 20px);
   }
+
+  // @include lg {
+  //   --paragraph-medium-font-size: 30px;
+  // }
+
+  // @include md {
+  //   --paragraph-medium-font-size: 20px;
+  // }
+
+  // @include xs {
+  //   --paragraph-medium-font-size: 15px;
+  // }
 
   // paragraph - standard основной текст
 
@@ -256,17 +421,41 @@
   --paragraph-standard-text-transform: none;
   --paragraph-standard-text-decoration: none;
 
+  @media (min-width: 1920px) {
+    --paragraph-standard-font-size: 20px;
+  }
+
   @include lg {
-    --paragraph-standard-font-size: 16px;
+    --paragraph-standard-font-size: clamp(16px, calc(16px + ((20 - 16) * ((100vw - 1440px) / (1920 - 1440)))), 20px);
   }
 
   @include md {
+    --paragraph-standard-font-size: clamp(15px, calc(15px + ((16 - 15) * ((100vw - 768px) / (1440 - 768)))), 16px);
+  }
+
+  @include sm {
     --paragraph-standard-font-size: 15px;
   }
 
   @include xs {
-    --paragraph-standard-font-size: 14px;
+    --paragraph-standard-font-size: clamp(14px, calc(14px + ((15 - 14) * ((100vw - 320px) / (428 - 320)))), 15px);
   }
+
+  // @include lg {
+  //   --paragraph-standard-font-size: 16px;
+  // }
+
+  // @include md {
+  //   --paragraph-standard-font-size: 15px;
+  // }
+
+  // @include sm {
+  //   --paragraph-standard-font-size: 15px;
+  // }
+
+  // @include xs {
+  //   --paragraph-standard-font-size: 14px;
+  // }
 
   // paragraph - small
 
@@ -277,17 +466,38 @@
   --paragraph-small-text-transform: none;
   --paragraph-small-text-decoration: none;
 
-  @include lg {
+  @media (min-width: 1920px) {
     --paragraph-small-font-size: 15px;
   }
 
+  @include lg {
+    --paragraph-small-font-size: clamp(12px, calc(12px + ((15 - 12) * ((100vw - 1440px) / (1920 - 1440)))), 15px);
+  }
+
   @include md {
+    --paragraph-small-font-size: clamp(12px, calc(12px + ((15 - 12) * ((100vw - 768px) / (1440 - 768)))), 15px);
+  }
+
+  @include sm {
     --paragraph-small-font-size: 12px;
   }
 
   @include xs {
-    --paragraph-small-font-size: 10px;
+    --paragraph-small-font-size: clamp(10px, calc(10px + ((12 - 10) * ((100vw - 320px) / (428 - 320)))), 12px);
   }
+  
+
+  // @include lg {
+  //   --paragraph-small-font-size: 15px;
+  // }
+
+  // @include md {
+  //   --paragraph-small-font-size: 12px;
+  // }
+
+  // @include xs {
+  //   --paragraph-small-font-size: 10px;
+  // }
 
   // button - text
 
@@ -297,17 +507,38 @@
   --button-text-font-style: normal;
   --button-text-text-decoration: none;
 
+  @media (min-width: 1920px) {
+    --button-text-font-size: 32px;
+  }
+
   @include lg {
-    --button-text-font-size: 24px;
+    --button-text-font-size: clamp(24px, calc(24px + ((32 - 24) * ((100vw - 1440px) / (1920 - 1440)))), 32px);
   }
 
   @include md {
+    --button-text-font-size: clamp(18px, calc(18px + ((24 - 18) * ((100vw - 768px) / (1440 - 768)))), 24px);
+  }
+
+  @include sm {
     --button-text-font-size: 18px;
   }
 
   @include xs {
-    --button-text-font-size: 15px;
+    --button-text-font-size: clamp(15px, calc(15px + ((18 - 15) * ((100vw - 320px) / (428 - 320)))), 18px);
   }
+
+
+  // @include lg {
+  //   --button-text-font-size: 24px;
+  // }
+
+  // @include md {
+  //   --button-text-font-size: 18px;
+  // }
+
+  // @include xs {
+  //   --button-text-font-size: 15px;
+  // }
 
   // footnote - standard
 
@@ -339,17 +570,37 @@
   --error-text-text-transform: none;
   --error-text-text-decoration: none;
 
+  @media (min-width: 1920px) {
+    --error-text-font-size: 16px;
+  }
+
   @include lg {
-    --error-text-font-size: 15px;
+    --error-text-font-size: clamp(15px, calc(15px + ((16 - 15) * ((100vw - 1440px) / (1920 - 1440)))), 16px);
   }
 
   @include md {
-    --error-text-font-size: 13px;
+    --error-text-font-size: clamp(13px, calc(13px + ((15 - 13) * ((100vw - 768px) / (1440 - 768)))), 15px);
   }
 
+  @include sm {
+    --error-text-font-size: 13px;
+}
+
   @include xs {
-    --error-text-font-size: 12px;
+    --error-text-font-size: clamp(12px, calc(12px + ((13 - 12) * ((100vw - 320px) / (428 - 320)))), 13px);
   }
+
+  // @include lg {
+  //   --error-text-font-size: 15px;
+  // }
+
+  // @include md {
+  //   --error-text-font-size: 13px;
+  // }
+
+  // @include xs {
+  //   --error-text-font-size: 12px;
+  // }
 
   // span - text
 
@@ -362,29 +613,59 @@
   --span-text-text-transform: none;
   --span-text-text-decoration: none;
 
+  @media (min-width: 1920px) {
+    --span-text-font-size-ru: 35px;
+    --span-text-font-size-en: 40px;
+    --span-text-font-size-fr: 42px;
+  }
+
   @include lg {
-    --span-text-font-size-ru: 26px;
-    --span-text-font-size-en: 30px;
-    --span-text-font-size-fr: 31px;
+    --span-text-font-size-ru: clamp(26px, calc(26px + ((35 - 26) * ((100vw - 1440px) / (1920 - 1440)))), 35px);
+    --span-text-font-size-en: clamp(30px, calc(30px + ((40 - 30) * ((100vw - 1440px) / (1920 - 1440)))), 40px);
+    --span-text-font-size-fr: clamp(31px, calc(31px + ((42 - 31) * ((100vw - 1440px) / (1920 - 1440)))), 42px);
   }
 
   @include md {
-    --span-text-font-size-ru: 16px;
-    --span-text-font-size-en: 16px;
-    --span-text-font-size-fr: 16px;
+    --span-text-font-size-ru: clamp(16px, calc(16px + ((26 - 16) * ((100vw - 768px) / (1440 - 768)))), 26px);
+    --span-text-font-size-en: clamp(16px, calc(16px + ((30 - 16) * ((100vw - 768px) / (1440 - 768)))), 30px);
+    --span-text-font-size-fr: clamp(16px, calc(16px + ((31 - 16) * ((100vw - 768px) / (1440 - 768)))), 31px);
   }
 
   @include sm {
-    --span-text-font-size-ru: 17px;
-    --span-text-font-size-en: 20px;
-    --span-text-font-size-fr: 22px;
+    --span-text-font-size-ru: clamp(17px, calc(17px + ((17 - 17) * ((100vw - 428px) / (768 - 428)))), 17px);
+    --span-text-font-size-en: clamp(20px, calc(20px + ((20 - 20) * ((100vw - 428px) / (768 - 428)))), 20px);
+    --span-text-font-size-fr: clamp(22px, calc(22px + ((22 - 22) * ((100vw - 428px) / (768 - 428)))), 22px);
   }
 
   @include xs {
-    --span-text-font-size-ru: 14px;
-    --span-text-font-size-en: 14px;
-    --span-text-font-size-fr: 15px;
+    --span-text-font-size-ru: clamp(14px, calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))), 16px);
+    --span-text-font-size-en: clamp(14px, calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))), 16px);
+    --span-text-font-size-fr: clamp(15px, calc(15px + ((16 - 15) * ((100vw - 320px) / (428 - 320)))), 16px);
   }
+
+  // @include lg {
+  //   --span-text-font-size-ru: 26px;
+  //   --span-text-font-size-en: 30px;
+  //   --span-text-font-size-fr: 31px;
+  // }
+
+  // @include md {
+  //   --span-text-font-size-ru: 16px;
+  //   --span-text-font-size-en: 16px;
+  //   --span-text-font-size-fr: 16px;
+  // }
+
+  // @include sm {
+  //   --span-text-font-size-ru: 17px;
+  //   --span-text-font-size-en: 20px;
+  //   --span-text-font-size-fr: 22px;
+  // }
+
+  // @include xs {
+  //   --span-text-font-size-ru: 14px;
+  //   --span-text-font-size-en: 14px;
+  //   --span-text-font-size-fr: 15px;
+  // }
 
   // swiper-navigation-size
 

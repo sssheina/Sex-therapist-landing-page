@@ -50,23 +50,55 @@
   }
 
   &__logo {
-    max-width: 92px;
-    max-height: 105px;
+    max-width: clamp(55px, 5vw + 5px, 92px); 
+    max-height: clamp(61px, 5vw + 5px, 105px);
+    // max-width: 92px;
+    // max-height: 105px;
 
     @include lg {
       // max-width: 48px;
       // max-height: 55px;
     }
 
+    @include md {
+      // max-width: 48px;
+      // max-height: 55px;
+    }
+
+    @include sm {
+      // max-width: 48px;
+      // max-height: 55px;
+    }
+
     @include xs {
       // max-width: 36px;
-      // max-height: 42px;
+      // max-height: 41px;
     }
   }
 
   &__logo-text {
     font-weight: 500;
-    max-width: 240px;
+    max-width: 260px;
+
+    @include lg {
+      // max-width: 48px;
+      // max-height: 55px;
+    }
+
+    @include md {
+      // max-width: 48px;
+      // max-height: 55px;
+    }
+
+    @include sm {
+      // max-width: 48px;
+      // max-height: 55px;
+    }
+
+    @include xs {
+      // max-width: 36px;
+      // max-height: 41px;
+    }
   }
 
   &__subscribe {

@@ -75,6 +75,26 @@
     .price-card__title {
       color: $color-white;
       margin-bottom: 45px;
+
+      @media (min-width: 1920px) {
+        margin-bottom: 45px;
+      }
+    
+      @include lg {
+        margin-bottom: clamp(35px, calc(35px + ((45 - 35) * ((100vw - 1440px) / (1920 - 1440)))), 45px);
+      }
+    
+      @include md {
+        margin-bottom: clamp(25px, calc(25px + ((35 - 25) * ((100vw - 768px) / (1440 - 768)))), 35px);
+      }
+    
+      @include sm {
+        margin-bottom: clamp(10px, calc(10px + ((25 - 10) * ((100vw - 428px) / (768 - 428)))), 25px);
+      }
+    
+      @include xs {
+        margin-bottom: clamp(5px, calc(5px + ((10 - 5) * ((100vw - 320px) / (428 - 320)))), 10px);
+      }
     }
 
     .price-card__duration {
@@ -95,6 +115,31 @@
     &:hover {
       background: $color-blue-lightest;
     }
+
+    .price-card__title {
+      margin-bottom: 45px;
+
+      @media (min-width: 1920px) {
+        margin-bottom: 45px;
+      }
+    
+      @include lg {
+        margin-bottom: clamp(35px, calc(35px + ((45 - 35) * ((100vw - 1440px) / (1920 - 1440)))), 45px);
+      }
+    
+      @include md {
+        margin-bottom: clamp(25px, calc(25px + ((35 - 25) * ((100vw - 768px) / (1440 - 768)))), 35px);
+      }
+    
+      @include sm {
+        margin-bottom: clamp(10px, calc(10px + ((25 - 10) * ((100vw - 428px) / (768 - 428)))), 25px);
+      }
+    
+      @include xs {
+        margin-bottom: clamp(5px, calc(5px + ((10 - 5) * ((100vw - 320px) / (428 - 320)))), 10px);
+      }
+    }
+
   }
 
   &:nth-child(3) {
