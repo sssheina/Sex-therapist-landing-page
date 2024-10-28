@@ -255,5 +255,9 @@
       background: $color-blue-dark;
       color: $color-white;
     }
+
+    &:focus {
+      background: $color-orange-light;
+    }
   }
 }

@@ -1805,6 +1805,9 @@ input[type=checkbox]:focus + label {
   background: #010e23;
   color: #fefefe;
 }
+.language__option:focus {
+  background: #d69961;
+}
 
 .header-burger {
   position: relative;

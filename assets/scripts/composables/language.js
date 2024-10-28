@@ -6,21 +6,43 @@ language.addEventListener("click", () => {
   languageOptionsList.classList.toggle("active");
 });
 
-languageOptions.forEach((option) => {
-  option.addEventListener("click", () => {
-    if (option.textContent === "RU") {
-      window.location.href = "ru.html";
-    } else if (option.textContent === "FR") {
-      window.location.href = "fr.html";
-    } else window.location.href = "index.html";
-
-    language.textContent = option.textContent;
+document.addEventListener("click", (event) => {
+  if (!language.contains(event.target)) {
     languageOptionsList.classList.remove("active");
+  }
+});
+
+const selectLanguage = (option) => {
+  const langText = option.textContent;
+  if (langText === "RU") {
+    window.location.href = "ru.html";
+  } else if (langText === "FR") {
+    window.location.href = "fr.html";
+  } else {
+    window.location.href = "index.html";
+  }
+
+  language.textContent = langText;
+  languageOptionsList.classList.remove("active");
+};
+
+languageOptions.forEach((option) => {
+  option.addEventListener("click", () => selectLanguage(option));
+  option.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      selectLanguage(option);
+    }
   });
 });
 
-document.addEventListener("click", function (event) {
-  if (event.target !== language && event.target !== languageOptions) {
+language.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    languageOptionsList.classList.toggle("active");
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
     languageOptionsList.classList.remove("active");
   }
 });
