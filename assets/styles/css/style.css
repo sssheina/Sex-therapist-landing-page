@@ -4445,6 +4445,10 @@ input[type=checkbox]:focus + label {
   transform: rotate(45deg);
 }
 
+.faq-box:focus .faq-box__title {
+  color: #ce6a0e;
+}
+
 .questions {
   padding-top: 73px;
   padding-bottom: 145px;

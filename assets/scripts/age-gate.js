@@ -29,6 +29,13 @@ ageCheckbox.addEventListener("change", () => {
   }
 });
 
+ageCheckbox.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    ageCheckbox.checked = !ageCheckbox.checked;
+    ageCheckbox.dispatchEvent(new Event("change"));
+  }
+});
+
 const getAgeAccess = () => {
   if (ageCheckbox.checked) {
     ageModal.style.display = "none";
@@ -51,19 +58,21 @@ const handleStorageChange = (event) => {
 
 window.addEventListener("storage", handleStorageChange);
 
-// Управление фокусом внутри age-gate
-const ageFocusableElements = ageModal.querySelectorAll('button, [href], input');
+const ageFocusableElements = ageModal.querySelectorAll("button, [href], input");
 let firstAgeFocusableElement = ageFocusableElements[0];
-let lastAgeFocusableElement = ageFocusableElements[ageFocusableElements.length - 1];
+let lastAgeFocusableElement =
+  ageFocusableElements[ageFocusableElements.length - 1];
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Tab" && ageModal.style.display === "flex") {
-    if (e.shiftKey) { // Shift + Tab
+    if (e.shiftKey) {
+      // Shift + Tab
       if (document.activeElement === firstAgeFocusableElement) {
         lastAgeFocusableElement.focus();
         e.preventDefault();
       }
-    } else { // Tab
+    } else {
+      // Tab
       if (document.activeElement === lastAgeFocusableElement) {
         firstAgeFocusableElement.focus();
         e.preventDefault();
