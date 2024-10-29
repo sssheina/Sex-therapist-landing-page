@@ -45,26 +45,6 @@
     max-width: clamp(212px, calc(212px + ((278 - 212) * ((100vw - 320px) / (428 - 320)))), 278px);
     height: clamp(53px, calc(53px + ((70 - 53) * ((100vw - 320px) / (428 - 320)))), 70px);
     }
-
-  // @include lg {
-  //   max-width: 295px;
-  //   height: 70px;
-  // }
-
-  // @include md {
-  //   max-width: 213px;
-  //   height: 50px;
-  // }
-
-  // @include sm {
-  //   max-width: 278px;
-  //   height: 70px;
-  // }
-
-  // @include xs {
-  //   max-width: 212px;
-  //   height: 53px;
-  // }
 }
 
 .button-main {

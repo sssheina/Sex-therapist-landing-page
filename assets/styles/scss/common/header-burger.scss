@@ -16,11 +16,6 @@
     }
 } 
 
-  // &:focus-visible {
-    // outline: 2px solid $color-orange-light; /* Обводка только при использовании клавиатуры */
-    // outline-offset: 3px; /* Отступ от обводки */
-  // }
-
   &.no-focus:focus {
    outline: none; /* Убираем обводку при клике */
   }

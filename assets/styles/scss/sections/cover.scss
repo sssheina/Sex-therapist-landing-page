@@ -11,7 +11,6 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  // padding-top: $header-height;
   padding-bottom: 75px;
 
   @include lg {
@@ -174,7 +173,6 @@
 
 [lang="en"] .cover {
   &__content {
-    // grid-template-columns: auto 16% 1fr 5% auto;
     gap: 12px 35px;
     grid-template-areas:
       "subtitle-top subtitle-top subtitle-top subtitle-top subtitle-top"
@@ -241,7 +239,6 @@
 
 [lang="fr"] .cover {
   &__content {
-    // grid-template-columns: auto auto 1fr 7% auto;
     grid-template-columns: 1fr auto auto auto auto;
     gap: 12px 35px;
     grid-template-areas:
@@ -251,13 +248,11 @@
       "subtitle-bottom subtitle-bottom subtitle-bottom subtitle-bottom subtitle-bottom";
 
     @include md {
-      // grid-template-columns: auto 15% 1fr 10% auto;
       gap: 12px 25px;
     }
 
     @include sm {
       grid-template-columns: 1fr auto 1fr;
-      // grid-template-columns: auto 1fr auto;
       grid-template-areas:
         "subtitle-top subtitle-top subtitle-top"
         "title-top title-top title-top"

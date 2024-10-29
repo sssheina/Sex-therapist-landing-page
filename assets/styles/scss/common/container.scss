@@ -23,20 +23,4 @@
   @include xs {
     padding: 0 clamp(20px, calc(20px + ((30 - 20) * ((100vw - 320px) / (428 - 320)))), 30px);
   }
-
-  // @include lg {
-  //   padding: 0 100px;
-  // }
-
-  // @include md {
-  //   padding: 0 50px;
-  // }
-
-  // @include sm {
-  //   padding: 0 30px;
-  // }
-
-  // @include xs {
-  //   padding: 0 20px;
-  // }
 }

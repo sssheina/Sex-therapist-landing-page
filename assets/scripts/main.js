@@ -49,68 +49,6 @@ function toggleMenu() {
   }
 }
 
-
-
-
-
-// const burger = document.querySelector(".header-burger");
-// const overlay = document.querySelector(".header__overlay");
-// const headerMenuLinks = document.querySelectorAll(".header__menu-link");
-// let activeLink = null;
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   burger.setAttribute("tabindex", "0");
-//   burger.addEventListener("keydown", function (e) {
-//     if (e.key === "Enter" || e.key === " ") {
-//       e.preventDefault();
-//       showHeaderMenu();
-//     }
-//   });
-//   burger.addEventListener("click", showHeaderMenu);
-//   overlay.addEventListener("click", showHeaderMenu);
-// });
-
-// const showHeaderMenu = () => {
-//   burger.classList.toggle("active");
-//   overlay.classList.toggle("show");
-
-//   const nav = document.querySelector(".header__nav");
-
-//   nav.classList.toggle("show");
-//   document.body.classList.toggle("lock");
-
-//   if (!nav.classList.contains("show") && activeLink) {
-//     activeLink.classList.remove("active");
-//     activeLink = null;
-//   }
-// };
-
-// headerMenuLinks.forEach((link) => {
-//   link.addEventListener("click", function (e) {
-//     e.preventDefault();
-
-//     headerMenuLinks.forEach((otherLink) =>
-//       otherLink.classList.remove("active")
-//     );
-
-//     showHeaderMenu();
-
-//     link.classList.add("active");
-//     activeLink = link;
-
-//     const targetId = this.getAttribute("href");
-//     const targetElement = document.querySelector(targetId);
-//     const headerHeight = document.querySelector(".header").offsetHeight;
-//     const targetPosition =
-//       targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
-
-//     window.scrollTo({
-//       top: targetPosition,
-//       behavior: "smooth",
-//     });
-//   });
-// });
-
 // ----- FEEDBACK -----
 
 const swiper = new Swiper(".swiper", {
@@ -184,10 +122,3 @@ btnUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
-
-// ----- REGISTRATION -----
-
-// Calendly.initInlineWidget({
-//   url: "https://calendly.com/katerina-tartary/discovery-session",
-//   parentElement: document.getElementById("calendly-embed"),
-// });
