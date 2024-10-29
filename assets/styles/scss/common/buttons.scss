@@ -101,6 +101,12 @@
   &:active {
     background: $color-orange-dark;
   }
+
+  &:focus {
+    background: $color-orange-apricot;
+    border: 1px solid $color-orange-dark;
+    color: $color-orange-dark;
+  }   
 }
 
 .button__outline {

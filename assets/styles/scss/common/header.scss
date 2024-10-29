@@ -24,9 +24,9 @@
   &__logo {
     max-height: fit-content;
 
-    img {
-      @include lg {
-        max-width: 64px;
+    &:focus {
+      .icon-logo {
+        stroke: $color-orange-light;
       }
     }
   }
@@ -95,11 +95,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     max-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
-
     gap: 30px;
 
     @include md {
@@ -133,6 +131,10 @@
     &.active {
       color: $color-orange-light;
     }
+
+    &:focus {
+      background: $color-focus;
+  }
   }
 
   &__end {
@@ -170,6 +172,9 @@
     &:active {
       color: $color-orange-light;
     }
+    &:focus {
+      color: $color-orange-light;
+    }
   }
 
   &__overlay {
@@ -193,12 +198,22 @@
     background: $color-white;
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05);
 
+    .header__logo {
+      &:focus .icon-logo {
+        stroke: $color-orange-light;
+      }}
+
     .icon-logo {
       stroke: $color-blue-dark;
-    }
+          }
+
 
     .header__link {
       color: $color-blue-dark;
+
+      &:focus {
+        color: $color-orange-light;
+      }
     }
 
     .header__burger {
@@ -209,15 +224,31 @@
       }
     }
 
+    .header__burger:focus {
+      &::before,
+      &::after,
+      span {
+        background: $color-orange-light; // Или другой цвет, который вы хотите
+      }
+    }
+
     .language__language {
       color: $color-blue-dark;
+
+      &:focus {
+        background: $color-focus;
+      }
     }
   }
 }
 
 .language {
-  min-width: 32px;
+  min-width: 36px;
   position: relative;
+
+  @include lg {
+    min-width: 32px;
+  }
 
   &__options {
     position: absolute;
@@ -233,13 +264,20 @@
       opacity: 1;
       z-index: 1;
     }
+
+    &:focus {
+      background: $color-focus;
+    }
   }
 
   &__language {
-    font-size: 18px;
     text-align: center;
     color: $color-white;
     cursor: pointer;
+
+    &:focus {
+      background: $color-focus;
+    }
   }
 
   &__option {
@@ -257,7 +295,7 @@
     }
 
     &:focus {
-      background: $color-orange-light;
+      background: $color-focus;
     }
   }
 }

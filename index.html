@@ -26,7 +26,7 @@
 
 <body>
   <!-- AGE GATE -->
-  <div class="age-gate" id="ageGateModal">
+  <div class="age-gate" id="ageGateModal" tabindex="0">
     <div class="age-gate__content">
       <img src="./assets/images/age-gate.png" alt="Абстрактные волнистые линии" class="age-gate__image">
 
@@ -41,29 +41,29 @@
           </p>
         </div>
         <div class="age-gate__age">
-          <input type="checkbox" id="age">
+          <input type="checkbox" id="age" tabindex="1">
           <label for="age" class="paragraph-xsmall">I confirm that I am over 18&nbsp;years&nbsp;old</label>
         </div>
 
-        <button class="age-gate__button button__secondary button-text">Confirm</button>
+        <button class="age-gate__button button__secondary button-text" tabindex="2">Confirm</button>
       </div>
     </div>
   </div>
 
   <!-- Cookie Notification -->
-  <div id="cookieConsent" class="cookie hidden">
+  <div id="cookieConsent" class="cookie hidden" tabindex="0">
     <div class="cookie__content container">
       <div class="cookie__text-block">
         <h4 class="cookie__title h4-title">cookies</h4>
         <p class="cookie__text paragraph-standard">We use analytical cookies to enhance your experience on the site.
           Details about data processing can be found in the
-          <a href="#" class="cookie__link link policy__link">Privacy Policy
+          <a href="#" class="cookie__link link policy__link"  tabindex="3">Privacy Policy
           </a>
         </p>
       </div>
       <div class="cookie__button-block">
-        <button class="cookie__button button__secondary button-text" id="acceptCookies">Accept</button>
-        <button class="cookie__button button__outline-blue button-text" id="declineCookies">Decline</button>
+        <button class="cookie__button button__secondary button-text" id="acceptCookies"  tabindex="4">Accept</button>
+        <button class="cookie__button button__outline-blue button-text" id="declineCookies"  tabindex="5">Decline</button>
       </div>
     </div>
   </div>
@@ -80,7 +80,7 @@
   <!-- HEADER -->
   <header class="header">
     <div class="header__container container">
-      <a class="header__logo" href="index.html" itemprop="url">
+      <a class="header__logo" href="index.html" itemprop="url" tabindex="6">
         <svg class="icon-logo">
           <use xlink:href="/assets/images/figures/sprite.svg#logo"></use>
         </svg>
@@ -137,15 +137,15 @@
           </a>
 
           <div class="language">
-            <p class="language__language paragraph-standard" role="button" tabindex="0">EN</p>
+            <p class="language__language paragraph-standard" role="button"  tabindex="7">EN</p>
             <ul class="language__options" role="menu" tabindex="-1">
-              <li class="language__option paragraph-standard" role="menuitem" tabindex="0">RU</li>
-              <li class="language__option paragraph-standard" role="menuitem" tabindex="0">FR</li>
+              <li class="language__option paragraph-standard" role="menuitem" tabindex="8">RU</li>
+              <li class="language__option paragraph-standard" role="menuitem" tabindex="9">FR</li>
             </ul>
           </div>
         </div>
 
-        <div class="header-burger header__burger" role="button" tabindex="0">
+        <div class="header-burger header__burger" role="button" tabindex="10" aria-expanded="false" aria-controls="header-menu">
           <span></span>
         </div>
       </div>
@@ -1379,8 +1379,8 @@
                 If you have any questions, just
                 <a href="mailto:kat.tartary@gmail.com" target="_blank" class="faq-box__link link">email</a>
                 me or&nbsp;find me in
-                <a href="https://bit.ly/3zXMRCP" target="_blank" class="faq-box__link" itemprop="url">Telegram </a>/
-                <a href="https://bit.ly/4hcGvjz" target="_blank" class="faq-box__link" itemprop="url"> WhatsApp</a>
+                <a href="https://bit.ly/3zXMRCP" target="_blank" class="faq-box__link link" itemprop="url">Telegram </a>/
+                <a href="https://bit.ly/4hcGvjz" target="_blank" class="faq-box__link link" itemprop="url"> WhatsApp</a>
               </p>
             </div>
           </div>
@@ -1416,7 +1416,7 @@
             <p class="paragraph-standard">
               Send it anonymously. I will selectively answer questions in my
               <a class="questions__link link" target="_blank"
-                href="https://www.instagram.com/inspired.intimacy/">instagram blog</a>.
+                href="https://www.instagram.com/katerina.tartary_therapy/">instagram blog</a>.
             </p>
             <p class="paragraph-standard">
               Finding the answer to your question may be also important for
@@ -1475,8 +1475,8 @@
     <div class="container">
       <div class="footer__content">
         <div class="footer__logo-block">
-          <a class="footer__link" href="index.html">
-            <svg class="footer__logo">
+          <a class="footer__link" href="index.html" tabindex="0">
+            <svg class="footer__logo" aria-hidden="true">
               <use xlink:href="/assets/images/figures/sprite.svg#logo-footer"></use>
             </svg>
           </a>
@@ -1556,7 +1556,7 @@
 
         <p class="footer__copyright paragraph-standard">
           <span class="footer__developed">Created by</span>
-          <a href="https://www.instagram.com/ddc.web.studio/" class="footer__link-studio footer__link"
+          <a href="https://www.instagram.com/ddc.webstudio/" target="_blank" class="footer__link-studio footer__link"
             itemprop="sameAs">
             © <span itemprop="name">DDC Web Studio</span></a>
         </p>

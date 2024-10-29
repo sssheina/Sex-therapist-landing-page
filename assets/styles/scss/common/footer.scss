@@ -29,6 +29,12 @@
     text-decoration: none;
     color: $color-blue-dark;
     transition: $transition;
+
+    &:focus {
+      fill: $color-orange-light;
+      stroke: $color-orange-light;
+      outline: none; // Оранжевый цвет при фокусировке
+    }
   }
 
   &__logo-block {
@@ -52,6 +58,11 @@
   &__logo {
     max-width: clamp(55px, 5vw + 5px, 92px); 
     max-height: clamp(61px, 5vw + 5px, 105px);
+    color: $color-blue-dark;
+
+    &:focus {
+      stroke: $color-orange-light; // Оранжевый цвет при фокусировке на логотипе
+    }
   }
 
   &__logo-text {
@@ -130,6 +141,10 @@
     border-radius: 0;
     padding: 12px 19px;
 
+    &:focus {
+      border: 2px solid $color-orange-light;
+    }
+
     &::placeholder {
       color: $color-gray-dark;
 
@@ -147,6 +162,15 @@
     width: 100%;
     background: $color-blue-dark;
     color: $color-white;
+
+    &:active {
+      background: $color-white;
+      color: $color-blue-dark;
+    }
+    &:focus {
+      background: $color-blue-middle;
+      color: $color-orange-light;  
+    }
   }
 
   &__contacts {

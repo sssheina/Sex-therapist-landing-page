@@ -9,65 +9,107 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// ----- BURGER MENU -----
+// // ----- BURGER MENU -----
 
-const burger = document.querySelector(".header-burger");
+const burger = document.querySelector(".header__burger");
 const overlay = document.querySelector(".header__overlay");
+const nav = document.querySelector(".header__nav");
 const headerMenuLinks = document.querySelectorAll(".header__menu-link");
-let activeLink = null;
 
-document.addEventListener("DOMContentLoaded", function () {
-  burger.setAttribute("tabindex", "0");
-  burger.addEventListener("keydown", function (e) {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      showHeaderMenu();
-    }
-  });
-  burger.addEventListener("click", showHeaderMenu);
-  overlay.addEventListener("click", showHeaderMenu);
+burger.addEventListener("click", toggleMenu);
+burger.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" || e.key === " ") {
+    e.preventDefault();
+    toggleMenu();
+  }
 });
 
-const showHeaderMenu = () => {
+overlay.addEventListener("click", toggleMenu);
+
+headerMenuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    toggleMenu();
+  });
+});
+
+function toggleMenu() {
+  const isExpanded = burger.getAttribute("aria-expanded") === "true";
+  burger.setAttribute("aria-expanded", !isExpanded);
+  
   burger.classList.toggle("active");
   overlay.classList.toggle("show");
-
-  const nav = document.querySelector(".header__nav");
-
   nav.classList.toggle("show");
   document.body.classList.toggle("lock");
 
-  if (!nav.classList.contains("show") && activeLink) {
-    activeLink.classList.remove("active");
-    activeLink = null;
+  // Устанавливаем фокус на бургер-меню или первый элемент меню
+  if (nav.classList.contains("show")) {
+    headerMenuLinks[0].focus(); // Фокус на первом элементе меню
+  } else {
+    burger.focus(); // Возврат фокуса на бургер-меню
   }
-};
+}
 
-headerMenuLinks.forEach((link) => {
-  link.addEventListener("click", function (e) {
-    e.preventDefault();
 
-    headerMenuLinks.forEach((otherLink) =>
-      otherLink.classList.remove("active")
-    );
 
-    showHeaderMenu();
 
-    link.classList.add("active");
-    activeLink = link;
 
-    const targetId = this.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
-    const headerHeight = document.querySelector(".header").offsetHeight;
-    const targetPosition =
-      targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+// const burger = document.querySelector(".header-burger");
+// const overlay = document.querySelector(".header__overlay");
+// const headerMenuLinks = document.querySelectorAll(".header__menu-link");
+// let activeLink = null;
 
-    window.scrollTo({
-      top: targetPosition,
-      behavior: "smooth",
-    });
-  });
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   burger.setAttribute("tabindex", "0");
+//   burger.addEventListener("keydown", function (e) {
+//     if (e.key === "Enter" || e.key === " ") {
+//       e.preventDefault();
+//       showHeaderMenu();
+//     }
+//   });
+//   burger.addEventListener("click", showHeaderMenu);
+//   overlay.addEventListener("click", showHeaderMenu);
+// });
+
+// const showHeaderMenu = () => {
+//   burger.classList.toggle("active");
+//   overlay.classList.toggle("show");
+
+//   const nav = document.querySelector(".header__nav");
+
+//   nav.classList.toggle("show");
+//   document.body.classList.toggle("lock");
+
+//   if (!nav.classList.contains("show") && activeLink) {
+//     activeLink.classList.remove("active");
+//     activeLink = null;
+//   }
+// };
+
+// headerMenuLinks.forEach((link) => {
+//   link.addEventListener("click", function (e) {
+//     e.preventDefault();
+
+//     headerMenuLinks.forEach((otherLink) =>
+//       otherLink.classList.remove("active")
+//     );
+
+//     showHeaderMenu();
+
+//     link.classList.add("active");
+//     activeLink = link;
+
+//     const targetId = this.getAttribute("href");
+//     const targetElement = document.querySelector(targetId);
+//     const headerHeight = document.querySelector(".header").offsetHeight;
+//     const targetPosition =
+//       targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+//     window.scrollTo({
+//       top: targetPosition,
+//       behavior: "smooth",
+//     });
+//   });
+// });
 
 // ----- FEEDBACK -----
 

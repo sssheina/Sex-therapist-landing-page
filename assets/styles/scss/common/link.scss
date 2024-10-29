@@ -6,4 +6,8 @@
   &:hover {
     color: $color-orange-light;
   }
+
+  &:focus {
+    background: rgba(255, 220, 188, 0.5);   // Цвет фона при фокусе
+  }
 }

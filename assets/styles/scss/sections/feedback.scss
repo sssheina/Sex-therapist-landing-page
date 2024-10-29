@@ -134,3 +134,8 @@
     font-size: 35px !important;
   }
 }
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  background: $color-focus;
+}

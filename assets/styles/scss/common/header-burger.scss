@@ -6,9 +6,24 @@
   cursor: pointer;
 
   &:focus {
-    outline: 2px solid var(--color-orange-dark); /* Задайте обводку */
-    outline-offset: 12px; /* Отступ от обводки */
+    outline: none;
+    background: none;
+
+    &::before,
+    &::after,
+    span {
+      background: $color-orange-light; // Или другой цвет, который вы хотите
+    }
 } 
+
+  // &:focus-visible {
+    // outline: 2px solid $color-orange-light; /* Обводка только при использовании клавиатуры */
+    // outline-offset: 3px; /* Отступ от обводки */
+  // }
+
+  &.no-focus:focus {
+   outline: none; /* Убираем обводку при клике */
+  }
 
   &::before,
   &::after,
