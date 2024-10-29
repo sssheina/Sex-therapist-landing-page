@@ -24,9 +24,9 @@
 
 <body>
   <!-- AGE GATE -->
-  <div class="age-gate" id="ageGateModal">
+  <div class="age-gate" id="ageGateModal" tabindex="0">
     <div class="age-gate__content">
-      <img src="./assets/images/age-gate.png" alt="Абстрактные волнистые линии" class="age-gate__image">
+      <img src="./assets/images/age-gate.png" alt="Lignes ondulées abstraites" class="age-gate__image">
 
       <div class="age-gate__info">
         <svg class="age-gate__logo icon-logo">
@@ -39,30 +39,30 @@
           </p>
         </div>
         <div class="age-gate__age">
-          <input type="checkbox" id="age">
-          <label for="age" class="paragraph-standard">Je certifie que j'ai plus de 18 ans</label>
+          <input type="checkbox" id="age" tabindex="1">
+          <label for="age" class="paragraph-xsmall">Je certifie que j'ai plus de 18 ans</label>
         </div>
 
-        <button class="age-gate__button button__secondary button-text">Confirmer</button>
+        <button class="age-gate__button button__secondary button-text" tabindex="2">Confirmer</button>
       </div>
     </div>
   </div>
 
   <!-- Cookie Notification -->
-  <div id="cookieConsent" class="cookie hidden">
+  <div id="cookieConsent" class="cookie hidden" tabindex="0">
     <div class="cookie__content container">
       <div class="cookie__text-block">
         <h4 class="cookie__title h4-title">cookies</h4>
         <p class="cookie__text paragraph-standard">Nous utilisons des cookies analytiques pour améliorer votre
           expérience sur le site.
           Les détails concernant le traitement des données peuvent être trouvés dans la
-          <a href="#" class="cookie__link link policy__link">Politique de confidentialité
+          <a href="#" class="cookie__link link policy__link" tabindex="3">Politique de confidentialité
           </a>
         </p>
       </div>
       <div class="cookie__button-block">
-        <button class="cookie__button button__secondary button-text" id="acceptCookies">Accepter</button>
-        <button class="cookie__button button__outline-blue button-text" id="declineCookies">Refuser</button>
+        <button class="cookie__button button__secondary button-text" id="acceptCookies" tabindex="4">Accepter</button>
+        <button class="cookie__button button__outline-blue button-text" id="declineCookies" tabindex="5">Refuser</button>
       </div>
     </div>
   </div>
@@ -84,6 +84,7 @@
           <use xlink:href="/assets/images/figures/sprite.svg#logo"></use>
         </svg>
       </a>
+
       <nav class="header__nav">
         <ul class="header__menu">
           <li class="header__menu-item">
@@ -102,8 +103,7 @@
             <a href="#methods" class="header__menu-link h5-title">J’utilise ces méthodes</a>
           </li>
           <li class="header__menu-item">
-            <a href="#benefits" class="header__menu-link h5-title">
-              Pourquoi me consulter</a>
+            <a href="#benefits" class="header__menu-link h5-title">Pourquoi me consulter</a>
           </li>
           <li class="header__menu-item">
             <a href="#feedback" class="header__menu-link h5-title">Témoignages</a>
@@ -134,14 +134,14 @@
           </a>
 
           <div class="language">
-            <p class="language__language paragraph-standard" role="button" tabindex="0">FR</p>
+            <p class="language__language paragraph-standard" role="button" tabindex="7">FR</p>
             <ul class="language__options" role="menu" tabindex="-1">
-              <li class="language__option paragraph-standard" role="menuitem" tabindex="0">EN</li>
-              <li class="language__option paragraph-standard" role="menuitem" tabindex="0">RU</li>
+              <li class="language__option paragraph-standard" role="menuitem" tabindex="8">EN</li>
+              <li class="language__option paragraph-standard" role="menuitem" tabindex="9">RU</li>
             </ul>
           </div>
         </div>
-        <div class="header-burger header__burger" role="button" tabindex="0">
+        <div class="header-burger header__burger" role="button" tabindex="10" aria-expanded="false" aria-controls="header-menu">
           <span></span>
         </div>
       </div>
@@ -1374,8 +1374,8 @@
                 Si vous avez des questions, envoyez-moi simplement un&nbsp;<a href="mailto:kat.tartary@gmail.com"
                   target="_blank" class="faq-box__link link">e-mail</a>
                 à&nbsp;ou&nbsp;contactez-moi via
-                <a href="https://bit.ly/3zXMRCP" target="_blank" class="faq-box__link">Telegram</a>&nbsp;/
-                <a href="https://bit.ly/4hcGvjz" target="_blank" class="faq-box__link">WhatsApp</a>
+                <a href="https://t.me/Sartari" target="_blank" class="faq-box__link">Telegram</a>&nbsp;/
+                <a href="https://wa.me/33646811834" target="_blank" class="faq-box__link">WhatsApp</a>
               </p>
             </div>
           </div>
@@ -1475,7 +1475,7 @@
         <div class="footer__logo-block">
           <a class="footer__link" href="fr.html">
             <svg class="footer__logo">
-              <use xlink:href="/assets/images/figures/sprite.svg#logo-footer"></use>
+              <use xlink:href="/assets/images/figures/sprite.svg#logo"></use>
             </svg>
           </a>
           <p class="footer__logo-text paragraph-standard" itemprop="name">
@@ -1557,7 +1557,7 @@
           <span class="footer__developed">Développé par</span>
           <a href="https://www.instagram.com/ddc.webstudio/" target="_blank" class="footer__link-studio footer__link"
             itemprop="sameAs">©
-            <span itemprop="name">DDС Web Studio</span></a>
+            <span itemprop="name">DDC Web Studio</span></a>
         </p>
       </div>
     </div>
