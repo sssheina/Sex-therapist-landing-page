@@ -30,9 +30,9 @@
     transition: $transition;
 
     &:focus {
-     color: $color-orange-light;
-     fill: $color-orange-light;
-     outline: none;
+      color: $color-orange-light;
+      fill: $color-orange-light;
+      outline: none;
     }
   }
 
@@ -87,22 +87,6 @@
     @include xs {
       max-width: clamp(190px, calc(190px + ((205 - 190) * ((100vw - 320px) / (428 - 320)))), 205px);
     }
-
-    // @include lg {
-    //   max-width: 220px;
-    // }
-
-    // @include md {
-    //   max-width: 205px;
-    // }
-
-    // @include sm {
-    //   max-width: 205px;
-    // }
-
-    // @include xs {
-    //   max-width: 190px;
-    // }
   }
 
   &__subscribe {
@@ -292,7 +276,5 @@
 
   &__error-politics {
     padding-left: 1.3em;
-    // position: absolute;
-    // top: 110%;
   }
 }

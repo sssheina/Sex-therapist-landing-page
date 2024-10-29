@@ -101,26 +101,6 @@
     --h1-title-font-size-en-fr: clamp(30px, calc(30px + ((38 - 30) * ((100vw - 320px) / (428 - 320)))), 38px);
   }
 
-  // @include lg {
-  //   --h1-title-font-size: 78px;
-  //   --h1-title-font-size-en-fr: 90px;
-  // }
-
-  // @include md {
-  //   --h1-title-font-size: 41px;
-  //   --h1-title-font-size-en-fr: 48px;
-  // }
-
-  // @include sm {
-  //   --h1-title-font-size: 41px;
-  //   --h1-title-font-size-en-fr: 38px;
-  // }
-
-  // @include xs {
-  //   --h1-title-font-size: 31px;
-  //   --h1-title-font-size-en-fr: 30px;
-  // }
-
   // h2 - title
 
   --h2-title-font-family: var(--raleway-font-family);
@@ -151,18 +131,6 @@
   --h2-title-font-size: clamp(25px, calc(25px + ((34 - 25) * ((100vw - 320px) / (428 - 320)))), 34px);
 }
 
-  // @include lg {
-  //   --h2-title-font-size: 48px;
-  // }
-
-  // @include md {
-  //   --h2-title-font-size: 34px;
-  // }
-
-  // @include xs {
-  //   --h2-title-font-size: 25px;
-  // }
-
   // h3 - title
 
   --h3-title-font-family: var(--raleway-font-family);
@@ -191,18 +159,6 @@
 @include xs {
   --h3-title-font-size: clamp(16px, calc(16px + ((19 - 16) * ((100vw - 320px) / (428 - 320)))), 19px);
 }
-
-  // @include lg {
-  //   --h3-title-font-size: 22px;
-  // }
-
-  // @include md {
-  //   --h3-title-font-size: 19px;
-  // }
-
-  // @include xs {
-  //   --h3-title-font-size: 16px;
-  // }
 
   // h3 - title - main
 
@@ -233,22 +189,6 @@
     --h3-title-main-font-size: clamp(14px, calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))), 16px);
   }
 
-  // @include lg {
-  //   --h3-title-main-font-size: 22px;
-  // }
-
-  // @include md {
-  //   --h3-title-main-font-size: 12px;
-  // }
-
-  // @include sm {
-  //   --h3-title-main-font-size: 16px;
-  // }
-
-  // @include xs {
-  //   --h3-title-main-font-size: 14px;
-  // }
-
   // h4 - title
 
   --h4-title-font-family: var(--raleway-font-family);
@@ -277,18 +217,6 @@
   @include xs {
     --h4-title-font-size: clamp(14px, calc(14px + ((17 - 14) * ((100vw - 320px) / (428 - 320)))), 17px);
   }
-
-  // @include lg {
-  //   --h4-title-font-size: 19px;
-  // }
-
-  // @include md {
-  //   --h4-title-font-size: 17px;
-  // }
-
-  // @include xs {
-  //   --h4-title-font-size: 14px;
-  // }
 
   // h5 - title
 
@@ -319,18 +247,6 @@
     --h5-title-font-size: clamp(12px, calc(12px + ((15 - 12) * ((100vw - 320px) / (428 - 320)))), 15px);
   }
 
-  // @include lg {
-  //   --h5-title-font-size: 16px;
-  // }
-
-  // @include md {
-  //   --h5-title-font-size: 15px;
-  // }
-
-  // @include xs {
-  //   --h5-title-font-size: 12px;
-  // }
-
   // paragraph - large  цена в тарифах
 
   --paragraph-large-font-family: var(--raleway-font-family);
@@ -358,18 +274,6 @@
   @include xs {
     --paragraph-large-font-size: clamp(20px, calc(20px + ((24 - 20) * ((100vw - 320px) / (428 - 320)))), 24px);
   }
-
-  // @include lg {
-  //   --paragraph-large-font-size: 36px;
-  // }
-
-  // @include md {
-  //   --paragraph-large-font-size: 24px;
-  // }
-
-  // @include xs {
-  //   --paragraph-large-font-size: 20px;
-  // }
 
   // paragraph - medium  текст в блоке слова
 
@@ -400,18 +304,6 @@
     --paragraph-medium-font-size: clamp(15px, calc(15px + ((20 - 15) * ((100vw - 320px) / (428 - 320)))), 20px);
   }
 
-  // @include lg {
-  //   --paragraph-medium-font-size: 30px;
-  // }
-
-  // @include md {
-  //   --paragraph-medium-font-size: 20px;
-  // }
-
-  // @include xs {
-  //   --paragraph-medium-font-size: 15px;
-  // }
-
   // paragraph - standard основной текст
 
   --paragraph-standard-font-family: var(--montserrat-font-family);
@@ -441,22 +333,6 @@
     --paragraph-standard-font-size: clamp(14px, calc(14px + ((15 - 14) * ((100vw - 320px) / (428 - 320)))), 15px);
   }
 
-  // @include lg {
-  //   --paragraph-standard-font-size: 16px;
-  // }
-
-  // @include md {
-  //   --paragraph-standard-font-size: 15px;
-  // }
-
-  // @include sm {
-  //   --paragraph-standard-font-size: 15px;
-  // }
-
-  // @include xs {
-  //   --paragraph-standard-font-size: 14px;
-  // }
-
   // paragraph - small
 
   --paragraph-small-font-family: var(--montserrat-font-family);
@@ -485,19 +361,6 @@
   @include xs {
     --paragraph-small-font-size: clamp(10px, calc(10px + ((12 - 10) * ((100vw - 320px) / (428 - 320)))), 12px);
   }
-  
-
-  // @include lg {
-  //   --paragraph-small-font-size: 15px;
-  // }
-
-  // @include md {
-  //   --paragraph-small-font-size: 12px;
-  // }
-
-  // @include xs {
-  //   --paragraph-small-font-size: 10px;
-  // }
 
   // paragraph-xsmall
 
@@ -552,40 +415,6 @@
     --button-text-font-size: clamp(15px, calc(15px + ((18 - 15) * ((100vw - 320px) / (428 - 320)))), 18px);
   }
 
-
-  // @include lg {
-  //   --button-text-font-size: 24px;
-  // }
-
-  // @include md {
-  //   --button-text-font-size: 18px;
-  // }
-
-  // @include xs {
-  //   --button-text-font-size: 15px;
-  // }
-
-  // footnote - standard
-
-  // --footnote-standard-font-size: 18px;
-  // --footnote-standard-font-weight: 400;
-  // --footnote-standard-font-style: italic;
-  // --footnote-standard-line-height: 28px;
-  // --footnote-standard-text-transform: none;
-  // --footnote-standard-text-decoration: none;
-
-  // @include lg {
-  //   --footnote-standard-font-size: 16px;
-  // }
-
-  // @include md {
-  //   --footnote-standard-font-size: 15px;
-  // }
-
-  // @include xs {
-  //   --footnote-standard-font-size: 14px;
-  // }
-
   // error - text
 
   --error-text-font-size: 16px;
@@ -614,18 +443,6 @@
   @include xs {
     --error-text-font-size: clamp(12px, calc(12px + ((13 - 12) * ((100vw - 320px) / (428 - 320)))), 13px);
   }
-
-  // @include lg {
-  //   --error-text-font-size: 15px;
-  // }
-
-  // @include md {
-  //   --error-text-font-size: 13px;
-  // }
-
-  // @include xs {
-  //   --error-text-font-size: 12px;
-  // }
 
   // span - text
 
@@ -668,45 +485,9 @@
     --span-text-font-size-fr: clamp(15px, calc(15px + ((16 - 15) * ((100vw - 320px) / (428 - 320)))), 16px);
   }
 
-  // @include lg {
-  //   --span-text-font-size-ru: 26px;
-  //   --span-text-font-size-en: 30px;
-  //   --span-text-font-size-fr: 31px;
-  // }
-
-  // @include md {
-  //   --span-text-font-size-ru: 16px;
-  //   --span-text-font-size-en: 16px;
-  //   --span-text-font-size-fr: 16px;
-  // }
-
-  // @include sm {
-  //   --span-text-font-size-ru: 17px;
-  //   --span-text-font-size-en: 20px;
-  //   --span-text-font-size-fr: 22px;
-  // }
-
-  // @include xs {
-  //   --span-text-font-size-ru: 14px;
-  //   --span-text-font-size-en: 14px;
-  //   --span-text-font-size-fr: 15px;
-  // }
-
   // swiper-navigation-size
 
   --swiper-navigation-size: 66px;
-
-  // @include lg {
-  //   --swiper-navigation-size: 50px;
-  // }
-
-  // @include md {
-  //   --swiper-navigation-size: 27px;
-  // }
-
-  // @include xs {
-  //   --swiper-navigation-size: 20px;
-  // }
 }
 
 .h1-title {

@@ -4,8 +4,6 @@ export const animateSingleElement = (elementClass) => {
   const element = gsap.from(elementClass, {
     y: 40,
     opacity: 0,
-    // anticipatePin: 1,
-    // fastScrollEnd: 3000,
   });
 
   ScrollTrigger.create({
@@ -31,12 +29,10 @@ export const animateElementsGroup = (elementClass) => {
         start: "top 75%",
         end: "top bottom",
         toggleActions: "play none none reverse",
-        // markers: true,
       },
       y: 30,
       stagger: 0.8,
       opacity: 0.2,
-      // anticipatePin: 1,
     });
   });
 };
