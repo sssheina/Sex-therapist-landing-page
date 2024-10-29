@@ -24,7 +24,7 @@
 
 <body>
   <!-- AGE GATE -->
-  <div class="age-gate" id="ageGateModal">
+  <div class="age-gate" id="ageGateModal" tabindex="0">
     <div class="age-gate__content">
       <img src="./assets/images/age-gate.png" alt="Абстрактные волнистые линии" class="age-gate__image">
 
@@ -40,29 +40,29 @@
           </p>
         </div>
         <div class="age-gate__age">
-          <input type="checkbox" id="age">
-          <label for="age" class="paragraph-standard">Я подтверждаю, что мне больше 18 лет</label>
+          <input type="checkbox" id="age" tabindex="1">
+          <label for="age" class="paragraph-xsmall">Я подтверждаю, что мне больше 18 лет</label>
         </div>
 
-        <button class="age-gate__button button__secondary button-text">Подтвердить</button>
+        <button class="age-gate__button button__secondary button-text" tabindex="2">Подтвердить</button>
       </div>
     </div>
   </div>
 
   <!-- Cookie Notification -->
-  <div id="cookieConsent" class="cookie hidden">
+  <div id="cookieConsent" class="cookie hidden" tabindex="0">
     <div class="cookie__content container">
       <div class="cookie__text-block">
         <h4 class="cookie__title h4-title">cookies</h4>
         <p class="cookie__text paragraph-standard">Мы используем аналитические куки для улучшения вашего опыта на сайте.
-          Подробности о обработке данных можно найти в&nbsp;<a href="#" class="cookie__link link policy__link">Политике
+          Подробности о обработке данных можно найти в&nbsp;<a href="#" class="cookie__link link policy__link" tabindex="3">Политике
             конфиденциальности
           </a>
         </p>
       </div>
       <div class="cookie__button-block">
-        <button class="cookie__button button__secondary button-text" id="acceptCookies">Принять</button>
-        <button class="cookie__button button__outline-blue button-text" id="declineCookies">Отклонить</button>
+        <button class="cookie__button button__secondary button-text" id="acceptCookies" tabindex="4">Принять</button>
+        <button class="cookie__button button__outline-blue button-text" id="declineCookies" tabindex="5">Отклонить</button>
       </div>
     </div>
   </div>
@@ -103,8 +103,7 @@
             <a href="#methods" class="header__menu-link h5-title">Методы работы</a>
           </li>
           <li class="header__menu-item">
-            <a href="#benefits" class="header__menu-link h5-title">
-              Почему выбирают меня</a>
+            <a href="#benefits" class="header__menu-link h5-title">Почему выбирают меня</a>
           </li>
           <li class="header__menu-item">
             <a href="#feedback" class="header__menu-link h5-title">Отзывы</a>
@@ -136,15 +135,15 @@
           </a>
 
           <div class="language">
-            <p class="language__language paragraph-standard" role="button" tabindex="0">RU</p>
+            <p class="language__language paragraph-standard" role="button" tabindex="7">RU</p>
             <ul class="language__options" role="menu" tabindex="-1">
-              <li class="language__option paragraph-standard" role="menuitem" tabindex="0">EN</li>
-              <li class="language__option paragraph-standard" role="menuitem" tabindex="0">FR</li>
+              <li class="language__option paragraph-standard" role="menuitem" tabindex="8">EN</li>
+              <li class="language__option paragraph-standard" role="menuitem" tabindex="9">FR</li>
             </ul>
           </div>
         </div>
 
-        <div class="header-burger header__burger" role="button" tabindex="0">
+        <div class="header-burger header__burger" role="button" tabindex="10" aria-expanded="false" aria-controls="header-menu">
           <span></span>
         </div>
       </div>
@@ -160,9 +159,7 @@
         <div class="cover__content">
           <h1 class="cover__title top h1-title" itemprop="serviceType">Онлайн консультации</h1>
           <h2 class="cover__title bottom h1-title" itemprop="name">Катерины Тартари</h2>
-          <h3 class="cover__subtitle top h3-title-main" itemprop="offers">
-            Начните с бесплатной сессии
-          </h3>
+          <h3 class="cover__subtitle top h3-title-main" itemprop="offers">Начните с бесплатной сессии</h3>
           <h3 class="cover__subtitle bottom h3-title-main">
             Индивидуально, для пар, полиаморных союзов и&nbsp;семей
           </h3>
@@ -978,7 +975,6 @@
     <section class="steps" id="steps" itemscope itemtype="https://schema.org/HowTo">
       <div class="steps__wrapper container">
         <h2 class="steps__title h2-title title">Этапы работы</h2>
-
         <div class="steps__content">
           <div class="steps__img">
             <img src="/assets/images/steps__img.png" alt="Абстрактные волнистые линии">
@@ -1366,9 +1362,9 @@
                 Если у вас остались вопросы, просто напишите мне
                 на&nbsp;<a href="mailto:kat.tartary@gmail.com" target="_blank" class="faq-box__link link">электронную
                   почту</a>
-                или&nbsp;найдите меня в&nbsp;<a href="https://bit.ly/3zXMRCP" target="_blank" class="faq-box__link"
-                  itemprop="url">Telegram </a>/
-                <a href="https://bit.ly/4hcGvjz" target="_blank" class="faq-box__link" itemprop="url">WhatsApp</a>
+                или&nbsp;найдите меня в&nbsp;
+                <a href="https://t.me/Sartari" target="_blank" class="faq-box__link" itemprop="url">Telegram </a>/
+                <a href="https://wa.me/33646811834" target="_blank" class="faq-box__link" itemprop="url">WhatsApp</a>
               </p>
             </div>
           </div>
@@ -1464,7 +1460,7 @@
         <div class="footer__logo-block">
           <a class="footer__link" href="ru.html">
             <svg class="footer__logo">
-              <use xlink:href="/assets/images/figures/sprite.svg#logo-footer"></use>
+              <use xlink:href="/assets/images/figures/sprite.svg#logo"></use>
             </svg>
           </a>
           <p class="footer__logo-text paragraph-standard" itemprop="name">
@@ -1543,7 +1539,7 @@
         <p class="footer__copyright paragraph-standard">
           <span class="footer__developed">Разработано</span>
           <a href="https://www.instagram.com/ddc.web.studio/" target="_blank" class="footer__link-studio footer__link">©
-            <span itemprop="name">DDС Web Studio</span></a>
+            <span itemprop="name">DDC Web Studio</span></a>
         </p>
       </div>
     </div>
