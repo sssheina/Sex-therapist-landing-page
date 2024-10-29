@@ -2183,6 +2183,7 @@ input[type=checkbox]:focus + label {
 }
 .footer__link-studio {
   color: #fefefe;
+  text-decoration: none;
 }
 .footer__link-studio:hover {
   color: #ce6a0e;
