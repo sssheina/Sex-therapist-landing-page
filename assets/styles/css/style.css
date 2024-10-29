@@ -1562,9 +1562,11 @@ input[type=checkbox]:focus + label {
 }
 .header__logo {
   max-height: fit-content;
+  color: #fefefe;
 }
-.header__logo:focus .icon-logo {
-  stroke: #d69961;
+.header__logo:focus {
+  color: #d69961;
+  outline: none;
 }
 .header__nav {
   position: fixed;
@@ -1732,6 +1734,7 @@ input[type=checkbox]:focus + label {
 }
 .header__link:focus {
   color: #d69961;
+  outline: none;
 }
 .header__overlay {
   position: fixed;
@@ -1752,11 +1755,12 @@ input[type=checkbox]:focus + label {
   background: #fefefe;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.05);
 }
-.header.scrolled .header__logo:focus .icon-logo {
-  stroke: #d69961;
+.header.scrolled .header__logo {
+  color: #010e23;
 }
-.header.scrolled .icon-logo {
-  stroke: #010e23;
+.header.scrolled .header__logo:focus {
+  color: #d69961;
+  outline: none;
 }
 .header.scrolled .header__link {
   color: #010e23;
@@ -1951,13 +1955,12 @@ input[type=checkbox]:focus + label {
   }
 }
 .footer__link {
-  text-decoration: none;
   color: #010e23;
   transition: 0.4s ease;
 }
 .footer__link:focus {
+  color: #d69961;
   fill: #d69961;
-  stroke: #d69961;
   outline: none;
 }
 .footer__logo-block {
@@ -2273,7 +2276,7 @@ input[type=checkbox]:focus + label {
   max-width: 53px;
   max-height: 53px;
 }
-.icon-socialfocus {
+.icon-social:focus {
   fill: #d69961;
 }
 @media only screen and (max-width: 1919px) {

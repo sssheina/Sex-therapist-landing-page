@@ -55,8 +55,8 @@
   max-height: 53px;
   // color: $color-blue-dark;
 
-  &focus {
-   fill: $color-orange-light;
+  &:focus {
+    fill: $color-orange-light;
   }
 
   @include lg {

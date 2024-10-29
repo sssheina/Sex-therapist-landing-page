@@ -26,14 +26,13 @@
   }
 
   &__link {
-    text-decoration: none;
     color: $color-blue-dark;
     transition: $transition;
 
     &:focus {
-      fill: $color-orange-light;
-      stroke: $color-orange-light;
-      outline: none; // Оранжевый цвет при фокусировке
+     color: $color-orange-light;
+     fill: $color-orange-light;
+     outline: none;
     }
   }
 
