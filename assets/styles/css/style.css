@@ -4660,6 +4660,7 @@ input[type=checkbox]:focus + label {
   justify-content: center;
   padding: 30px;
   backdrop-filter: blur(23px);
+  -webkit-backdrop-filter: blur(23px);
   z-index: 2000;
 }
 @media only screen and (max-width: 427px) {
@@ -4740,11 +4741,6 @@ input[type=checkbox]:focus + label {
     align-items: flex-start;
   }
 }
-@media only screen and (max-width: 427px) {
-  .age-gate__age {
-    align-items: flex-start;
-  }
-}
 .age-gate__age label,
 .age-gate__age input {
   cursor: pointer;
@@ -4773,6 +4769,7 @@ input[type=checkbox]:focus + label {
   padding: 10% 0;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   z-index: 1000;
   overflow-y: scroll;
 }
@@ -4800,7 +4797,6 @@ input[type=checkbox]:focus + label {
 @media only screen and (max-width: 1439px) {
   .modal {
     padding: 1rem;
-    max-width: 70%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -4812,7 +4808,6 @@ input[type=checkbox]:focus + label {
 @media only screen and (max-width: 427px) {
   .modal {
     padding: 1rem;
-    max-width: 90%;
   }
 }
 .modal__title {
