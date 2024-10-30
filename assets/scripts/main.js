@@ -131,11 +131,10 @@ function checkViewport() {
   if (window.innerWidth <= 1000) {
     video.pause();
     video.style.display = "none";
+  } else {
+    video.style.display = "block";
+    video.play();
   }
-  // else {
-  //   video.style.display = "block";
-  //   video.play();
-  // }
 }
 
 window.addEventListener("resize", checkViewport);

@@ -136,6 +136,7 @@
 
     @include r(1000) {
       display: none;
+      // visibility: hidden;
     }
   }
 }
