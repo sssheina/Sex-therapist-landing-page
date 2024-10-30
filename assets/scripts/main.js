@@ -35,7 +35,7 @@ headerMenuLinks.forEach((link) => {
 function toggleMenu() {
   const isExpanded = burger.getAttribute("aria-expanded") === "true";
   burger.setAttribute("aria-expanded", !isExpanded);
-  
+
   burger.classList.toggle("active");
   overlay.classList.toggle("show");
   nav.classList.toggle("show");
@@ -122,3 +122,21 @@ btnUp.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// ----- VIDEO (IOS adaptation) -----
+
+const video = document.querySelector(".cover__video");
+
+function checkViewport() {
+  if (window.innerWidth <= 1000) {
+    video.pause();
+    video.style.display = "none";
+  }
+  // else {
+  //   video.style.display = "block";
+  //   video.play();
+  // }
+}
+
+window.addEventListener("resize", checkViewport);
+document.addEventListener("DOMContentLoaded", checkViewport);
