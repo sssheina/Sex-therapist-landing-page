@@ -155,12 +155,13 @@
   &:hover {
     border: 2px solid $color-blue-middle;
     background: $color-blue-middle;
+    color: $color-white;
   }
 
   &:active {
     border: 2px solid $color-blue-dark;
-  background: $color-blue-dark;
-  color: $color-white;
+    background: $color-blue-dark;
+    color: $color-white;
   }
 
   &:focus {

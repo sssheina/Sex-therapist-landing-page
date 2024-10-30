@@ -2479,6 +2479,7 @@ input[type=checkbox]:focus + label {
 .button__outline-blue:hover {
   border: 2px solid #35445b;
   background: #35445b;
+  color: #fefefe;
 }
 .button__outline-blue:active {
   border: 2px solid #010e23;
