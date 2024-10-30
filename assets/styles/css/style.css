@@ -2759,7 +2759,6 @@ input[type=checkbox]:focus + label {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 }
 @media only screen and (max-width: 767px) {
