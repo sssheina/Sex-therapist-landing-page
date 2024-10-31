@@ -1797,12 +1797,22 @@ input[type=checkbox]:focus + label {
 }
 
 .language {
-  min-width: 36px;
+  min-width: 44px;
   position: relative;
 }
 @media only screen and (max-width: 1919px) {
   .language {
+    min-width: 35px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .language {
     min-width: 32px;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .language {
+    min-width: 28px;
   }
 }
 .language__options {
@@ -1834,13 +1844,25 @@ input[type=checkbox]:focus + label {
   background: rgba(255, 220, 188, 0.5019607843);
 }
 .language__option {
-  margin-top: 1px;
-  padding: 1px 3px;
+  margin-top: 3px;
+  padding: 3px 3px;
   text-align: center;
   background: rgba(254, 254, 254, 0.8);
   color: #010e23;
   transition: 0.4s ease;
   cursor: pointer;
+}
+@media only screen and (max-width: 1439px) {
+  .language__option {
+    padding: 5px 4px;
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 427px) {
+  .language__option {
+    padding: 4px 3px;
+    margin-top: 4px;
+  }
 }
 .language__option:hover {
   background: #010e23;

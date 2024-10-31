@@ -259,11 +259,19 @@
 }
 
 .language {
-  min-width: 36px;
+  min-width: 44px;
   position: relative;
 
   @include lg {
+    min-width: 35px;
+  }
+
+  @include md {
     min-width: 32px;
+  }
+
+  @include xs {
+    min-width: 28px;
   }
 
   &__options {
@@ -301,13 +309,23 @@
   }
 
   &__option {
-    margin-top: 1px;
-    padding: 1px 3px;
+    margin-top: 3px;
+    padding: 3px 3px;
     text-align: center;
     background: rgba(254, 254, 254, 0.8);
     color: $color-blue-dark;
     transition: $transition;
     cursor: pointer;
+
+    @include md {
+      padding: 5px 4px;
+      margin-top: 5px;
+    }
+
+    @include xs {
+      padding: 4px 3px;
+      margin-top: 4px;
+    }
 
     &:hover {
       background: $color-blue-dark;
