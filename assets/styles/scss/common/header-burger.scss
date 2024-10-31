@@ -5,6 +5,14 @@
   z-index: 10;
   cursor: pointer;
 
+  &:hover {
+    &::before,
+    &::after,
+    span {
+      background: $color-blue;
+    }
+  }
+
   &:focus {
     outline: none;
     background: none;

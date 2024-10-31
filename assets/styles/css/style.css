@@ -1727,7 +1727,7 @@ input[type=checkbox]:focus + label {
   transition: 0.4s ease;
 }
 .header__link:hover {
-  color: #c8c7c7;
+  color: #c1cdde;
 }
 .header__link:active {
   color: #d69961;
@@ -1772,6 +1772,13 @@ input[type=checkbox]:focus + label {
 .header.scrolled .header__burger span {
   background: #010e23;
 }
+.header.scrolled .header__burger:hover {
+  outline: none;
+}
+.header.scrolled .header__burger:hover::before, .header.scrolled .header__burger:hover::after,
+.header.scrolled .header__burger:hover span {
+  background: #c1cdde;
+}
 .header.scrolled .header__burger:focus::before, .header.scrolled .header__burger:focus::after,
 .header.scrolled .header__burger:focus span {
   background: #d69961;
@@ -1779,8 +1786,14 @@ input[type=checkbox]:focus + label {
 .header.scrolled .language__language {
   color: #010e23;
 }
+.header.scrolled .language__language:hover {
+  color: #c1cdde;
+}
 .header.scrolled .language__language:focus {
-  background: rgba(255, 220, 188, 0.5019607843);
+  color: #ce6a0e;
+}
+.header.scrolled .header__icon:hover {
+  color: #c1cdde;
 }
 
 .language {
@@ -1814,6 +1827,9 @@ input[type=checkbox]:focus + label {
   color: #fefefe;
   cursor: pointer;
 }
+.language__language:hover {
+  color: #c1cdde;
+}
 .language__language:focus {
   background: rgba(255, 220, 188, 0.5019607843);
 }
@@ -1840,6 +1856,10 @@ input[type=checkbox]:focus + label {
   height: 28px;
   z-index: 10;
   cursor: pointer;
+}
+.header-burger:hover::before, .header-burger:hover::after,
+.header-burger:hover span {
+  background: #c1cdde;
 }
 .header-burger:focus {
   outline: none;
@@ -1958,6 +1978,10 @@ input[type=checkbox]:focus + label {
   color: #010e23;
   transition: 0.4s ease;
 }
+.footer__link:hover {
+  color: #c1cdde;
+  fill: #c1cdde;
+}
 .footer__link:focus {
   color: #d69961;
   fill: #d69961;
@@ -2073,6 +2097,9 @@ input[type=checkbox]:focus + label {
   background: #010e23;
   color: #fefefe;
 }
+.footer__button:hover {
+  background: #35445b;
+}
 .footer__button:active {
   background: #fefefe;
   color: #010e23;
@@ -2186,7 +2213,7 @@ input[type=checkbox]:focus + label {
   text-decoration: none;
 }
 .footer__link-studio:hover {
-  color: #ce6a0e;
+  color: #d69961;
 }
 .footer__politics {
   display: flex;
@@ -2478,8 +2505,8 @@ input[type=checkbox]:focus + label {
 }
 .button__outline-blue:hover {
   border: 2px solid #35445b;
-  background: #35445b;
-  color: #fefefe;
+  background: #c1cdde;
+  color: #35445b;
 }
 .button__outline-blue:active {
   border: 2px solid #010e23;

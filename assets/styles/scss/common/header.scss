@@ -42,7 +42,6 @@
     background-position: 85% bottom;
     background-repeat: no-repeat;
     z-index: 10;
-
     box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 1);
     overflow-y: auto;
     overflow-x: hidden; // предотвращение горизонтальной прокрутки
@@ -164,7 +163,7 @@
     transition: $transition;
 
     &:hover {
-      color: $color-gray-middle;
+      color: $color-blue;
     }
     &:active {
       color: $color-orange-light;
@@ -205,8 +204,6 @@
       }
     }
 
-
-
     .header__link {
       color: $color-blue-dark;
 
@@ -221,22 +218,42 @@
       span {
         background: $color-blue-dark;
       }
+
+      &:hover {
+        outline: none;
+    
+        &::before,
+        &::after,
+        span {
+          background: $color-blue;
+        }
+    } 
     }
 
     .header__burger:focus {
       &::before,
       &::after,
       span {
-        background: $color-orange-light; // Или другой цвет, который вы хотите
+        background: $color-orange-light;
       }
     }
 
     .language__language {
       color: $color-blue-dark;
 
-      &:focus {
-        background: $color-focus;
+      &:hover {
+          color: $color-blue;
       }
+
+      &:focus {
+        color: $color-orange;
+      }
+    }
+
+    .header__icon {
+      &:hover {
+        color: $color-blue;
+    }
     }
   }
 }
@@ -273,6 +290,10 @@
     text-align: center;
     color: $color-white;
     cursor: pointer;
+
+    &:hover {
+      color: $color-blue;
+    }
 
     &:focus {
       background: $color-focus;
