@@ -29,6 +29,11 @@
     color: $color-blue-dark;
     transition: $transition;
 
+    &:hover {
+      color: $color-blue;
+      fill: $color-blue;
+    }
+
     &:focus {
       color: $color-orange-light;
       fill: $color-orange-light;
@@ -146,6 +151,10 @@
     background: $color-blue-dark;
     color: $color-white;
 
+    &:hover {
+      background: $color-blue-middle;
+    }
+
     &:active {
       background: $color-white;
       color: $color-blue-dark;
@@ -258,7 +267,7 @@
     text-decoration: none;
 
     &:hover {
-      color: $color-orange;
+      color: $color-orange-light;
     }
   }
   &__politics {
