@@ -2245,10 +2245,8 @@ input[type=checkbox]:focus + label {
 }
 
 .icon-logo {
-  max-width: 35px;
-  max-height: 40px;
-  stroke: #fefefe;
-  stroke-width: 2px;
+  max-width: 30px;
+  max-height: 30px;
 }
 
 .icon-cross {
@@ -2295,8 +2293,7 @@ input[type=checkbox]:focus + label {
 }
 
 .icon-whatsapp {
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 35px;
   fill: #fefefe;
 }
 

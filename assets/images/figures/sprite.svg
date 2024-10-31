@@ -1,10 +1,18 @@
 <svg width="0" height="0" class="hidden">
   <!-- logo -->
-  <symbol version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 65 75">
+
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 65 75" id="logo">
+    <path d="m42.57,56.81c-4.12,7.63-15.02,7.63-19.14,0-.03-.05-.06-.1-.09-.16l-10-19.23L3.26,18.03C-.54,10.72,4.74,2,12.92,2h40.16c8.18,0,13.46,8.73,9.66,16.03l-10.08,19.39-10,19.23c-.03.06-.06.11-.09.16Zm20.17,0l-10.08-19.39-3.28-6.3-6.72-12.93c-4.08-7.84-15.24-7.84-19.32,0l-10,19.23L3.26,56.81c-3.8,7.31,1.48,16.03,9.66,16.03h40.16c8.18,0,13.46-8.73,9.66-16.03Z" stroke="currentColor"  stroke-width="4"></path>
+  </symbol>
+
+
+
+
+  <symbol version="1.1" id="footer_logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve" viewBox="0 0 65 75">
     <path d="M62.2,18.1L62.2,18.1c3.8-7.3-1.5-16-9.7-16H12.4c-8.2,0-13.5,8.7-9.7,16c0,0,0,0,0,0l20.1,38.6
 	c4.1,7.8,15.2,7.8,19.3,0L62.2,18.1z M2.8,56.9l10.1-19.4l10-19.2c2-3.9,5.9-5.9,9.7-5.9s7.6,2,9.7,5.9l10,19.2l10.1,19.4
 	 M62.2,56.9c3.8,7.3-1.5,16-9.7,16H12.4c-8.2,0-13.5-8.7-9.7-16" stroke="currentColor" 
-    stroke-width="2" 
+    stroke-width="2.5" 
     fill="none"></path>
   </symbol>
 
