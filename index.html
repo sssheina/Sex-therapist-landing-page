@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="/assets/images/figures/logo.png" type="image/svg">
   <link rel="stylesheet" href="/assets/styles/css/style.css">
+  <link rel="stylesheet" href="styles.css?v=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
   <title>Sex therapy and psychotherapy with Katerina Tartari</title>
@@ -15,13 +16,43 @@
     content="Professional online counseling services for sex therapy and psychotherapy with Katerina Tartari">
 
   <!-- Основная (каноническая) версия страницы на английском языке -->
-  <link rel="canonical" href="https://example.com/">
+  <link rel="canonical" href="https://katerina-tartary.com/">
 
   <!-- Альтернативные языковые версии -->
-  <link rel="alternate" hreflang="en" href="https://example.com/">
-  <link rel="alternate" hreflang="ru" href="https://example.com/ru">
-  <link rel="alternate" hreflang="fr" href="https://example.com/fr">
-  <link rel="alternate" hreflang="x-default" href="https://example.com/">
+  <link rel="alternate" hreflang="en" href="https://katerina-tartary.com/">
+  <link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru.html">
+  <link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr.html">
+  <link rel="alternate" hreflang="x-default" href="https://katerina-tartary.com/">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CJMGRT9H7E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CJMGRT9H7E');
+</script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+  m[i].l=1*new Date();
+  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+  ym(98781094, "init", {
+       clickmap:true,
+       trackLinks:true,
+       accurateTrackBounce:true,
+       webvisor:true,
+       ecommerce:"data Layer"
+  });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/98781094" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+  <script src="./assets/scripts/index.js?v=1.0"></script>
 </head>
 
 <body>
@@ -34,15 +65,15 @@
         <svg class="age-gate__logo icon-logo">
           <use xlink:href="/assets/images/figures/sprite.svg#logo"></use>
         </svg>
-        <h3 class="h3-title">This site contains adult content</h3>
+        <h3 class="h3-title">Are you 18 or&nbsp;older?</h3>
         <div>
-          <p class="paragraph-standard">If you are over 18 years old, welcome!</p>
-          <p class="paragraph-standard">In case you are not, please use resources that correspond to&nbsp;your&nbsp;age.
+          <p class="paragraph-standard">My therapeutic services are for adults only.</p>
+          <p class="paragraph-standard"> If you're under 18, please seek a&nbsp;more suitable&nbsp;specialist.
           </p>
         </div>
         <div class="age-gate__age">
           <input type="checkbox" id="age" tabindex="1">
-          <label for="age" class="paragraph-xsmall">I confirm that I am over 18&nbsp;years&nbsp;old</label>
+          <label for="age" class="paragraph-xsmall">I confirm that I am 18&nbsp;+years&nbsp;old</label>
         </div>
 
         <button class="age-gate__button button__secondary button-text" tabindex="2">Confirm</button>
@@ -156,20 +187,20 @@
 
   <main class="main">
     <!-- COVER -->
-    <section class="cover" id="main" itemscope itemtype="https://schema.org/Service">
+    <section class="cover" id="main" itemscope itemtype="https://schema.org/MedicalBusiness">
       <div class="cover__wrapper container">
         <div class="cover__content">
-          <h1 class="cover__title top h1-title" itemprop="serviceType">Online Counseling</h1>
-          <h2 class="cover__title bottom h1-title" itemprop="name">Katerina Tartari</h2>
+          <h1 class="cover__title top h1-title" itemprop="medicalProcedure">Online Counseling</h1>
+          <h2 class="cover__title bottom h1-title" itemprop="name">Katerina Tartary</h2>
           <h3 class="cover__subtitle top h3-title-main" itemprop="offers">Get started <br>with a free session</h3>
           <h3 class="cover__subtitle bottom h3-title-main">
-            For Individual, couples, <br>
+            For Individuals, couples, <br>
             polyamorous unions&nbsp;and families
           </h3>
-          <p class="cover__therapy psychotherapy span-text" itemprop="serviceType">
+          <p class="cover__therapy psychotherapy span-text" itemprop="medicalSpecialty">
             psychotherapy
           </p>
-          <p class="cover__therapy sextherapy span-text" itemprop="serviceType">
+          <p class="cover__therapy sextherapy span-text" itemprop="medicalSpecialty">
             sex therapy
           </p>
           <p class="cover__preposition h1-title">with</p>
@@ -186,13 +217,19 @@
           </svg>
           <button class="cover__button button__primary button button-text button-main scroll" itemprop="potentialAction"
             itemscope itemtype="https://schema.org/Action">
-            <span itemprop="name">Let’s talk!</span>
+            <span itemprop="name">Book free session</span>
           </button>
         </div>
       </div>
       <video class="cover__video" autoplay muted loop poster="/assets/images/cover.png">
         <source src="/assets/video/video_5.mp4" type="video/mp4">
       </video>
+
+      <!-- Meta data for location -->
+    <div style="display: none;" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <meta itemprop="addressLocality" content="Paris">
+    <meta itemprop="addressCountry" content="France">
+  </div>
     </section>
 
     <!-- ABOUT -->
@@ -205,13 +242,13 @@
               Hello! My name is&nbsp;Katerina Tartary.
             </p>
             <p class="paragraph-standard" itemprop="jobTitle">
-              I am a sex therapist, ACT* and EFT** counsellor trained in
-              violence trauma counselling.
+              <!-- I am a sex therapist, ACT* and EFT** counselor trained in
+              violence trauma counseling. -->
+                I am a sex therapist, ACT* and EFT** counselor with expertise in psychological support for trauma of violence. I am based in Paris, France. 
             </p>
             <p class="paragraph-standard">
-              Since 2022, I have been helping clients from 15 countries by
-              providing consultations, organizing therapeutic retreats and art
-              therapy for groups.
+                <!-- I am based in Paris, France and since 2022, I have been working with clients from many countries providing consultations for individuals and couples, and therapeutic retreats and art therapy for groups. -->
+                Since 2022, I have been helping clients from 15 countries through individual and couples consultations, therapeutic retreats, and group art therapy. 
             </p>
 
             <p class="paragraph-standard">
@@ -221,8 +258,8 @@
               polyamorous unions.
             </p>
             <p class="paragraph-standard">
-              I&nbsp;help people connect to their values, find their unique
-              way&nbsp;of being and&nbsp;build close relationships.
+              I&nbsp;help people connect with their values, discover their unique
+              way&nbsp;of being and&nbsp;build meaningful relationships.
             </p>
             <hr class="about__line">
             <div class="about__footnote">
@@ -242,10 +279,13 @@
             </video>
             <meta itemprop="name" content="Welcome Video from sex therapist Katerina Tartary.">
             <meta itemprop="description"
-              content="Katerina Tartari addresses common relationship challenges and invites you to book a free discovery session.">
+              content="Katerina Tartari talks about common relationship challenges and invites you to book a free discovery session.">
             <meta itemprop="duration" content="PT1M13S">
+            <meta itemprop="uploadDate" content="2024-10-30T00:00:00+02:00" />
+            <meta itemprop="thumbnailUrl" content="/assets/images/poster.png" />
           </div>
-        </div>
+          </div>
+        
 
         <div class="about__action button-block">
           <svg class="about__cross icon-cross">
@@ -262,7 +302,7 @@
     <!-- EXPERTISE -->
     <section class="expertise" id="expertise" itemscope itemtype="https://schema.org/PsychologicalTreatment">
       <div class="expertise__wrapper container">
-        <h2 class="expertise__title h2-title title">WHAT I WORK WITH</h2>
+        <h2 class="expertise__title h2-title title">What I can help&nbsp;with</h2>
 
         <div class="expertise__content">
           <!-- Сексуальность -->
@@ -288,7 +328,7 @@
                   <div class="expertise-block-item__line"></div>
                 </div>
                 <p class="expertise-block-item__text paragraph-standard" itemprop="description">
-                  My libido is too weak/strong or I&nbsp;have difficulty
+                  My libido is low or too high libido or I&nbsp;have difficulty
                   getting aroused or having an&nbsp;orgasm
                 </p>
               </div>
@@ -313,7 +353,7 @@
                   <div class="expertise-block-item__line"></div>
                 </div>
                 <p class="expertise-block-item__text paragraph-standard" itemprop="description">
-                  My desires and those of my partners do&nbsp;not&nbsp;coincide, it’s
+                  My desires and those of my partners do&nbsp;not&nbsp;align, it’s
                   scary to talk about&nbsp;my&nbsp;fantasies or&nbsp;preferences
                 </p>
               </div>
@@ -321,13 +361,13 @@
               <div class="expertise-block-item">
                 <div class="expertise-block-item__heading">
                   <h5 class="expertise-block-item__title h5-title" itemprop="additionalType">
-                    sexualised violence
+                    sexualized violence
                   </h5>
                   <div class="expertise-block-item__line"></div>
                 </div>
                 <p class="expertise-block-item__text paragraph-standard" itemprop="description">
-                  I'm trying to cope with the effects of&nbsp;sexualised violence
-                  that are preventing me from moving forward
+                  I'm trying to cope with the impact of&nbsp;sexualized violence
+                  that hinder my ability to move forvard
                 </p>
               </div>
 
@@ -523,7 +563,7 @@
           </svg>
           <button class="expertise__button button__primary button button-text scroll" itemprop="potentialAction"
             itemscope itemtype="https://schema.org/Action">
-            <span itemprop="name">Let’s talk!</span>
+            <span itemprop="name">Book free session</span>
           </button>
         </div>
       </div>
@@ -596,7 +636,7 @@
           </svg>
           <button class="clients__button button__primary button button-text scroll" itemprop="potentialAction" itemscope
             itemtype="https://schema.org/Action">
-            <span itemprop="name">Let’s talk!</span>
+            <span itemprop="name">Book free session</span>
           </button>
         </div>
       </div>
@@ -684,7 +724,7 @@
     </section>
 
     <!-- BENEFITS -->
-    <section class="benefits" id="benefits" itemscope itemtype="https://schema.org/Occupation">
+    <section class="benefits" id="benefits">
       <div class="benefits__wrapper container">
         <h2 class="benefits__title h2-title title">
           why clients choose&nbsp;me
@@ -693,8 +733,8 @@
         <div class="benefits__content">
           <!-- 1 -->
           <div class="benefits-card benefits__card">
-            <h3 class="benefits-card__title h3-title" itemprop="name">scientific approach</h3>
-            <p class="benefits-card__text paragraph-standard" itemprop="skills">
+            <h3 class="benefits-card__title h3-title">scientific approach</h3>
+            <p class="benefits-card__text paragraph-standard">
               I use scientifically proven methods. I combine tools from ACT,
               EFT, IFS, the biopsychosocial model of sex therapy and other
               approaches
@@ -703,8 +743,8 @@
 
           <!-- 2 -->
           <div class="benefits-card benefits__card">
-            <h3 class="benefits-card__title h3-title" itemprop="name">feminist lens</h3>
-            <p class="benefits-card__text paragraph-standard" itemprop="skills">
+            <h3 class="benefits-card__title h3-title">feminist lens</h3>
+            <p class="benefits-card__text paragraph-standard">
               I take into account the socio-cultural context of your life, the
               prejudices and discrimination that cause stress and put pressure
               on you
@@ -716,8 +756,8 @@
 
           <!-- 4 -->
           <div class="benefits-card benefits__card">
-            <h3 class="benefits-card__title h3-title" itemprop="name">support of LGBTQIA+</h3>
-            <p class="benefits-card__text paragraph-standard" itemprop="skills">
+            <h3 class="benefits-card__title h3-title">support of LGBTQIA+</h3>
+            <p class="benefits-card__text paragraph-standard">
               Supporting the LGBTQIA+ community reflects my deepest values. I
               will help you feel accepted and heard, and build thriving
               personal relationships
@@ -733,8 +773,8 @@
 
           <!-- 6 -->
           <div class="benefits-card benefits__card">
-            <h3 class="benefits-card__title h3-title" itemprop="name">nonmonogamous relationships</h3>
-            <p class="benefits-card__text paragraph-standard" itemprop="skills">
+            <h3 class="benefits-card__title h3-title">nonmonogamous relationships</h3>
+            <p class="benefits-card__text paragraph-standard">
               I know how to work with particularities of creating emotional
               intimacy and challenges in non-monogamous relationships
             </p>
@@ -748,10 +788,10 @@
 
           <!-- 8 -->
           <div class="benefits-card benefits__card">
-            <h3 class="benefits-card__title h3-title" itemprop="name">
+            <h3 class="benefits-card__title h3-title">
               working with trauma of violence
             </h3>
-            <p class="benefits-card__text paragraph-standard" itemprop="skills">
+            <p class="benefits-card__text paragraph-standard">
               I help in situations of psychological and physical abuse in
               relationships. I work with both survivors of violence and its
               actors.
@@ -760,10 +800,10 @@
 
           <!-- 9 -->
           <div class="benefits-card benefits__card">
-            <h3 class="benefits-card__title h3-title" itemprop="name">
+            <h3 class="benefits-card__title h3-title">
               neurodiversities awareness
             </h3>
-            <p class="benefits-card__text paragraph-standard" itemprop="skills">
+            <p class="benefits-card__text paragraph-standard">
               I am skilled in working with ADHD, ASD, bipolar disorder, and
               other neurodiversities. I create a safe environment that is
               tailored to you
@@ -775,10 +815,10 @@
 
           <!-- 11 -->
           <div class="benefits-card benefits__card">
-            <h3 class="benefits-card__title h3-title" itemprop="name">
+            <h3 class="benefits-card__title h3-title">
               continuous improvement
             </h3>
-            <p class="benefits-card__text paragraph-standard" itemprop="skills">
+            <p class="benefits-card__text paragraph-standard">
               I constantly develop and improve my skills through personal
               therapy, regular supervision, training and communication with
               colleagues
@@ -787,7 +827,7 @@
 
           <!-- 12 -->
           <div class="benefits-card benefits__card">
-            <h3 class="benefits-card__title h3-title" itemprop="name">
+            <h3 class="benefits-card__title h3-title">
               multicultural experience
             </h3>
             <p class="benefits-card__text paragraph-standard">
@@ -812,7 +852,7 @@
     </section>
 
     <!-- FEEDBACK -->
-    <section class="feedback" id="feedback" itemscope itemtype="https://schema.org/Review">
+    <section class="feedback" id="feedback">
       <div class="feedback__wrapper container">
         <h2 class="feedback__title h2-title title">Feedback</h2>
 
@@ -830,22 +870,17 @@
                 <svg class="feedback__quote icon-quote">
                   <use xlink:href="/assets/images/figures/sprite.svg#quote"></use>
                 </svg>
-                <p class="feedback__text paragraph-standard" itemprop="reviewBody">
+                <p class="feedback__text paragraph-standard">
                   I felt comfortable with Katerina, I was able to open up.
                   It’s great that there was feedback on the additional
                   exercises she gave me, and it was used in further work.
                   <br><br>
                 </p>
                 <hr class="feedback__line">
-                <p class="feedback__client h5-title" itemprop="name">Maria</p>
+                <p class="feedback__client h5-title">Maria</p>
                 <p class="feedback__client-info paragraph-standard">
                   23 years old, France
                 </p>
-                <!-- Hidden Review Rating -->
-                <span style="display: none;" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                  <meta itemprop="ratingValue" content="5">
-                  <meta itemprop="bestRating" content="5">
-                </span>
               </div>
 
               <!-- 2 -->
@@ -853,7 +888,7 @@
                 <svg class="feedback__quote icon-quote">
                   <use xlink:href="/assets/images/figures/sprite.svg#quote"></use>
                 </svg>
-                <p class="feedback__text paragraph-standard" itemprop="reviewBody">
+                <p class="feedback__text paragraph-standard">
                   Katerina, I want to thank you for being so caring with me
                   and doing such a deep work. You not only helped to
                   understand the problem, but also showed what tools can be
@@ -861,15 +896,10 @@
                   action. Thank you so much!
                 </p>
                 <hr class="feedback__line">
-                <p class="feedback__client h5-title" itemprop="name">Anastasiya</p>
+                <p class="feedback__client h5-title">Anastasiya</p>
                 <p class="feedback__client-info paragraph-standard">
                   36 years old, Russia
                 </p>
-                <!-- Hidden Review Rating -->
-                <span style="display: none;" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                  <meta itemprop="ratingValue" content="5">
-                  <meta itemprop="bestRating" content="5">
-                </span>
               </div>
 
               <!-- 3 -->
@@ -877,22 +907,18 @@
                 <svg class="feedback__quote icon-quote">
                   <use xlink:href="/assets/images/figures/sprite.svg#quote"></use>
                 </svg>
-                <p class="feedback__text paragraph-standard" itemprop="reviewBody">
+                <p class="feedback__text paragraph-standard">
                   Katerina was attentive, caring and I immediately felt safe.
                   She helped me unravel the thread of my thoughts and look at
                   my actions from the outside. Months later, I am still using
                   this analysis
                 </p>
                 <hr class="feedback__line">
-                <p class="feedback__client h5-title" itemprop="name">Annabelle</p>
+                <p class="feedback__client h5-title">Annabelle</p>
                 <p class="feedback__client-info paragraph-standard">
                   31 years old, France
                 </p>
-                <!-- Hidden Review Rating -->
-                <span style="display: none;" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                  <meta itemprop="ratingValue" content="5">
-                  <meta itemprop="bestRating" content="5">
-                </span>
+                
               </div>
 
               <!-- 4 -->
@@ -900,7 +926,7 @@
                 <svg class="feedback__quote icon-quote">
                   <use xlink:href="/assets/images/figures/sprite.svg#quote"></use>
                 </svg>
-                <p class="feedback__text paragraph-standard" itemprop="reviewBody">
+                <p class="feedback__text paragraph-standard">
                   We started therapy when we were literally on the verge of
                   breaking our relationship. And you managed to lower the
                   intensity from the first session, and resolve some issues
@@ -908,15 +934,11 @@
                   and with understanding came compassion
                 </p>
                 <hr class="feedback__line">
-                <p class="feedback__client h5-title" itemprop="name">Eva & Badri</p>
+                <p class="feedback__client h5-title">Eva & Badri</p>
                 <p class="feedback__client-info paragraph-standard">
                   60 and 30 years old, Georgia
                 </p>
-                <!-- Hidden Review Rating -->
-                <span style="display: none;" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                  <meta itemprop="ratingValue" content="5">
-                  <meta itemprop="bestRating" content="5">
-                </span>
+                
               </div>
 
               <!-- 5 -->
@@ -925,7 +947,7 @@
                   <use xlink:href="/assets/images/figures/sprite.svg#quote"></use>
                 </svg>
 
-                <p class="feedback__text paragraph-standard" itemprop="reviewBody">
+                <p class="feedback__text paragraph-standard">
                   I had a hard time coping during a difficult period in my
                   life. I lacked support and encouragement due to the fact
                   that my loved ones were no longer in the world. I was
@@ -933,15 +955,10 @@
                   received relief right during the session
                 </p>
                 <hr class="feedback__line">
-                <p class="feedback__client h5-title" itemprop="name">Svetlana</p>
+                <p class="feedback__client h5-title">Svetlana</p>
                 <p class="feedback__client-info paragraph-standard">
                   46 years old, Belarus
                 </p>
-                <!-- Hidden Review Rating -->
-                <span style="display: none;" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                  <meta itemprop="ratingValue" content="5">
-                  <meta itemprop="bestRating" content="5">
-                </span>
               </div>
 
               <!-- 6 -->
@@ -950,7 +967,7 @@
                   <use xlink:href="/assets/images/figures/sprite.svg#quote"></use>
                 </svg>
 
-                <p class="feedback__text paragraph-standard" itemprop="reviewBody">
+                <p class="feedback__text paragraph-standard">
                   My mind is clearer now. I am learning to notice parts of my
                   personality without falling into rescue mode. Few
                   psychologists could introduce me to myself gently, without
@@ -959,15 +976,10 @@
                   pain points!
                 </p>
                 <hr class="feedback__line">
-                <p class="feedback__client h5-title" itemprop="name">Daria</p>
+                <p class="feedback__client h5-title">Daria</p>
                 <p class="feedback__client-info paragraph-standard">
                   37 years old, Kazakhstan
                 </p>
-                <!-- Hidden Review Rating -->
-                <span style="display: none;" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
-                  <meta itemprop="ratingValue" content="5">
-                  <meta itemprop="bestRating" content="5">
-                </span>
               </div>
             </div>
           </div>
@@ -983,13 +995,6 @@
             <span itemprop="name">Schedule now!</span>
           </button>
         </div>
-        <!-- Aggregate Rating -->
-        <span style="display: none;" itemscope itemtype="https://schema.org/AggregateRating" itemprop="aggregateRating">
-          <meta itemprop="ratingValue" content="5">
-          <meta itemprop="reviewCount" content="20">
-          <meta itemprop="bestRating" content="5">
-          <meta itemprop="worstRating" content="1">
-        </span>
       </div>
     </section>
 
@@ -1180,7 +1185,7 @@
           </svg>
           <button class="price__button button__primary button button-text scroll" itemprop="potentialAction" itemscope
             itemtype="https://schema.org/Action">
-            <span itemprop="name">Let’s Talk!</span>
+            <span itemprop="name">Book free session</span>
           </button>
         </div>
       </div>

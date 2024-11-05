@@ -1,4 +1,5 @@
-import { enableAnalytics, disableAnalytics } from "./analytics.js";
+// cookie.js
+import { enableAnalytics, disableAnalytics, enableYandexMetrika, disableYandexMetrika } from "./analytics.js";
 
 const cookieConsent = document.getElementById("cookieConsent");
 const acceptCookiesBtn = document.getElementById("acceptCookies");
@@ -10,12 +11,15 @@ const checkCookiesConsent = () => {
   if (cookiesAccepted === "true") {
     cookieConsent.style.display = "none";
     enableAnalytics();
+    enableYandexMetrika();
   } else if (cookiesAccepted === "false") {
     cookieConsent.style.display = "none";
     disableAnalytics();
+    disableYandexMetrika();
   } else {
     cookieConsent.style.display = "flex";
     disableAnalytics();
+    disableYandexMetrika();
   }
 };
 
@@ -25,14 +29,17 @@ acceptCookiesBtn.addEventListener("click", () => {
   cookieConsent.style.display = "none";
   sessionStorage.setItem("cookiesAccepted", "true");
   enableAnalytics();
+  enableYandexMetrika();
 });
 
 declineCookiesBtn.addEventListener("click", () => {
   cookieConsent.style.display = "none";
   sessionStorage.setItem("cookiesAccepted", "false");
   disableAnalytics();
+  disableYandexMetrika();
 });
 
+// Блокировка фокуса на уведомлении о куки
 const cookieFocusableElements = cookieConsent.querySelectorAll("button, [href]");
 let firstCookieFocusableElement = cookieFocusableElements[0];
 let lastCookieFocusableElement = cookieFocusableElements[cookieFocusableElements.length - 1];
@@ -54,6 +61,7 @@ document.addEventListener("keydown", (e) => {
     }
   }
 });
+
 
 // Обработка выбора языка
 const languageOptions = document.querySelectorAll(".language__option");

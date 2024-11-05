@@ -116,7 +116,7 @@
   }
 
   &__menu-link {
-    color: $color-gray-middle;
+    color: $color-white;
     text-transform: uppercase;
     transition: $transition;
 
@@ -129,7 +129,8 @@
     }
 
     &:focus {
-      background: $color-focus;
+      color: $color-orange-light;
+      outline: none;
   }
   }
 

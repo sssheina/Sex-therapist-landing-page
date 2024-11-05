@@ -126,7 +126,7 @@ sendButton.addEventListener("click", async function (event) {
   try {
     loading("grid");
 
-    const response = await fetch("https://formspree.io/f/xvgpvnov", {
+    const response = await fetch("https://formspree.io/f/mrbgpgdq", {
       method: "POST",
       body: formData,
       headers: {

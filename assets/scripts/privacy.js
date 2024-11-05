@@ -472,7 +472,7 @@ const generatePrivacyPolicyContent = (content) => {
   const items = list
     .map(
       (item) => `
-    <li class="modal__item-ordered">
+    <li class="modal__item-ordered h4-title">
       <h4 class="h4-title">${item.title}</h4>
       <p class="modal__text paragraph-small">${item.text}</p>
       ${

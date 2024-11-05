@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://katerina-tartary.com/sitemap.xml

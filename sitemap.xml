@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <url>
+        <loc>https://katerina-tartary.com/</loc>
+        <lastmod>2024-10-31T17:07:37+01:00</lastmod>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/"/>
+
+        <video:video>
+            <video:content_loc>https://katerina-tartary.com/assets/video/kate_en.mp4</video:content_loc>
+            <video:thumbnail_loc>https://katerina-tartary.com/assets/images/poster.png</video:thumbnail_loc>
+            <video:title>Welcome Video from Sex Therapist Katerina Tartari</video:title>
+            <video:description>Katerina Tartari discusses the challenges people face in intimacy and her mission to help clients create harmonious and trusting relationships. She invites you to a free introductory session.</video:description>
+            <video:duration>73</video:duration>
+        </video:video>
+    </url>
+
+     <!-- Version française -->
+
+<url>
+    <loc>https://katerina-tartary.com/fr.html</loc>
+    <lastmod>2024-10-31T17:07:37+01:00</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr.html"/>
+    <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr.html"/>
+
+    <video:video>
+        <video:content_loc>https://katerina-tartary.com/assets/video/kate_fr.mp4</video:content_loc>
+        <video:thumbnail_loc>https://katerina-tartary.com/assets/images/poster.png</video:thumbnail_loc>
+        <video:title>Vidéo de bienvenue de la sexothérapeute Katerina Tartari</video:title>
+        <video:description>Katerina Tartari parle des difficultés rencontrées par les gens dans le domaine de l'intimité et de sa mission d'aider les clients à créer des relations harmonieuses et de confiance. Elle invite à une séance d'initiation gratuite.</video:description>
+        <video:duration>73</video:duration>
+    </video:video>
+</url>
+
+    <!-- Russian version -->
+
+    <url>
+        <loc>https://katerina-tartary.com/ru.html</loc>
+        <lastmod>2024-10-31T17:07:37+01:00</lastmod>
+        <priority>0.9</priority>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru.html"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru.html"/>
+
+        <video:video>
+            <video:content_loc>https://katerina-tartary.com/assets/video/kate_ru_sub.mp4</video:content_loc>
+            <video:thumbnail_loc>https://katerina-tartary.com/assets/images/poster.png</video:thumbnail_loc>
+            <video:title>Приветственное видео от секс-терапевта Катерины Тартари</video:title>
+            <video:description>Катерина Тартари рассказывает о сложностях, с которыми сталкиваются люди в сфере интимной близости, и о своей миссии — помочь клиентам создавать гармоничные и доверительные отношения. Приглашает на бесплатную ознакомительную сессию.</video:description>
+            <video:duration>73</video:duration>
+        </video:video>
+    </url>
+
+    </urlset>

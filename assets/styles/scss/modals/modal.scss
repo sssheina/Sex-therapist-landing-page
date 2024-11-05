@@ -22,7 +22,7 @@
   position: relative;
   max-width: 50%;
   min-width: 270px;
-  padding: 2rem;
+  padding: 6rem;
   z-index: 2000;
   background-color: white;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
@@ -30,10 +30,11 @@
 
   @include lg {
     max-width: 70%;
+    padding: 5rem;
   }
 
   @include md {
-    padding: 1rem;
+    padding: 2.5rem;
   }
 
   @include sm {
@@ -42,7 +43,7 @@
   }
 
   @include xs {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
   &__title {
@@ -65,11 +66,14 @@
     list-style: decimal;
     padding-left: 19px;
     gap: 1rem;
+
+    @include sm {
+      padding-left: 25px;
+    }
   }
 
   &__item-ordered {
     margin-bottom: 5px;
-    font-family: var(--montserrat-font-family);
   }
 
   &__item-unordered {
