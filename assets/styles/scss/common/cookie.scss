@@ -40,11 +40,7 @@
     &__text-block {
         display: flex;
         flex-direction: column;
-        gap: 0.6rem; 
-
-        @include lg {
-            gap: 6px; 
-        }
+        gap: 0.1rem; 
 
         @include sm {
             flex-direction: column;
@@ -62,17 +58,17 @@
     }
 
     &__button {
-        width: 300px;
-        height: 60px;
+        width: 250px;
+        height: 55px;
 
         @media (min-width: 1920px) {
-            width: 300px;
-            height: 60px;
+            width: 250px;
+            height: 55px;
           }
 
         @include lg {
-            width: clamp(230px, calc(230px + ((300 - 230) * ((100vw - 1440px) / (1920 - 1440)))), 300px);
-            height: clamp(50px, calc(50px + ((60 - 50) * ((100vw - 1440px) / (1920 - 1440)))), 60px);
+            width: clamp(230px, calc(230px + ((250 - 230) * ((100vw - 1440px) / (1920 - 1440)))), 250px);
+            height: clamp(50px, calc(50px + ((55 - 50) * ((100vw - 1440px) / (1920 - 1440)))), 55px);
         }
 
         @include md {
