@@ -25,19 +25,19 @@
   }
 
   &__content {
-    max-width: 702px;
+    max-width: 846px;
     text-align: center;
 
     @include lg {
-      max-width: 526px;
+      max-width: 626px;
     }
 
     @include md {
-      max-width: 347px;
+      max-width: 400px;
     }
 
     @include xs {
-      max-width: 259px;
+      max-width: 300px;
     }
   }
 }

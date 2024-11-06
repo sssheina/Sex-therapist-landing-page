@@ -31,10 +31,12 @@
   &__conclusion {
     grid-column: 2;
     grid-row: 4 / 5;
+    max-width: 60%;
 
     @include r(1140) {
       grid-column: 1;
       grid-row: 7 / 8;
+      max-width: 100%;
     }
   }
 }

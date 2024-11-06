@@ -133,6 +133,7 @@ $transition: 0.4s ease;
   font-weight: var(--paragraph-medium-font-weight, 400);
   font-style: italic;
   line-height: var(--paragraph-medium-line-height);
+  letter-spacing: var(--paragraph-medium-letter-spacing);
   text-transform: var(--paragraph-medium-text-transform);
   text-decoration: var(--paragraph-medium-text-decoration);
   color: $color-white;
