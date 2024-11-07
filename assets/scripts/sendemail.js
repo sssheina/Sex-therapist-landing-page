@@ -105,7 +105,7 @@ footerSendButton.addEventListener("click", async function (event) {
   try {
     loading("grid");
 
-    const response = await fetch("https://formspree.io/f/meoqaqdj", {
+    const response = await fetch("https://formspree.io/f/xblrpeez", {
       method: "POST",
       body: formData,
       headers: {
