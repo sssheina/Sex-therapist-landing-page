@@ -8,8 +8,13 @@ document.querySelectorAll(".policy__link").forEach(function (link) {
   });
 });
 
-export const checkPrivacyPolicyConsent = (consentCheckbox, errorPolitics) => {
+export const checkPrivacyPolicyConsent = (
+  consentCheckbox,
+  errorPolitics,
+  errorPoliticsText
+) => {
   if (!consentCheckbox.checked) {
+    errorPolitics.textContent = errorPoliticsText;
     errorPolitics.style.display = "block";
     return false;
   } else {

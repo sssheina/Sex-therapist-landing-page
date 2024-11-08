@@ -20,6 +20,7 @@ const modalMessageMap = {
     errorText: "Произошла ошибка при отправке формы",
     messageEmpty: "Сообщение не может быть пустым",
     messageForbidden: "Сообщение содержит недопустимые слова или символы",
+    errorPoliticsText: "Прочтите и подтвердите согласие",
   },
   EN: {
     thanksTitle: "Thank you!",
@@ -28,6 +29,7 @@ const modalMessageMap = {
     errorText: "An error occurred while submitting the form",
     messageEmpty: "Message can not be empty",
     messageForbidden: "The message contains invalid words or characters",
+    errorPoliticsText: "Read and confirm consent",
   },
   FR: {
     thanksTitle: "Merci !",
@@ -37,8 +39,11 @@ const modalMessageMap = {
     messageEmpty: "Le message ne peut pas être vide",
     messageForbidden:
       "Le message contient des mots ou des caractères non valides",
+    errorPoliticsText: "Lire et accepter",
   },
 };
+
+const content = modalMessageMap[language.textContent] || modalMessageMap.EN;
 
 const validateInput = (input) => {
   const forbiddenWords = [
@@ -69,7 +74,6 @@ const validateInput = (input) => {
 };
 
 const checkMessageField = (userInput) => {
-  const content = modalMessageMap[language.textContent] || modalMessageMap.EN;
   console.log("content", content);
 
   if (!validateInput(userInput)) {
@@ -87,8 +91,6 @@ const checkMessageField = (userInput) => {
 };
 
 const updateModalContent = () => {
-  const content = modalMessageMap[language.textContent] || modalMessageMap.EN;
-
   thanksMessage = `<div class="modal-content__small">
   <svg class="modal-content__icon icon-success">
   <use xlink:href="/assets/images/figures/sprite.svg#success"></use>
@@ -115,7 +117,13 @@ sendButton.addEventListener("click", async function (event) {
   const formData = new FormData(form);
   const userInput = formData.get("message");
 
-  if (!checkPrivacyPolicyConsent(consentCheckbox, errorPolitics)) {
+  if (
+    !checkPrivacyPolicyConsent(
+      consentCheckbox,
+      errorPolitics,
+      content.errorPoliticsText
+    )
+  ) {
     return;
   }
 

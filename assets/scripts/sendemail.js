@@ -20,6 +20,7 @@ const modalMessageMap = {
     errorText: "Произошла ошибка при отправке формы",
     fieldEmpty: "E-mail не может быть пустым",
     fieldError: "Неправильный адрес электронной почты",
+    errorPoliticsText: "Прочтите и подтвердите согласие",
   },
   EN: {
     thanksTitle: "Thank you!",
@@ -28,6 +29,7 @@ const modalMessageMap = {
     errorText: "An error occurred while submitting the form",
     fieldEmpty: "E-mail can not be empty",
     fieldError: "Incorrect e-mail address",
+    errorPoliticsText: "Read and confirm consent",
   },
   FR: {
     thanksTitle: "Merci !",
@@ -36,12 +38,13 @@ const modalMessageMap = {
     errorText: "Une erreur s'est produite lors de l'envoi du formulaire",
     fieldEmpty: "E-mail ne peut pas être vide",
     fieldError: "Adresse électronique incorrecte",
+    errorPoliticsText: "Lire et accepter",
   },
 };
 
-const validateRegFormEmail = (needShowMessages) => {
-  const content = modalMessageMap[language.textContent] || modalMessageMap.EN;
+const content = modalMessageMap[language.textContent] || modalMessageMap.EN;
 
+const validateRegFormEmail = (needShowMessages) => {
   const re =
     /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/i;
 
@@ -67,8 +70,6 @@ const validateRegFormEmail = (needShowMessages) => {
 };
 
 const updateModalContent = () => {
-  const content = modalMessageMap[language.textContent] || modalMessageMap.EN;
-
   thanksMessage = `<div class="modal-content__small">
   <svg class="modal-content__icon icon-success">
   <use xlink:href="/assets/images/figures/sprite.svg#success"></use>
@@ -94,7 +95,13 @@ footerSendButton.addEventListener("click", async function (event) {
 
   const formData = new FormData(form);
 
-  if (!checkPrivacyPolicyConsent(consentCheckbox, errorPolitics)) {
+  if (
+    !checkPrivacyPolicyConsent(
+      consentCheckbox,
+      errorPolitics,
+      content.errorPoliticsText
+    )
+  ) {
     return;
   }
 
