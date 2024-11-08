@@ -112,30 +112,42 @@
 
 .swiper-button-prev,
 .swiper-button-next {
+  transition: $transition;
+
   @include sm {
     display: none !important;
   }
 }
 
-.swiper-button-prev::after {
-  left: 0;
+.swiper-button-prev:active {
+  transform: translateX(-7px);
+}
+
+.swiper-button-next:active {
+  transform: translateX(7px);
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
   color: $color-white;
 
   @include md {
     font-size: 35px !important;
   }
+}
+
+.swiper-button-prev::after {
+  left: 0;
 }
 
 .swiper-button-next::after {
   right: 0;
-  color: $color-white;
-
-  @include md {
-    font-size: 35px !important;
-  }
 }
 
-.swiper-button-prev:focus,
-.swiper-button-next:focus {
-  background: $color-blue-middle;
+.swiper-button-next:focus.swiper-button-next::after {
+  color: $color-orange;
+}
+
+.swiper-button-prev:focus.swiper-button-prev::after {
+  color: $color-orange;
 }

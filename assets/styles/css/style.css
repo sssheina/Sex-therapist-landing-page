@@ -4141,6 +4141,10 @@ input[type=checkbox]:focus + label {
   background: #d69961 !important;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  transition: 0.4s ease;
+}
 @media only screen and (max-width: 767px) {
   .swiper-button-prev,
   .swiper-button-next {
@@ -4148,29 +4152,39 @@ input[type=checkbox]:focus + label {
   }
 }
 
-.swiper-button-prev::after {
-  left: 0;
-  color: #fefefe;
-}
-@media only screen and (max-width: 1439px) {
-  .swiper-button-prev::after {
-    font-size: 35px !important;
-  }
+.swiper-button-prev:active {
+  transform: translateX(-7px);
 }
 
+.swiper-button-next:active {
+  transform: translateX(7px);
+}
+
+.swiper-button-prev::after,
 .swiper-button-next::after {
-  right: 0;
   color: #fefefe;
 }
 @media only screen and (max-width: 1439px) {
+  .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 35px !important;
   }
 }
 
-.swiper-button-prev:focus,
-.swiper-button-next:focus {
-  background: #35445b;
+.swiper-button-prev::after {
+  left: 0;
+}
+
+.swiper-button-next::after {
+  right: 0;
+}
+
+.swiper-button-next:focus.swiper-button-next::after {
+  color: #ce6a0e;
+}
+
+.swiper-button-prev:focus.swiper-button-prev::after {
+  color: #ce6a0e;
 }
 
 .steps {
