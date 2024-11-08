@@ -522,7 +522,7 @@ const generatePrivacyPolicyContent = (content) => {
   `;
 };
 
-const updatePrivacyPolicyContent = () => {
+export const updatePrivacyPolicyContent = () => {
   const content =
     privacyPolicyData[language.textContent] || privacyPolicyData.EN;
 

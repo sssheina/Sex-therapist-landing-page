@@ -4,7 +4,6 @@ export const modalContent = document.querySelector(".modal-content");
 export const buttonClose = document.querySelector(".button-close");
 const acceptCookiesBtn = document.getElementById("acceptCookies");
 
-// Открытие модального окна
 export const openModal = () => {
   if (!modal || !overlay) return;
 
@@ -20,7 +19,6 @@ export const openModal = () => {
   document.addEventListener("keydown", trapFocus);
 };
 
-// Закрытие модального окна
 export const closeModal = () => {
   if (!modal || !overlay) return;
 
@@ -45,7 +43,6 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-// Функция ловушки фокуса
 const trapFocus = (e) => {
   if (!modal) return;
 
@@ -66,7 +63,6 @@ const trapFocus = (e) => {
     }
   }
 };
-
 
 // export const overlay = document.querySelector(".overlay");
 // export const modal = document.querySelector(".modal");

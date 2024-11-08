@@ -1,9 +1,11 @@
 import { openModal } from "./modal.js";
+import { updatePrivacyPolicyContent } from "../privacy.js";
 
 document.querySelectorAll(".policy__link").forEach(function (link) {
   link.addEventListener("click", function (event) {
     event.preventDefault();
 
+    updatePrivacyPolicyContent();
     openModal();
   });
 });
