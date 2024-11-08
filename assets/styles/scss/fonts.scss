@@ -78,27 +78,55 @@
 
   @media (min-width: 1920px) {
     --h1-title-font-size: 102px;
-    --h1-title-font-size-en-fr: 120px; 
+    --h1-title-font-size-en-fr: 120px;
   }
-  
+
   @include lg {
-    --h1-title-font-size: clamp(78px, calc(78px + ((102 - 78) * ((100vw - 1440px) / (1920 - 1440)))), 102px);
-    --h1-title-font-size-en-fr: clamp(90px, calc(90px + ((120 - 90) * ((100vw - 1440px) / (1920 - 1440)))), 120px);
+    --h1-title-font-size: clamp(
+      78px,
+      calc(78px + ((102 - 78) * ((100vw - 1440px) / (1920 - 1440)))),
+      102px
+    );
+    --h1-title-font-size-en-fr: clamp(
+      90px,
+      calc(90px + ((120 - 90) * ((100vw - 1440px) / (1920 - 1440)))),
+      120px
+    );
   }
 
   @include md {
-    --h1-title-font-size: clamp(41px, calc(41px + ((78 - 41) * ((100vw - 768px) / (1440 - 768)))), 78px);
-    --h1-title-font-size-en-fr: clamp(48px, calc(48px + ((90 - 48) * ((100vw - 768px) / (1440 - 768)))), 90px);
+    --h1-title-font-size: clamp(
+      41px,
+      calc(41px + ((78 - 41) * ((100vw - 768px) / (1440 - 768)))),
+      78px
+    );
+    --h1-title-font-size-en-fr: clamp(
+      48px,
+      calc(48px + ((90 - 48) * ((100vw - 768px) / (1440 - 768)))),
+      90px
+    );
   }
 
   @include sm {
     --h1-title-font-size: 41px;
-    --h1-title-font-size-en-fr: clamp(38px, calc(38px + ((48 - 38) * ((100vw - 428px) / (768 - 428)))), 48px);
+    --h1-title-font-size-en-fr: clamp(
+      38px,
+      calc(38px + ((48 - 38) * ((100vw - 428px) / (768 - 428)))),
+      48px
+    );
   }
 
   @include xs {
-    --h1-title-font-size: clamp(31px, calc(31px + ((41 - 31) * ((100vw - 320px) / (428 - 320)))), 41px);
-    --h1-title-font-size-en-fr: clamp(30px, calc(30px + ((38 - 30) * ((100vw - 320px) / (428 - 320)))), 38px);
+    --h1-title-font-size: clamp(
+      31px,
+      calc(31px + ((41 - 31) * ((100vw - 320px) / (428 - 320)))),
+      41px
+    );
+    --h1-title-font-size-en-fr: clamp(
+      30px,
+      calc(30px + ((38 - 30) * ((100vw - 320px) / (428 - 320)))),
+      38px
+    );
   }
 
   // h2 - title
@@ -111,25 +139,37 @@
   --h2-title-text-decoration: none;
   --h2-title-text-align: left;
 
-@media (min-width: 1920px) {
-  --h2-title-font-size: 64px;
-}
+  @media (min-width: 1920px) {
+    --h2-title-font-size: 64px;
+  }
 
-@include lg {
-  --h2-title-font-size: clamp(48px, calc(48px + ((64 - 48) * ((100vw - 1440px) / (1920 - 1440)))), 64px);
-}
+  @include lg {
+    --h2-title-font-size: clamp(
+      48px,
+      calc(48px + ((64 - 48) * ((100vw - 1440px) / (1920 - 1440)))),
+      64px
+    );
+  }
 
-@include md {
-  --h2-title-font-size: clamp(34px, calc(34px + ((48 - 34) * ((100vw - 768px) / (1440 - 768)))), 48px);
-}
+  @include md {
+    --h2-title-font-size: clamp(
+      34px,
+      calc(34px + ((48 - 34) * ((100vw - 768px) / (1440 - 768)))),
+      48px
+    );
+  }
 
-@include sm {
-  --h2-title-font-size: 34px; 
-}
+  @include sm {
+    --h2-title-font-size: 34px;
+  }
 
-@include xs {
-  --h2-title-font-size: clamp(25px, calc(25px + ((34 - 25) * ((100vw - 320px) / (428 - 320)))), 34px);
-}
+  @include xs {
+    --h2-title-font-size: clamp(
+      25px,
+      calc(25px + ((34 - 25) * ((100vw - 320px) / (428 - 320)))),
+      34px
+    );
+  }
 
   // h3 - title
 
@@ -141,24 +181,36 @@
   --h3-title-text-decoration: none;
 
   @media (min-width: 1920px) {
-    --h3-title-font-size: 30px; 
+    --h3-title-font-size: 30px;
   }
 
   @include lg {
-    --h3-title-font-size: clamp(22px, calc(22px + ((30 - 22) * ((100vw - 1440px) / (1920 - 1440)))), 30px);
-}
+    --h3-title-font-size: clamp(
+      22px,
+      calc(22px + ((30 - 22) * ((100vw - 1440px) / (1920 - 1440)))),
+      30px
+    );
+  }
 
   @include md {
-    --h3-title-font-size: clamp(19px, calc(19px + ((22 - 19) * ((100vw - 768px) / (1440 - 768)))), 22px);
-}
+    --h3-title-font-size: clamp(
+      19px,
+      calc(19px + ((22 - 19) * ((100vw - 768px) / (1440 - 768)))),
+      22px
+    );
+  }
 
   @include sm {
     --h3-title-font-size: 19px;
-}
+  }
 
-@include xs {
-  --h3-title-font-size: clamp(16px, calc(16px + ((19 - 16) * ((100vw - 320px) / (428 - 320)))), 19px);
-}
+  @include xs {
+    --h3-title-font-size: clamp(
+      16px,
+      calc(16px + ((19 - 16) * ((100vw - 320px) / (428 - 320)))),
+      19px
+    );
+  }
 
   // h3 - title - main
 
@@ -170,23 +222,39 @@
   --h3-title-main-text-decoration: none;
 
   @media (min-width: 1920px) {
-    --h3-title-main-font-size: 30px; 
+    --h3-title-main-font-size: 30px;
   }
 
   @include lg {
-    --h3-title-main-font-size: clamp(22px, calc(22px + ((30 - 22) * ((100vw - 1440px) / (1920 - 1440)))), 30px);
+    --h3-title-main-font-size: clamp(
+      22px,
+      calc(22px + ((30 - 22) * ((100vw - 1440px) / (1920 - 1440)))),
+      30px
+    );
   }
 
   @include md {
-    --h3-title-main-font-size: clamp(14px, calc(14px + ((22 - 14) * ((100vw - 768px) / (1440 - 768)))), 22px);
+    --h3-title-main-font-size: clamp(
+      14px,
+      calc(14px + ((22 - 14) * ((100vw - 768px) / (1440 - 768)))),
+      22px
+    );
   }
 
   @include sm {
-    --h3-title-main-font-size: clamp(16px, calc(16px + ((19 - 16) * ((100vw - 428px) / (768 - 428)))), 19px);
+    --h3-title-main-font-size: clamp(
+      16px,
+      calc(16px + ((19 - 16) * ((100vw - 428px) / (768 - 428)))),
+      19px
+    );
   }
 
   @include xs {
-    --h3-title-main-font-size: clamp(14px, calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))), 16px);
+    --h3-title-main-font-size: clamp(
+      14px,
+      calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))),
+      16px
+    );
   }
 
   // h4 - title
@@ -203,11 +271,19 @@
   }
 
   @include lg {
-    --h4-title-font-size: clamp(19px, calc(19px + ((25 - 19) * ((100vw - 1440px) / (1920 - 1440)))), 25px);
+    --h4-title-font-size: clamp(
+      19px,
+      calc(19px + ((25 - 19) * ((100vw - 1440px) / (1920 - 1440)))),
+      25px
+    );
   }
 
   @include md {
-    --h4-title-font-size: clamp(17px, calc(17px + ((19 - 17) * ((100vw - 768px) / (1440 - 768)))), 19px);
+    --h4-title-font-size: clamp(
+      17px,
+      calc(17px + ((19 - 17) * ((100vw - 768px) / (1440 - 768)))),
+      19px
+    );
   }
 
   @include sm {
@@ -215,7 +291,11 @@
   }
 
   @include xs {
-    --h4-title-font-size: clamp(14px, calc(14px + ((17 - 14) * ((100vw - 320px) / (428 - 320)))), 17px);
+    --h4-title-font-size: clamp(
+      14px,
+      calc(14px + ((17 - 14) * ((100vw - 320px) / (428 - 320)))),
+      17px
+    );
   }
 
   // h5 - title
@@ -232,11 +312,19 @@
   }
 
   @include lg {
-    --h5-title-font-size: clamp(16px, calc(16px + ((20 - 16) * ((100vw - 1440px) / (1920 - 1440)))), 20px);
+    --h5-title-font-size: clamp(
+      16px,
+      calc(16px + ((20 - 16) * ((100vw - 1440px) / (1920 - 1440)))),
+      20px
+    );
   }
 
   @include md {
-    --h5-title-font-size: clamp(15px, calc(15px + ((16 - 15) * ((100vw - 768px) / (1440 - 768)))), 16px);
+    --h5-title-font-size: clamp(
+      15px,
+      calc(15px + ((16 - 15) * ((100vw - 768px) / (1440 - 768)))),
+      16px
+    );
   }
 
   @include sm {
@@ -244,7 +332,11 @@
   }
 
   @include xs {
-    --h5-title-font-size: clamp(12px, calc(12px + ((15 - 12) * ((100vw - 320px) / (428 - 320)))), 15px);
+    --h5-title-font-size: clamp(
+      12px,
+      calc(12px + ((15 - 12) * ((100vw - 320px) / (428 - 320)))),
+      15px
+    );
   }
 
   // paragraph - large  цена в тарифах
@@ -260,11 +352,19 @@
   }
 
   @include lg {
-    --paragraph-large-font-size: clamp(36px, calc(36px + ((48 - 36) * ((100vw - 1440px) / (1920 - 1440)))), 48px);
+    --paragraph-large-font-size: clamp(
+      36px,
+      calc(36px + ((48 - 36) * ((100vw - 1440px) / (1920 - 1440)))),
+      48px
+    );
   }
 
   @include md {
-    --paragraph-large-font-size: clamp(24px, calc(24px + ((36 - 24) * ((100vw - 768px) / (1440 - 768)))), 36px);
+    --paragraph-large-font-size: clamp(
+      24px,
+      calc(24px + ((36 - 24) * ((100vw - 768px) / (1440 - 768)))),
+      36px
+    );
   }
 
   @include sm {
@@ -272,7 +372,11 @@
   }
 
   @include xs {
-    --paragraph-large-font-size: clamp(20px, calc(20px + ((24 - 20) * ((100vw - 320px) / (428 - 320)))), 24px);
+    --paragraph-large-font-size: clamp(
+      20px,
+      calc(20px + ((24 - 20) * ((100vw - 320px) / (428 - 320)))),
+      24px
+    );
   }
 
   // paragraph - medium  текст в блоке слова
@@ -289,19 +393,31 @@
   }
 
   @include lg {
-    --paragraph-medium-font-size: clamp(30px, calc(30px + ((40 - 30) * ((100vw - 1440px) / (1920 - 1440)))), 40px);
+    --paragraph-medium-font-size: clamp(
+      30px,
+      calc(30px + ((40 - 30) * ((100vw - 1440px) / (1920 - 1440)))),
+      40px
+    );
   }
 
   @include md {
-    --paragraph-medium-font-size: clamp(20px, calc(20px + ((30 - 20) * ((100vw - 768px) / (1440 - 768)))), 30px);
+    --paragraph-medium-font-size: clamp(
+      20px,
+      calc(20px + ((30 - 20) * ((100vw - 768px) / (1440 - 768)))),
+      30px
+    );
   }
 
   @include sm {
-    --paragraph-medium-font-size: 20px; 
+    --paragraph-medium-font-size: 20px;
   }
 
   @include xs {
-    --paragraph-medium-font-size: clamp(15px, calc(15px + ((20 - 15) * ((100vw - 320px) / (428 - 320)))), 20px);
+    --paragraph-medium-font-size: clamp(
+      15px,
+      calc(15px + ((20 - 15) * ((100vw - 320px) / (428 - 320)))),
+      20px
+    );
   }
 
   // paragraph - standard основной текст
@@ -318,11 +434,19 @@
   }
 
   @include lg {
-    --paragraph-standard-font-size: clamp(16px, calc(16px + ((20 - 16) * ((100vw - 1440px) / (1920 - 1440)))), 20px);
+    --paragraph-standard-font-size: clamp(
+      16px,
+      calc(16px + ((20 - 16) * ((100vw - 1440px) / (1920 - 1440)))),
+      20px
+    );
   }
 
   @include md {
-    --paragraph-standard-font-size: clamp(15px, calc(15px + ((16 - 15) * ((100vw - 768px) / (1440 - 768)))), 16px);
+    --paragraph-standard-font-size: clamp(
+      15px,
+      calc(15px + ((16 - 15) * ((100vw - 768px) / (1440 - 768)))),
+      16px
+    );
   }
 
   @include sm {
@@ -330,7 +454,11 @@
   }
 
   @include xs {
-    --paragraph-standard-font-size: clamp(14px, calc(14px + ((15 - 14) * ((100vw - 320px) / (428 - 320)))), 15px);
+    --paragraph-standard-font-size: clamp(
+      14px,
+      calc(14px + ((15 - 14) * ((100vw - 320px) / (428 - 320)))),
+      15px
+    );
   }
 
   // paragraph - small
@@ -347,11 +475,19 @@
   }
 
   @include lg {
-    --paragraph-small-font-size: clamp(12px, calc(12px + ((15 - 12) * ((100vw - 1440px) / (1920 - 1440)))), 15px);
+    --paragraph-small-font-size: clamp(
+      12px,
+      calc(12px + ((15 - 12) * ((100vw - 1440px) / (1920 - 1440)))),
+      15px
+    );
   }
 
   @include md {
-    --paragraph-small-font-size: clamp(12px, calc(12px + ((15 - 12) * ((100vw - 768px) / (1440 - 768)))), 15px);
+    --paragraph-small-font-size: clamp(
+      12px,
+      calc(12px + ((15 - 12) * ((100vw - 768px) / (1440 - 768)))),
+      15px
+    );
   }
 
   @include sm {
@@ -359,7 +495,11 @@
   }
 
   @include xs {
-    --paragraph-small-font-size: clamp(10px, calc(10px + ((12 - 10) * ((100vw - 320px) / (428 - 320)))), 12px);
+    --paragraph-small-font-size: clamp(
+      10px,
+      calc(10px + ((12 - 10) * ((100vw - 320px) / (428 - 320)))),
+      12px
+    );
   }
 
   // paragraph-xsmall
@@ -376,7 +516,11 @@
   }
 
   @include md {
-    --paragraph-xsmall-font-size: clamp(13px, calc(13px + ((18 - 13) * ((100vw - 768px) / (1440 - 768)))), 18px);
+    --paragraph-xsmall-font-size: clamp(
+      13px,
+      calc(13px + ((18 - 13) * ((100vw - 768px) / (1440 - 768)))),
+      18px
+    );
   }
 
   @include sm {
@@ -384,7 +528,11 @@
   }
 
   @include xs {
-    --paragraph-xsmall-font-size: clamp(12px, calc(12px + ((13 - 12) * ((100vw - 320px) / (428 - 320)))), 13px);
+    --paragraph-xsmall-font-size: clamp(
+      12px,
+      calc(12px + ((13 - 12) * ((100vw - 320px) / (428 - 320)))),
+      13px
+    );
   }
 
   // button - text
@@ -400,11 +548,19 @@
   }
 
   @include lg {
-    --button-text-font-size: clamp(24px, calc(24px + ((32 - 24) * ((100vw - 1440px) / (1920 - 1440)))), 32px);
+    --button-text-font-size: clamp(
+      24px,
+      calc(24px + ((32 - 24) * ((100vw - 1440px) / (1920 - 1440)))),
+      32px
+    );
   }
 
   @include md {
-    --button-text-font-size: clamp(18px, calc(18px + ((24 - 18) * ((100vw - 768px) / (1440 - 768)))), 24px);
+    --button-text-font-size: clamp(
+      18px,
+      calc(18px + ((24 - 18) * ((100vw - 768px) / (1440 - 768)))),
+      24px
+    );
   }
 
   @include sm {
@@ -412,7 +568,11 @@
   }
 
   @include xs {
-    --button-text-font-size: clamp(15px, calc(15px + ((18 - 15) * ((100vw - 320px) / (428 - 320)))), 18px);
+    --button-text-font-size: clamp(
+      15px,
+      calc(15px + ((18 - 15) * ((100vw - 320px) / (428 - 320)))),
+      18px
+    );
   }
 
   // error - text
@@ -429,19 +589,31 @@
   }
 
   @include lg {
-    --error-text-font-size: clamp(15px, calc(15px + ((16 - 15) * ((100vw - 1440px) / (1920 - 1440)))), 16px);
+    --error-text-font-size: clamp(
+      15px,
+      calc(15px + ((16 - 15) * ((100vw - 1440px) / (1920 - 1440)))),
+      16px
+    );
   }
 
   @include md {
-    --error-text-font-size: clamp(13px, calc(13px + ((15 - 13) * ((100vw - 768px) / (1440 - 768)))), 15px);
+    --error-text-font-size: clamp(
+      13px,
+      calc(13px + ((15 - 13) * ((100vw - 768px) / (1440 - 768)))),
+      15px
+    );
   }
 
   @include sm {
     --error-text-font-size: 13px;
-}
+  }
 
   @include xs {
-    --error-text-font-size: clamp(12px, calc(12px + ((13 - 12) * ((100vw - 320px) / (428 - 320)))), 13px);
+    --error-text-font-size: clamp(
+      12px,
+      calc(12px + ((13 - 12) * ((100vw - 320px) / (428 - 320)))),
+      13px
+    );
   }
 
   // span - text
@@ -462,27 +634,75 @@
   }
 
   @include lg {
-    --span-text-font-size-ru: clamp(26px, calc(26px + ((35 - 26) * ((100vw - 1440px) / (1920 - 1440)))), 35px);
-    --span-text-font-size-en: clamp(30px, calc(30px + ((40 - 30) * ((100vw - 1440px) / (1920 - 1440)))), 40px);
-    --span-text-font-size-fr: clamp(31px, calc(31px + ((42 - 31) * ((100vw - 1440px) / (1920 - 1440)))), 42px);
+    --span-text-font-size-ru: clamp(
+      26px,
+      calc(26px + ((35 - 26) * ((100vw - 1440px) / (1920 - 1440)))),
+      35px
+    );
+    --span-text-font-size-en: clamp(
+      30px,
+      calc(30px + ((40 - 30) * ((100vw - 1440px) / (1920 - 1440)))),
+      40px
+    );
+    --span-text-font-size-fr: clamp(
+      31px,
+      calc(31px + ((42 - 31) * ((100vw - 1440px) / (1920 - 1440)))),
+      42px
+    );
   }
 
   @include md {
-    --span-text-font-size-ru: clamp(16px, calc(16px + ((26 - 16) * ((100vw - 768px) / (1440 - 768)))), 26px);
-    --span-text-font-size-en: clamp(16px, calc(16px + ((30 - 16) * ((100vw - 768px) / (1440 - 768)))), 30px);
-    --span-text-font-size-fr: clamp(16px, calc(16px + ((31 - 16) * ((100vw - 768px) / (1440 - 768)))), 31px);
+    --span-text-font-size-ru: clamp(
+      16px,
+      calc(16px + ((26 - 16) * ((100vw - 768px) / (1440 - 768)))),
+      26px
+    );
+    --span-text-font-size-en: clamp(
+      16px,
+      calc(16px + ((30 - 16) * ((100vw - 768px) / (1440 - 768)))),
+      30px
+    );
+    --span-text-font-size-fr: clamp(
+      16px,
+      calc(16px + ((31 - 16) * ((100vw - 768px) / (1440 - 768)))),
+      31px
+    );
   }
 
   @include sm {
-    --span-text-font-size-ru: clamp(17px, calc(17px - ((16 - 17) * ((100vw - 428px) / (768 - 428)))), 16px);
-    --span-text-font-size-en: clamp(20px, calc(20px - ((16 - 20) * ((100vw - 428px) / (768 - 428)))), 16px);
-    --span-text-font-size-fr: clamp(22px, calc(22px - ((16 - 22) * ((100vw - 428px) / (768 - 428)))), 16px);
-}
+    --span-text-font-size-ru: clamp(
+      17px,
+      calc(17px - ((16 - 17) * ((100vw - 428px) / (768 - 428)))),
+      16px
+    );
+    --span-text-font-size-en: clamp(
+      20px,
+      calc(20px - ((16 - 20) * ((100vw - 428px) / (768 - 428)))),
+      16px
+    );
+    --span-text-font-size-fr: clamp(
+      22px,
+      calc(22px - ((16 - 22) * ((100vw - 428px) / (768 - 428)))),
+      16px
+    );
+  }
 
   @include xs {
-    --span-text-font-size-ru: clamp(14px, calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))), 16px);
-    --span-text-font-size-en: clamp(14px, calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))), 16px);
-    --span-text-font-size-fr: clamp(15px, calc(15px + ((16 - 15) * ((100vw - 320px) / (428 - 320)))), 16px);
+    --span-text-font-size-ru: clamp(
+      14px,
+      calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))),
+      16px
+    );
+    --span-text-font-size-en: clamp(
+      14px,
+      calc(14px + ((16 - 14) * ((100vw - 320px) / (428 - 320)))),
+      16px
+    );
+    --span-text-font-size-fr: clamp(
+      15px,
+      calc(15px + ((16 - 15) * ((100vw - 320px) / (428 - 320)))),
+      16px
+    );
   }
 
   // swiper-navigation-size
