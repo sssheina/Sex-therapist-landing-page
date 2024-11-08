@@ -11,7 +11,7 @@
 
     @include md {
       grid-template-columns: repeat(2, 1fr);
-      gap: 35px;
+      gap: 15px;
     }
 
     @include sm {
@@ -71,26 +71,26 @@
 
   &__logo-text {
     font-weight: 400;
-    max-width: 280px;
+    max-width: 380px;
 
     @media (min-width: 1920px) {
-      max-width: 280px;
+      max-width: 380px;
     }
 
     @include lg {
-      max-width: clamp(220px, calc(220px + ((280 - 220) * ((100vw - 1440px) / (1920 - 1440)))), 280px);
+      max-width: clamp(320px, calc(320px + ((380 - 320) * ((100vw - 1440px) / (1920 - 1440)))), 380px);
     }
 
     @include md {
-      max-width: clamp(205px, calc(205px + ((220 - 205) * ((100vw - 768px) / (1440 - 768)))), 220px);
+      max-width: clamp(305px, calc(305px + ((320 - 305) * ((100vw - 768px) / (1440 - 768)))), 320px);
     }
 
     @include sm {
-      max-width: 205px;
+      max-width: 255px;
     }
 
     @include xs {
-      max-width: clamp(190px, calc(190px + ((205 - 190) * ((100vw - 320px) / (428 - 320)))), 205px);
+      max-width: clamp(210px, calc(210px + ((225 - 210) * ((100vw - 320px) / (428 - 320)))), 225px);
     }
   }
 
@@ -110,6 +110,7 @@
     @include sm {
       grid-column: 1;
       grid-row: 3;
+      align-items: center;
     }
   }
 

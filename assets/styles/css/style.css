@@ -1984,7 +1984,7 @@ input[type=checkbox]:focus + label {
 @media only screen and (max-width: 1439px) {
   .footer__content {
     grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
+    gap: 15px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -2042,31 +2042,31 @@ input[type=checkbox]:focus + label {
 }
 .footer__logo-text {
   font-weight: 400;
-  max-width: 280px;
+  max-width: 380px;
 }
 @media (min-width: 1920px) {
   .footer__logo-text {
-    max-width: 280px;
+    max-width: 380px;
   }
 }
 @media only screen and (max-width: 1919px) {
   .footer__logo-text {
-    max-width: clamp(220px, 220px + 60 * (100vw - 1440px) / 480, 280px);
+    max-width: clamp(320px, 320px + 60 * (100vw - 1440px) / 480, 380px);
   }
 }
 @media only screen and (max-width: 1439px) {
   .footer__logo-text {
-    max-width: clamp(205px, 205px + 15 * (100vw - 768px) / 672, 220px);
+    max-width: clamp(305px, 305px + 15 * (100vw - 768px) / 672, 320px);
   }
 }
 @media only screen and (max-width: 767px) {
   .footer__logo-text {
-    max-width: 205px;
+    max-width: 255px;
   }
 }
 @media only screen and (max-width: 427px) {
   .footer__logo-text {
-    max-width: clamp(190px, 190px + 15 * (100vw - 320px) / 108, 205px);
+    max-width: clamp(210px, 210px + 15 * (100vw - 320px) / 108, 225px);
   }
 }
 .footer__subscribe {
@@ -2088,6 +2088,7 @@ input[type=checkbox]:focus + label {
   .footer__subscribe {
     grid-column: 1;
     grid-row: 3;
+    align-items: center;
   }
 }
 .footer__form {
