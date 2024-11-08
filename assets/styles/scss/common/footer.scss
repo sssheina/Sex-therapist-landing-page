@@ -60,12 +60,12 @@
   }
 
   &__logo {
-    max-width: clamp(55px, 5vw + 5px, 92px); 
+    max-width: clamp(55px, 5vw + 5px, 92px);
     max-height: clamp(61px, 5vw + 5px, 105px);
     color: $color-blue-dark;
 
     &:focus {
-      stroke: $color-orange-light; // Оранжевый цвет при фокусировке на логотипе
+      stroke: $color-orange-light;
     }
   }
 
@@ -78,11 +78,19 @@
     }
 
     @include lg {
-      max-width: clamp(320px, calc(320px + ((380 - 320) * ((100vw - 1440px) / (1920 - 1440)))), 380px);
+      max-width: clamp(
+        320px,
+        calc(320px + ((380 - 320) * ((100vw - 1440px) / (1920 - 1440)))),
+        380px
+      );
     }
 
     @include md {
-      max-width: clamp(305px, calc(305px + ((320 - 305) * ((100vw - 768px) / (1440 - 768)))), 320px);
+      max-width: clamp(
+        305px,
+        calc(305px + ((320 - 305) * ((100vw - 768px) / (1440 - 768)))),
+        320px
+      );
     }
 
     @include sm {
@@ -90,7 +98,11 @@
     }
 
     @include xs {
-      max-width: clamp(210px, calc(210px + ((225 - 210) * ((100vw - 320px) / (428 - 320)))), 225px);
+      max-width: clamp(
+        210px,
+        calc(210px + ((225 - 210) * ((100vw - 320px) / (428 - 320)))),
+        225px
+      );
     }
   }
 
@@ -162,7 +174,7 @@
     }
     &:focus {
       background: $color-blue-middle;
-      color: $color-orange-light;  
+      color: $color-orange-light;
     }
   }
 

@@ -2540,6 +2540,7 @@ input[type=checkbox]:focus + label {
 
 .icon-whatsapp {
   max-width: 35px;
+  max-height: 35px;
   fill: #fefefe;
 }
 
@@ -3030,6 +3031,12 @@ input[type=checkbox]:focus + label {
 @media only screen and (max-width: 767px) {
   .cover {
     padding-bottom: 95px;
+  }
+}
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .cover {
+    height: auto;
+    padding-top: 70px;
   }
 }
 @media only screen and (max-width: 427px) {

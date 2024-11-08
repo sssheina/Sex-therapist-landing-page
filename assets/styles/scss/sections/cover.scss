@@ -30,6 +30,11 @@
 
   @include sm {
     padding-bottom: 95px;
+
+    @media (orientation: landscape) {
+      height: auto;
+      padding-top: 70px;
+    }
   }
 
   @include xs {
