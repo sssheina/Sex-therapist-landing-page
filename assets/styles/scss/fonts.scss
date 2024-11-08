@@ -278,7 +278,7 @@
   // paragraph - medium  текст в блоке слова
 
   --paragraph-medium-font-family: var(--raleway-font-family);
-  --paragraph-medium-font-size: 40px;
+  --paragraph-medium-font-size: 35px;
   --paragraph-medium-font-weight: 400;
   --paragraph-medium-line-height: 150%;
   --paragraph-medium-letter-spacing: 0.05em;
@@ -286,23 +286,23 @@
   --paragraph-medium-text-decoration: none;
 
   @media (min-width: 1920px) {
-    --paragraph-medium-font-size: 40px;
+    --paragraph-medium-font-size: 35px;
   }
 
   @include lg {
-    --paragraph-medium-font-size: clamp(30px, calc(30px + ((40 - 30) * ((100vw - 1440px) / (1920 - 1440)))), 40px);
+    --paragraph-medium-font-size: clamp(25px, calc(30px + ((35 - 25) * ((100vw - 1440px) / (1920 - 1440)))), 35px);
   }
 
   @include md {
-    --paragraph-medium-font-size: clamp(20px, calc(20px + ((30 - 20) * ((100vw - 768px) / (1440 - 768)))), 30px);
+    --paragraph-medium-font-size: clamp(18px, calc(18px + ((25 - 18) * ((100vw - 768px) / (1440 - 768)))), 25px);
   }
 
   @include sm {
-    --paragraph-medium-font-size: 20px; 
+    --paragraph-medium-font-size: 18px; 
   }
 
   @include xs {
-    --paragraph-medium-font-size: clamp(15px, calc(15px + ((20 - 15) * ((100vw - 320px) / (428 - 320)))), 20px);
+    --paragraph-medium-font-size: clamp(15px, calc(15px + ((18 - 15) * ((100vw - 320px) / (428 - 320)))), 18px);
   }
 
   // paragraph - standard основной текст

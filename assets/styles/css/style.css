@@ -1050,7 +1050,7 @@ textarea {
   --paragraph-large-line-height: 1.5;
   --paragraph-large-text-transform: uppercase;
   --paragraph-medium-font-family: var(--raleway-font-family);
-  --paragraph-medium-font-size: 40px;
+  --paragraph-medium-font-size: 35px;
   --paragraph-medium-font-weight: 400;
   --paragraph-medium-line-height: 150%;
   --paragraph-medium-letter-spacing: 0.05em;
@@ -1277,27 +1277,27 @@ textarea {
 }
 @media (min-width: 1920px) {
   :root {
-    --paragraph-medium-font-size: 40px;
+    --paragraph-medium-font-size: 35px;
   }
 }
 @media only screen and (max-width: 1919px) {
   :root {
-    --paragraph-medium-font-size: clamp(30px, calc(30px + ((40 - 30) * ((100vw - 1440px) / (1920 - 1440)))), 40px);
+    --paragraph-medium-font-size: clamp(25px, calc(30px + ((35 - 25) * ((100vw - 1440px) / (1920 - 1440)))), 35px);
   }
 }
 @media only screen and (max-width: 1439px) {
   :root {
-    --paragraph-medium-font-size: clamp(20px, calc(20px + ((30 - 20) * ((100vw - 768px) / (1440 - 768)))), 30px);
+    --paragraph-medium-font-size: clamp(18px, calc(18px + ((25 - 18) * ((100vw - 768px) / (1440 - 768)))), 25px);
   }
 }
 @media only screen and (max-width: 767px) {
   :root {
-    --paragraph-medium-font-size: 20px;
+    --paragraph-medium-font-size: 18px;
   }
 }
 @media only screen and (max-width: 427px) {
   :root {
-    --paragraph-medium-font-size: clamp(15px, calc(15px + ((20 - 15) * ((100vw - 320px) / (428 - 320)))), 20px);
+    --paragraph-medium-font-size: clamp(15px, calc(15px + ((18 - 15) * ((100vw - 320px) / (428 - 320)))), 18px);
   }
 }
 @media (min-width: 1920px) {
@@ -4374,6 +4374,7 @@ input[type=checkbox]:focus + label {
 .words__content {
   max-width: 846px;
   text-align: center;
+  color: #fefefe;
 }
 @media only screen and (max-width: 1919px) {
   .words__content {

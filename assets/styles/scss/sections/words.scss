@@ -27,6 +27,7 @@
   &__content {
     max-width: 846px;
     text-align: center;
+    color: $color-white;
 
     @include lg {
       max-width: 626px;
