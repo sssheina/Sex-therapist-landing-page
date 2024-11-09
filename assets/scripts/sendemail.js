@@ -15,7 +15,7 @@ const errorPolitics = document.querySelector(".footer__policy-error");
 const modalMessageMap = {
   RU: {
     thanksTitle: "Спасибо!",
-    thanksText: "Вы успешно подписались на рассылку новостей",
+    thanksText: "Вы успешно подписались на&nbsp;рассылку&nbsp;новостей",
     errorTitle: "Ошибка",
     errorText: "Произошла ошибка при отправке формы",
     fieldEmpty: "E-mail не может быть пустым",

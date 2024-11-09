@@ -20,26 +20,27 @@
 
 .modal {
   position: relative;
-  max-width: 50%;
+  max-width: 25%;
   min-width: 270px;
-  padding: 6rem;
+  padding: 4rem;
   z-index: 2000;
   background-color: white;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 
   @include lg {
-    max-width: 70%;
-    padding: 5rem;
+    max-width: 30%;
+    padding: 3rem;
   }
 
   @include md {
+    max-width: 50%;
     padding: 2.5rem;
   }
 
   @include sm {
     padding: 2rem;
-    max-width: 90%;
+    max-width: 80%;
   }
 
   @include xs {
