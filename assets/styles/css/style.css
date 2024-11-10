@@ -5070,7 +5070,7 @@ input[type=checkbox]:focus + label {
 
 .modal {
   position: relative;
-  max-width: 25%;
+  max-width: 60%;
   min-width: 270px;
   padding: 4rem;
   z-index: 2000;
@@ -5080,7 +5080,6 @@ input[type=checkbox]:focus + label {
 }
 @media only screen and (max-width: 1919px) {
   .modal {
-    max-width: 30%;
     padding: 3rem;
   }
 }
@@ -5114,13 +5113,8 @@ input[type=checkbox]:focus + label {
   display: flex;
   flex-direction: column;
   list-style: decimal;
-  padding-left: 19px;
+  padding-left: 14px;
   gap: 1rem;
-}
-@media only screen and (max-width: 767px) {
-  .modal__list-ordered {
-    padding-left: 25px;
-  }
 }
 .modal__item-ordered {
   margin-bottom: 5px;

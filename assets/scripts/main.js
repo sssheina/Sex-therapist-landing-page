@@ -123,9 +123,28 @@ btnUp.addEventListener("click", () => {
   });
 });
 
+// ----- SMOOTH SCROLL WITH OFFSET FOR HEADER -----
+headerMenuLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
+    const headerHeight = document.querySelector(".header").offsetHeight;
+    const targetPosition =
+      targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: "smooth",
+    });
+  });
+});
+
 // ----- VIDEO (IOS adaptation) -----
 
 const video = document.querySelector(".cover__video");
+const poster = document.querySelector(".cover__video").getAttribute("poster");
 
 function checkViewport() {
   if (window.innerWidth <= 1000) {
@@ -133,9 +152,29 @@ function checkViewport() {
     video.style.display = "none";
   } else {
     video.style.display = "block";
-    video.play();
+    video.play().catch(error => {
+      console.log('Ошибка воспроизведения видео:', error);
+      // Показываем постер вместо видео, если не удалось воспроизвести
+      video.style.display = "none";
+      const imageElement = document.createElement('img');
+      imageElement.src = poster;
+      imageElement.classList.add('cover__poster'); // Можно добавить стиль для изображения
+      video.parentElement.appendChild(imageElement); // Добавляем постер в контейнер
+    });
   }
 }
+
+// const video = document.querySelector(".cover__video");
+
+// function checkViewport() {
+//   if (window.innerWidth <= 1000) {
+//     video.pause();
+//     video.style.display = "none";
+//   } else {
+//     video.style.display = "block";
+//     video.play();
+//   }
+// }
 
 window.addEventListener("resize", checkViewport);
 document.addEventListener("DOMContentLoaded", checkViewport);

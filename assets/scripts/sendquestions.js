@@ -15,7 +15,7 @@ const errorPolitics = document.querySelector(".questions__policy-error");
 const modalMessageMap = {
   RU: {
     thanksTitle: "Спасибо!",
-    thanksText: "Сообщение было успешно отправлено",
+    thanksText: "Сообщение было успешно&nbsp;отправлено",
     errorTitle: "Ошибка",
     errorText: "Произошла ошибка при отправке формы",
     messageEmpty: "Сообщение не может быть пустым",
@@ -24,7 +24,7 @@ const modalMessageMap = {
   },
   EN: {
     thanksTitle: "Thank you!",
-    thanksText: "Message was successfully sent.",
+    thanksText: "Message was successfully&nbsp;sent.",
     errorTitle: "Error",
     errorText: "An error occurred while submitting the form",
     messageEmpty: "Message can not be empty",
