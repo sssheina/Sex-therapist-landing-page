@@ -21,7 +21,7 @@
         </video:video>
     </url>
 
-     <!-- Version française -->
+    <!-- Version française -->
 
 <url>
     <loc>https://katerina-tartary.com/fr.html</loc>
@@ -59,6 +59,612 @@
             <video:description>Катерина Тартари рассказывает о сложностях, с которыми сталкиваются люди в сфере интимной близости, и о своей миссии — помочь клиентам создавать гармоничные и доверительные отношения. Приглашает на бесплатную ознакомительную сессию.</video:description>
             <video:duration>73</video:duration>
         </video:video>
+    </url>
+
+    <!-- FR Folder -->
+
+     <url>
+        <loc>https://katerina-tartary.com/fr/abuser-counseling.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/abuser-counseling.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/abuser-counseling.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/abuser-counseling.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/abuser-counseling.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/abusive-relationships.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/abusive-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/abusive-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/abusive-relationships.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/abusive-relationships.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/act.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/act.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/act.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/act.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/act.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/aggressors.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/aggressors.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/aggressors.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/aggressors.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/aggressors.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/art-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/art-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/art-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/art-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/art-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/couples-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/couples-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/couples-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/couples-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/couples-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/domestic-violence.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/domestic-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/domestic-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/domestic-violence.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/domestic-violence.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/eft.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/eft.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/eft.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/eft.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/eft.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/family-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/family-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/family-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/family-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/family-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/gender-identity.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/gender-identity.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/gender-identity.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/gender-identity.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/gender-identity.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/group-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/group-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/group-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/group-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/group-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/ifs.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/ifs.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/ifs.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/ifs.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/ifs.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/lgbtqia.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/lgbtqia.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/lgbtqia.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/lgbtqia.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/lgbtqia.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/open-relationships.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/open-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/open-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/open-relationships.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/open-relationships.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/polyamory.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/polyamory.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/polyamory.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/polyamory.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/polyamory.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/psychological-trauma.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/psychological-trauma.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/psychological-trauma.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/psychological-trauma.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/psychological-trauma.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/sex-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/sex-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/sex-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/sex-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/sex-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/sexual-orientation.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/sexual-orientation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/sexual-orientation.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/sexual-orientation.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/sexual-orientation.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/sexualized-violence.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/sexualized-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/sexualized-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/sexualized-violence.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/sexualized-violence.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/fr/trauma-of-violence.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/trauma-of-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/trauma-of-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/trauma-of-violence.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/fr/trauma-of-violence.html"/>
+    </url>
+
+    <!-- EN Folder -->
+
+    <url>
+        <loc>https://katerina-tartary.com/en/abuser-counseling.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/abuser-counseling.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/abuser-counseling.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/abuser-counseling.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/abuser-counseling.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/abusive-relationships.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/abusive-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/abusive-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/abusive-relationships.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/abusive-relationships.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/act.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/act.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/act.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/act.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/act.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/aggressors.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/aggressors.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/aggressors.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/aggressors.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/aggressors.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/art-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/art-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/art-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/art-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/art-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/couples-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/couples-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/couples-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/couples-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/couples-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/domestic-violence.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/domestic-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/domestic-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/domestic-violence.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/domestic-violence.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/eft.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/eft.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/eft.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/eft.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/eft.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/family-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/family-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/family-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/family-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/family-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/gender-identity.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/gender-identity.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/gender-identity.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/gender-identity.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/gender-identity.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/group-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/group-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/group-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/group-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/group-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/ifs.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/ifs.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/ifs.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/ifs.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/ifs.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/lgbtqia.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/lgbtqia.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/lgbtqia.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/lgbtqia.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/lgbtqia.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/open-relationships.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/open-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/open-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/open-relationships.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/open-relationships.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/polyamory.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/polyamory.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/polyamory.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/polyamory.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/polyamory.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/psychological-trauma.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/psychological-trauma.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/psychological-trauma.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/psychological-trauma.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/psychological-trauma.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/sex-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/sex-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/sex-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/sex-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/sex-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/sexual-orientation.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/sexual-orientation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/sexual-orientation.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/sexual-orientation.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/sexual-orientation.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/sexualized-violence.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/sexualized-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/sexualized-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/sexualized-violence.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/sexualized-violence.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/en/trauma-of-violence.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/trauma-of-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/trauma-of-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/trauma-of-violence.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/en/trauma-of-violence.html"/>
+    </url>
+
+    <!-- RU Folder -->
+
+<url>
+        <loc>https://katerina-tartary.com/ru/abuser-counseling.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/abuser-counseling.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/abuser-counseling.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/abuser-counseling.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/abuser-counseling.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/abusive-relationships.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/abusive-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/abusive-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/abusive-relationships.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/abusive-relationships.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/act.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/act.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/act.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/act.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/act.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/aggressors.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/aggressors.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/aggressors.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/aggressors.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/aggressors.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/art-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/art-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/art-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/art-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/art-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/couples-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/couples-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/couples-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/couples-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/couples-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/domestic-violence.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/domestic-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/domestic-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/domestic-violence.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/domestic-violence.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/eft.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/eft.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/eft.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/eft.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/eft.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/family-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/family-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/family-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/family-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/family-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/gender-identity.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/gender-identity.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/gender-identity.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/gender-identity.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/gender-identity.html"/>
+    </url>
+
+     <url>
+        <loc>https://katerina-tartary.com/ru/group-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/group-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/group-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/group-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/group-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/ifs.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/ifs.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/ifs.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/ifs.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/ifs.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/lgbtqia.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/lgbtqia.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/lgbtqia.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/lgbtqia.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/lgbtqia.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/open-relationships.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/open-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/open-relationships.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/open-relationships.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/open-relationships.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/polyamory.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/polyamory.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/polyamory.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/polyamory.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/polyamory.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/psychological-trauma.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/psychological-trauma.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/psychological-trauma.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/psychological-trauma.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/psychological-trauma.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/sex-therapy.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/sex-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/sex-therapy.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/sex-therapy.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/sex-therapy.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/sexual-orientation.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/sexual-orientation.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/sexual-orientation.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/sexual-orientation.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/sexual-orientation.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/sexualized-violence.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/sexualized-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/sexualized-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/sexualized-violence.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/sexualized-violence.html"/>
+    </url>
+
+    <url>
+        <loc>https://katerina-tartary.com/ru/trauma-of-violence.html</loc>
+        <lastmod>2024-11-13T12:00:00+01:00</lastmod>
+        <priority>0.8</priority>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://katerina-tartary.com/fr/trauma-of-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://katerina-tartary.com/en/trauma-of-violence.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://katerina-tartary.com/ru/trauma-of-violence.html"/>
+        <xhtml:link rel="canonical" href="https://katerina-tartary.com/ru/trauma-of-violence.html"/>
     </url>
 
     </urlset>
