@@ -1075,7 +1075,7 @@ textarea {
   --paragraph-xsmall-text-transform: none;
   --paragraph-xsmall-text-decoration: none;
   --button-text-font-family: var(--montserrat-font-family);
-  --button-text-font-size: 26px;
+  --button-text-font-size: 30px;
   --button-text-font-weight: 400;
   --button-text-font-style: normal;
   --button-text-text-decoration: none;
@@ -1520,38 +1520,38 @@ textarea {
 }
 @media (min-width: 1920px) {
   :root {
-    --button-text-font-size: 26px;
+    --button-text-font-size: 30px;
   }
 }
 @media only screen and (max-width: 1919px) {
   :root {
     --button-text-font-size: clamp(
-      21px,
-      calc(21px + ((26 - 21) * ((100vw - 1440px) / (1920 - 1440)))),
-      26px
+      23px,
+      calc(23px + ((30 - 23) * ((100vw - 1440px) / (1920 - 1440)))),
+      30px
     );
   }
 }
 @media only screen and (max-width: 1439px) {
   :root {
     --button-text-font-size: clamp(
-      16px,
-      calc(16px + ((21 - 16) * ((100vw - 768px) / (1440 - 768)))),
-      21px
+      17px,
+      calc(17px + ((23 - 17) * ((100vw - 768px) / (1440 - 768)))),
+      23px
     );
   }
 }
 @media only screen and (max-width: 767px) {
   :root {
-    --button-text-font-size: 16px;
+    --button-text-font-size: 17px;
   }
 }
 @media only screen and (max-width: 427px) {
   :root {
     --button-text-font-size: clamp(
-      13px,
-      calc(13px + ((16 - 13) * ((100vw - 320px) / (428 - 320)))),
-      16px
+      15px,
+      calc(15px + ((17 - 15) * ((100vw - 320px) / (428 - 320)))),
+      17px
     );
   }
 }
@@ -2650,27 +2650,27 @@ input[type=checkbox]:focus + label {
 }
 
 .button-main {
-  max-width: 623px;
+  max-width: 523px;
   width: 100%;
 }
 @media only screen and (max-width: 1919px) {
   .button-main {
-    max-width: 492px;
+    max-width: 392px;
   }
 }
 @media only screen and (max-width: 1439px) {
   .button-main {
-    max-width: 410px;
+    max-width: 227px;
   }
 }
 @media only screen and (max-width: 767px) {
   .button-main {
-    max-width: 368px;
+    max-width: 278px;
   }
 }
 @media only screen and (max-width: 427px) {
   .button-main {
-    max-width: 280px;
+    max-width: 212px;
   }
 }
 
