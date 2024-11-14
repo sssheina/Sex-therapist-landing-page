@@ -539,40 +539,40 @@
   // button - text
 
   --button-text-font-family: var(--montserrat-font-family);
-  --button-text-font-size: 32px;
+  --button-text-font-size: 26px;
   --button-text-font-weight: 400;
   --button-text-font-style: normal;
   --button-text-text-decoration: none;
 
   @media (min-width: 1920px) {
-    --button-text-font-size: 32px;
+    --button-text-font-size: 26px;
   }
 
   @include lg {
     --button-text-font-size: clamp(
-      24px,
-      calc(24px + ((32 - 24) * ((100vw - 1440px) / (1920 - 1440)))),
-      32px
+      21px,
+      calc(21px + ((26 - 21) * ((100vw - 1440px) / (1920 - 1440)))),
+      26px
     );
   }
 
   @include md {
     --button-text-font-size: clamp(
-      18px,
-      calc(18px + ((24 - 18) * ((100vw - 768px) / (1440 - 768)))),
-      24px
+      16px,
+      calc(16px + ((21 - 16) * ((100vw - 768px) / (1440 - 768)))),
+      21px
     );
   }
 
   @include sm {
-    --button-text-font-size: 18px;
+    --button-text-font-size: 16px;
   }
 
   @include xs {
     --button-text-font-size: clamp(
-      15px,
-      calc(15px + ((18 - 15) * ((100vw - 320px) / (428 - 320)))),
-      18px
+      13px,
+      calc(13px + ((16 - 13) * ((100vw - 320px) / (428 - 320)))),
+      16px
     );
   }
 

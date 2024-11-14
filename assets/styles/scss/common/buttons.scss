@@ -48,24 +48,24 @@
 }
 
 .button-main {
-  max-width: 523px;
+  max-width: 623px;
   width: 100%;
 
 
   @include lg {
-    max-width: 392px;
+    max-width: 492px;
   }
 
   @include md {
-    max-width: 227px;
+    max-width: 410px;
   }
 
   @include sm {
-    max-width: 278px;
+    max-width: 368px;
   }
 
   @include xs {
-    max-width: 212px;
+    max-width: 280px;
   }
 }
 
