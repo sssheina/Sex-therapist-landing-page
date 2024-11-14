@@ -259,6 +259,7 @@
 
   &__copyright {
     color: $color-white;
+    line-height: 130%;
 
     &.author {
       @include md {

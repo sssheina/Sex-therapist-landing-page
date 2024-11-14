@@ -2440,6 +2440,7 @@ input[type=checkbox]:focus + label {
 }
 .footer__copyright {
   color: #fefefe;
+  line-height: 130%;
 }
 @media only screen and (max-width: 1439px) {
   .footer__copyright.author {
