@@ -5181,6 +5181,10 @@ input[type=checkbox]:focus + label {
   width: 28px;
   height: 28px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .hidden {
